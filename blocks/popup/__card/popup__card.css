@@ -1,0 +1,10 @@
+.popup__card {
+  width: 430px;
+  height: 330px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin-top: 195px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
