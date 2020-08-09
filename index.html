@@ -20,9 +20,9 @@
           <div class="profile__avatar"></div>
           <div class="profile__info">
             <div class="profile__info-column">
-              <p class="profile__user-name">Жак-Ив Кусто
-                <a href="" class="profile__edit-button"></a>
-              </p>
+              <p class="profile__user-name">Жак-Ив Кусто </p>
+              <a href="#" class="profile__edit-button"></a>
+
             </div>
             <p class="profile__subtitle">Исследователь океана</p>
           </div>
@@ -86,17 +86,20 @@
     <footer class="footer">
       <p class="footer__copyright">© 2020 Mesto Russia </p>
     </footer>
-
-    <div class="popup">
-      <div class="popup__card">
-        <p class="popup__title">Редактировать профиль</p>
-        <input type="text" name="" class="popup__input">
-        <input type="text" name="" class="popup__input">
-        <button type="submit" class="popup__save-button">Сохранить</button>
-        <div class="popup__escape-button"></div>
+    <form action="">
+      <div class="popup">
+        <div action="" class="popup__container">
+          <p class="popup__title">Редактировать профиль</p>
+          <input type="text" name="user" required class="popup__input popup__name" tabindex="1">
+          <input type="text " name="about-user" required class="popup__input popup__subtitle" tabindex="2">
+          <button type="submit" class="popup__save-button" tabindex="3">Сохранить</button>
+          <div class="popup__escape-button "></div>
+        </div>
       </div>
-    </div>
+    </form>
   </div>
+
+  <script src="./scripts/script.js "></script>
 </body>
 
 </html>

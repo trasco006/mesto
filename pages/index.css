@@ -11,3 +11,7 @@ body {
   color: #FFFFFF;
   font-family: 'Inter', 'Arial', sans-serif;
 }
+
+.popup__opened {
+  display: flex;
+}
