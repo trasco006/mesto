@@ -4,3 +4,12 @@
   height: 34px;
   background-repeat: no-repeat;
 }
+
+@media (max-width: 330px) {
+  .header__logo {
+    width: 103.74px;
+    height: 24.4px;
+    margin: 28px 0 32px 27px;
+    background-size: cover;
+  }
+}

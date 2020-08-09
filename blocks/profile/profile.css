@@ -12,3 +12,20 @@
   margin-top: 36.25px;
   justify-content: space-between;
 }
+
+@media (max-width: 882px) {
+  .profile {
+    flex-direction: column;
+    margin: 36.25px auto 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 330px) {
+  .profile {
+    width: 282px;
+    height: 286px;
+    flex-direction: column;
+    margin: 42px auto 0;
+  }
+}
