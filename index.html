@@ -20,65 +20,65 @@
           <div class="profile__avatar"></div>
           <div class="profile__info">
             <div class="profile__info-column">
-              <p class="profile__user-name">Жак-Ив Кусто </p>
-              <a href="#" class="profile__edit-button"></a>
+              <h1 class="profile__user-name">Жак-Ив Кусто </h1>
+              <button type="button" class="profile__edit-button"></button>
 
             </div>
             <p class="profile__subtitle">Исследователь океана</p>
           </div>
         </div>
-        <a href="#" class="profile__add-button"></a>
+        <button type="button" class="profile__add-button"></button>
       </section>
 
       <section class="elements">
 
-        <div class="elements__card">
-          <img src="./images/elements/1.jpg" alt="" class="elements__image">
-          <div class="elements__section">
-            <p class="elements__title">Карачаевск</p>
-            <a href="#" class="elements__like"></a>
+        <article class="card">
+          <img src="./images/elements/1.jpg" alt="Картинка 1" class="card__image">
+          <div class="card__section">
+            <h2 class="card__title">Карачаевск</h2>
+            <button type="button" class="card__like"></button>
           </div>
 
-        </div>
-        <div class="elements__card">
-          <img src="./images/elements/2.jpg" alt="" class="elements__image">
-          <div class="elements__section">
-            <p class="elements__title">Гора Эльбрус</p>
-            <a href="#" class="elements__like"></a>
+        </article>
+        <article class="card">
+          <img src="./images/elements/2.jpg" alt="Картинка 2" class="card__image">
+          <div class="card__section">
+            <h2 class="card__title">Гора Эльбрус</h2>
+            <button type="button" class="card__like"></button>
           </div>
-        </div>
+        </article>
 
-        <div class="elements__card">
-          <img src="./images/elements/3.jpg" alt="" class="elements__image">
-          <div class="elements__section">
-            <p class="elements__title">Домбай</p>
-            <a href="#" class="elements__like"></a>
+        <article class="card">
+          <img src="./images/elements/3.jpg" alt="Картинка 3" class="card__image">
+          <div class="card__section">
+            <h2 class="card__title">Домбай</h2>
+            <button type="button" class="card__like"></button>
           </div>
-        </div>
+        </article>
 
-        <div class="elements__card">
-          <img src="./images/elements/4.jpg" alt="" class="elements__image">
-          <div class="elements__section">
-            <p class="elements__title">Гора Эльбрус</p>
-            <a href="#" class="elements__like"></a>
+        <article class="card">
+          <img src="./images/elements/4.jpg" alt="Картинка 4" class="card__image">
+          <div class="card__section">
+            <h2 class="card__title">Гора Эльбрус</h2>
+            <button type="button" class="card__like"></button>
           </div>
-        </div>
+        </article>
 
-        <div class="elements__card">
-          <img src="./images/elements/5.jpg" alt="" class="elements__image">
-          <div class="elements__section">
-            <p class="elements__title">Домбай</p>
-            <a href="#" class="elements__like"></a>
+        <article class="card">
+          <img src="./images/elements/5.jpg" alt="Картинка 5" class="card__image">
+          <div class="card__section">
+            <h2 class="card__title">Домбай</h2>
+            <button type="button" class="card__like"></button>
           </div>
-        </div>
+        </article>
 
-        <div class="elements__card">
-          <img src="./images/elements/6.jpg" alt="" class="elements__image">
-          <div class="elements__section">
-            <p class="elements__title">Карачаево-Черкеск</p>
-            <a href="#" class="elements__like"></a>
+        <article class="card">
+          <img src="./images/elements/6.jpg" alt="Картинка 6" class="card__image">
+          <div class="card__section">
+            <h2 class="card__title">Карачаево-Черкеск</h2>
+            <button type="button" class="card__like"></button>
           </div>
-        </div>
+        </article>
 
       </section>
     </main>
@@ -87,17 +87,15 @@
       <p class="footer__copyright">© 2020 Mesto Russia </p>
     </footer>
 
-    <form action="" name="profile-edit">
-      <div class="popup">
-        <div class="popup__container">
-          <p class="popup__title">Редактировать профиль</p>
-          <input type="text" name="user" required class="popup__input popup__name" tabindex="1">
-          <input type="text " name="about-user" required class="popup__input popup__subtitle" tabindex="2">
-          <button type="submit" class="popup__save-button" tabindex="3">Сохранить</button>
-          <div class="popup__escape-button "></div>
-        </div>
-      </div>
-    </form>
+    <div class="popup">
+      <form name="profile-edit" class=" popup__container ">
+        <p class="popup__title ">Редактировать профиль</p>
+        <input type="text" name="user " required class="popup__input popup__input_name" tabindex="0">
+        <input type="text" name="about-user " required class="popup__input popup__input_subtitle" tabindex="0">
+        <button type="submit" class="popup__save-button " tabindex="0">Сохранить</button>
+        <button type="button" class="popup__escape-button "></button>
+      </form>
+    </div>
   </div>
 
   <script src="./scripts/script.js "></script>

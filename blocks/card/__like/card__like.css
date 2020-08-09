@@ -1,4 +1,4 @@
-.elements__like {
+.card__like {
   background-image: url(../../../images/elements/element__like.svg);
   margin: 0 15px 0 0;
   width: 21px;
@@ -8,6 +8,6 @@
   align-self: center;
 }
 
-.elements__like:hover {
+.card__like:hover {
   opacity: 0.5;
 }

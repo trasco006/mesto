@@ -1,17 +1,7 @@
 # Проект 4: Место
 
-### Обзор
+# HTML5, CSS3, JS
+# flex-box, grid
 
-* Figma
-* Картинки
+* [Ссылка на проект в GH-pages] (https://trasco006.github.io/mesto/)
 
-**Figma**
-
-* [Ссылка на макет в Figma](https://www.figma.com/file/StZjf8HnoeLdiXS7dYrLAh/JavaScript.-Sprint-4)
-
-**Картинки**
-
-Доставать картинки предстоит из Фигмы. Это расхожая практика, поэтому полезно потренироваться.
-Не забудьте [оптимизировать картинки](https://tinypng.com/), чтобы ваш сайт загружался быстрее.
-
-Удачи!

@@ -7,11 +7,11 @@ let saveButton = document.querySelector('.popup__save-button');
 let profileName = document.querySelector('.profile__user-name');
 let profileSubtitle = document.querySelector('.profile__subtitle');
 
-let inputName = document.querySelector('.popup__name');
-let inputSubtitle = document.querySelector('.popup__subtitle');
+let inputName = document.querySelector('.popup__input_name');
+let inputSubtitle = document.querySelector('.popup__input_subtitle');
 
 function popupOpened() {
-  popup.classList.toggle('popup__opened');
+  popup.classList.toggle('popup_opened');
 }
 
 inputName.value = profileName.textContent;

@@ -417,3 +417,26 @@ template {
 [hidden] {
   display: none;
 }
+
+
+/** Turn off buttons default style */
+
+button {
+  text-rendering: auto;
+  color: none;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  box-sizing: border-box;
+  margin: none;
+  font: none;
+  padding: 0;
+  border: none;
+}
