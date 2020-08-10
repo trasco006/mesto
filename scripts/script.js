@@ -10,22 +10,23 @@ let profileSubtitle = document.querySelector('.profile__subtitle');
 let inputName = document.querySelector('.popup__input_name');
 let inputSubtitle = document.querySelector('.popup__input_subtitle');
 
-function popupOpened() {
-  popup.classList.toggle('popup_opened');
+function popupOpen() {
+  if (popup.classList.contains('popup_opened') === true) {
+    popup.classList.toggle('popup_opened');
+  } else {
+    popup.classList.toggle('popup_opened');
+    inputName.value = profileName.textContent;
+    inputSubtitle.value = profileSubtitle.textContent;
+  }
 }
-
-inputName.value = profileName.textContent;
-inputSubtitle.value = profileSubtitle.textContent;
 
 function formSubmitHandler(evt) {
   evt.preventDefault();
-
   profileName.textContent = inputName.value;
   profileSubtitle.textContent = inputSubtitle.value;
-
-  popupOpened();
+  popupOpen();
 }
 
-editButton.addEventListener('click', popupOpened);
-escapeButton.addEventListener('click', popupOpened);
+editButton.addEventListener('click', popupOpen);
+escapeButton.addEventListener('click', popupOpen);
 form.addEventListener('submit', formSubmitHandler);

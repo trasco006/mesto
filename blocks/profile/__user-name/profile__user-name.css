@@ -12,11 +12,7 @@
 
 @media (max-width:330px) {
   .profile__user-name {
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 500;
     font-size: 27px;
-    line-height: 56px;
     text-align: center;
     color: #FFFFFF;
     max-width: 266px;

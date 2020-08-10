@@ -10,11 +10,14 @@
   overflow: hidden;
 }
 
+@media (max-width: 882px) {
+  .profile__subtitle {
+    text-align: center;
+  }
+}
+
 @media (max-width: 330px) {
   .profile__subtitle {
-    font-family: Inter;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 17px;
     text-align: center;
