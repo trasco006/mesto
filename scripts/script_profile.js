@@ -1,22 +1,22 @@
 ///////////////////////////////////////////// ДОБАВЛЕНИЕ ПОПАПА ИЗМЕНЕНИЯ ДАННЫХ ПРОФИЛЯ
-let editButton = document.querySelector('.profile__edit-button');
-let formEditProfile = document.querySelector('.popup__container')
-let popup = document.querySelector('.popup');
+const editButton = document.querySelector('.profile__edit-button');
+const formEditProfile = document.querySelector('.popup__container')
+const popup = document.querySelector('.popup');
 
 // ОБЪЯВЛЕНИЕ КНОПОК ПОПАПА
-let escapeButton = document.querySelector('.popup__escape-button');
+const escapeButton = document.querySelector('.popup__escape-button');
 
 // ОБЪЯВЛЕНИЕ ДАННЫХ ПРОФИЛЯ
-let profileName = document.querySelector('.profile__user-name');
-let profileSubtitle = document.querySelector('.profile__subtitle');
+const profileName = document.querySelector('.profile__user-name');
+const profileSubtitle = document.querySelector('.profile__subtitle');
 
 // ОБЪЯВЛЕНИЕ ПОЛЕЙ ВООДА ПОПАПА
-let inputName = document.querySelector('.popup__input_name');
-let inputSubtitle = document.querySelector('.popup__input_subtitle');
+const inputName = document.querySelector('.popup__input_name');
+const inputSubtitle = document.querySelector('.popup__input_subtitle');
 
 // ЛОГИКА ОТКРЫТИЯ-ЗАКРЫТИЯ ПОПАПА
 function popupOpen() {
-    if (popup.classList.contains('popup_opened') === true) {
+    if (popup.classList.contains('popup_opened')) {
         popup.classList.toggle('popup_opened');
     } else {
         popup.classList.toggle('popup_opened');

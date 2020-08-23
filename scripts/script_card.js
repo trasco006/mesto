@@ -3,18 +3,19 @@
 // ОБЪЯВЛЕНИЕ ПОПАПА-КАРТОЧКИ И КНОПКИ ДОБАВЛЕНИЯ КАРТОЧКИ
 const popupCard = document.querySelector('.popup-card');
 const addCardButton = document.querySelector('.profile__add-button');
-let formAddCard = document.querySelector('.popup-card__container')
+const formAddCard = document.querySelector('.popup-card__container')
+const popupImage = document.querySelector('.popup-image')
 
 // ОБЪЯВЛЕНИЕ КНОПОК ПОПАПА-КАРТОЧКИ
-let escapeCardButton = document.querySelector('.popup-card__escape-button');
+const escapeCardButton = document.querySelector('.popup-card__escape-button');
 
 // ОБЪЯВЛЕНИЕ ПОЛЕЙ ВВОДА ПОПАПА-КАРТОЧКИ
-let inputCardName = document.querySelector('.popup-card__input_name');
-let inputCardSrc = document.querySelector('.popup-card__input_src');
+const inputCardName = document.querySelector('.popup-card__input_name');
+const inputCardSrc = document.querySelector('.popup-card__input_src');
 
 // ЛОГИКА ОТКРЫТИЯ-ЗАКРЫТИЯ ПОПАПА-КАРТОЧКИ
-function popupCardOpen() {
-  if (popupCard.classList.contains('popup-card_opened') === true) {
+function openCardPopup() {
+  if (popupCard.classList.contains('popup-card_opened')) {
     popupCard.classList.toggle('popup-card_opened');
   } else {
     popupCard.classList.toggle('popup-card_opened');
@@ -22,8 +23,8 @@ function popupCardOpen() {
 }
 
 // НАЗНАЧЕНИЕ КНОПОК ПОПАПА-КАРТОЧКИ
-addCardButton.addEventListener('click', popupCardOpen);
-escapeCardButton.addEventListener('click', popupCardOpen)
+addCardButton.addEventListener('click', openCardPopup);
+escapeCardButton.addEventListener('click', openCardPopup)
 formAddCard.addEventListener('submit', formSubmitHandler);
 
 // ЛОГИКА ДОБАВЛЕНИЯ КАРТОЧКИ
@@ -34,6 +35,7 @@ function cardAdding(cardName, cardSrc) {
   const cardItem = cardTemplate.cloneNode(true);
 
   cardItem.querySelector('.card__image').src = cardSrc;
+  cardItem.querySelector('.card__image').alt = cardName;
   cardItem.querySelector('.card__title').textContent = cardName;
   cardItem.querySelector('.card__like').addEventListener('click', function (evt) {
     evt.target.classList.toggle('card_liked');
@@ -42,24 +44,24 @@ function cardAdding(cardName, cardSrc) {
   elementsContainer.prepend(cardItem);
 
   // ЛОГИКА УДАЛЕНИЯ КАРТОЧКИ
-  const cardRemoveButton = document.querySelector('.card__trash-can');
+  const cardRemoveButton = document.querySelector('.card__trash-can'); //TODO: Разобраться почему не работает поиск в cardItem
   cardRemoveButton.addEventListener('click', function () {
     cardRemoveButton.parentElement.remove();
   })
 
   // ЛОГИКА ЗУМА ИЗОБРАЖЕНИЯ
 
-  const imageZoomButton = document.querySelector('.card__image');
-  const popupImage = document.querySelector('.popup-image')
+  const imageZoomButton = document.querySelector('.card__image'); //TODO: Разобраться почему не работает поиск в cardItem
 
-  function cardImageOpened() {
-    if (popupImage.classList.contains('popup-image_opened') === false) {
+
+  function openCardImage() {
+    if (!popupImage.classList.contains('popup-image_opened')) {
       popupImage.classList.toggle('popup-image_opened');
     }
   }
 
   function cardImageClose() {
-    if (popupImage.classList.contains('popup-image_opened') === true) {
+    if (popupImage.classList.contains('popup-image_opened')) {
       popupImage.classList.toggle('popup-image_opened');
     }
   }
@@ -69,8 +71,9 @@ function cardAdding(cardName, cardSrc) {
   const imageZoomItem = document.querySelector('.popup-image__item');
 
   imageZoomButton.addEventListener('click', function (evt) {
-    cardImageOpened()
+    openCardImage()
     imageZoomItem.src = cardSrc;
+    imageZoomItem.alt = cardName;
     imageZoomTitle.textContent = cardName;
     imageZoomEscapeButton.addEventListener('click', cardImageClose)
   })
@@ -82,7 +85,7 @@ function cardAdding(cardName, cardSrc) {
 function formSubmitHandler(evt) {
   evt.preventDefault();
   cardAdding(inputCardName.value, inputCardSrc.value);
-  popupCardOpen();
+  openCardPopup();
 }
 
 // ДОБАВЛЕНИЕ ПЕРВЫХ ШЕСТИ КАРТОЧЕК
