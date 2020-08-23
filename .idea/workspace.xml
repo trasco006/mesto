@@ -24,10 +24,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4b0e37f5-b424-4334-8890-16353cda1424" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup-image/__container/popup-image__container.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup-image/__container/popup-image__container.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/profile/__add-button/profile__add_button.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/profile/__add-button/profile__add-button.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/profile/__info-column/profile__info-column.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/profile/__info-column/profile__info-column.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/profile/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/profile/profile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/script_card.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/script_card.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +91,8 @@
       <updated>1598115194537</updated>
       <workItem from="1598115198698" duration="17201000" />
       <workItem from="1598174707008" duration="8785000" />
-      <workItem from="1598185533575" duration="4501000" />
+      <workItem from="1598185533575" duration="4628000" />
+      <workItem from="1598194436497" duration="366000" />
     </task>
     <task id="LOCAL-00001" summary="Готовая проектная работа 5">
       <created>1598183575222</created>
@@ -124,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598189849475</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Правки 3">
+      <created>1598190103364</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1598190103364</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,7 +152,8 @@
     <MESSAGE value="Первые правки" />
     <MESSAGE value="Первые правки1" />
     <MESSAGE value="Правки 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Правки 2" />
+    <MESSAGE value="Правки 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Правки 3" />
   </component>
   <component name="WindowStateProjectService">
     <state x="570" y="252" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598124511521">

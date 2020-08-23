@@ -41,19 +41,18 @@ function cardAdding(cardName, cardSrc) {
     evt.target.classList.toggle('card_liked');
   });
 
-  elementsContainer.prepend(cardItem);
+
 
   // ЛОГИКА УДАЛЕНИЯ КАРТОЧКИ
-  const cardRemoveButton = document.querySelector('.card__trash-can'); //TODO: Разобраться почему не работает поиск в cardItem
+  const cardRemoveButton = cardItem.querySelector('.card__trash-can');
   cardRemoveButton.addEventListener('click', function () {
     cardRemoveButton.parentElement.remove();
   })
 
   // ЛОГИКА ЗУМА ИЗОБРАЖЕНИЯ
 
-  const imageZoomButton = document.querySelector('.card__image'); //TODO: Разобраться почему не работает поиск в cardItem
-
-
+  const imageZoomButton = cardItem.querySelector('.card__image');
+  elementsContainer.prepend(cardItem);
   function openCardImage() {
     if (!popupImage.classList.contains('popup-image_opened')) {
       popupImage.classList.toggle('popup-image_opened');
