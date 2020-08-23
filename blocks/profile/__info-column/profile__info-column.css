@@ -4,6 +4,3 @@
   align-content: center;
 }
 
-@media (max-width: 330px) {
-  .profile__info-column {}
-}
