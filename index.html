@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 
 <head>
   <meta charset="UTF-8">
@@ -9,96 +9,81 @@
 </head>
 
 <body>
-  <div class="page">
-    <header class="header">
-      <div class="header__logo"></div>
-    </header>
-    <main>
+<div class="page">
+  <header class="header">
+    <div class="header__logo"></div>
+  </header>
+  <main>
 
-      <section class="profile">
-        <div class="profile__column">
-          <div class="profile__avatar"></div>
-          <div class="profile__info">
-            <div class="profile__info-column">
-              <h1 class="profile__user-name">Жак-Ив Кусто </h1>
-              <button type="button" class="profile__edit-button"></button>
+    <section class="profile">
+      <div class="profile__column">
+        <div class="profile__avatar"></div>
+        <div class="profile__info">
+          <div class="profile__info-column">
+            <h1 class="profile__user-name">Жак-Ив Кусто </h1>
+            <button type="button" class="profile__edit-button"></button>
 
-            </div>
-            <p class="profile__subtitle">Исследователь океана</p>
           </div>
+          <p class="profile__subtitle">Исследователь океана</p>
         </div>
-        <button type="button" class="profile__add-button"></button>
-      </section>
+      </div>
+      <button type="button" class="profile__add-button"></button>
+    </section>
 
-      <section class="elements">
+    <section class="elements">
 
-        <article class="card">
-          <img src="./images/elements/1.jpg" alt="Картинка 1" class="card__image">
-          <div class="card__section">
-            <h2 class="card__title">Карачаевск</h2>
-            <button type="button" class="card__like"></button>
-          </div>
+    </section>
+  </main>
 
-        </article>
-        <article class="card">
-          <img src="./images/elements/2.jpg" alt="Картинка 2" class="card__image">
-          <div class="card__section">
-            <h2 class="card__title">Гора Эльбрус</h2>
-            <button type="button" class="card__like"></button>
-          </div>
-        </article>
+  <footer class="footer">
+    <p class="footer__copyright">© 2020 Mesto Russia </p>
+  </footer>
 
-        <article class="card">
-          <img src="./images/elements/3.jpg" alt="Картинка 3" class="card__image">
-          <div class="card__section">
-            <h2 class="card__title">Домбай</h2>
-            <button type="button" class="card__like"></button>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="./images/elements/4.jpg" alt="Картинка 4" class="card__image">
-          <div class="card__section">
-            <h2 class="card__title">Гора Эльбрус</h2>
-            <button type="button" class="card__like"></button>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="./images/elements/5.jpg" alt="Картинка 5" class="card__image">
-          <div class="card__section">
-            <h2 class="card__title">Домбай</h2>
-            <button type="button" class="card__like"></button>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="./images/elements/6.jpg" alt="Картинка 6" class="card__image">
-          <div class="card__section">
-            <h2 class="card__title">Карачаево-Черкеск</h2>
-            <button type="button" class="card__like"></button>
-          </div>
-        </article>
-
-      </section>
-    </main>
-
-    <footer class="footer">
-      <p class="footer__copyright">© 2020 Mesto Russia </p>
-    </footer>
-
-    <div class="popup">
-      <form name="profile-edit" class=" popup__container ">
-        <p class="popup__title ">Редактировать профиль</p>
-        <input type="text" name="user " required class="popup__input popup__input_name" tabindex="0">
-        <input type="text" name="about-user " required class="popup__input popup__input_subtitle" tabindex="0">
-        <button type="submit" class="popup__save-button " tabindex="0">Сохранить</button>
-        <button type="button" class="popup__escape-button "></button>
-      </form>
-    </div>
+  <div class="popup">
+    <form name="profile-edit" class="popup__container">
+      <p class="popup__title">Редактировать профиль</p>
+      <input type="text" name="user " required class="popup__input popup__input_name" tabindex="0">
+      <input type="text" name="about-user " required class="popup__input popup__input_subtitle" tabindex="0">
+      <button type="submit" class="popup__save-button " tabindex="0">Сохранить</button>
+      <button type="button" class="popup__escape-button "></button>
+    </form>
   </div>
 
-  <script src="./scripts/script.js "></script>
+  <div class="popup-card">
+    <form name="add card" class=" popup-card__container ">
+      <p class="popup-card__title ">Новое место</p>
+      <input type="text" name="card-name" placeholder="Название" required
+             class="popup-card__input popup-card__input_name" tabindex="0">
+      <input type="text" name="card-src" placeholder="Ссылка на картинку" required
+             class="popup-card__input popup-card__input_src" tabindex="0">
+      <button type="submit" class="popup-card__save-button" tabindex="0">Сохранить</button>
+      <button type="button" class="popup-card__escape-button"></button>
+    </form>
+  </div>
+
+  <div class="popup-image">
+
+    <div class="popup-image__container">
+      <img src="" alt="" class="popup-image__item">
+      <p class="popup-image__title"></p>
+      <button class="popup-image__escape-button"></button>
+
+    </div>
+  </div>
+</div>
+
+<template class="card-template">
+  <article class="card">
+    <img src="" alt="" class="card__image">
+    <button class="card__trash-can"></button>
+    <div class="card__section">
+      <h2 class="card__title"></h2>
+      <button type="button" class="card__like"></button>
+    </div>
+  </article>
+</template>
+<script src="scripts/script_profile.js "></script>
+<script src="scripts/script_card.js "></script>
 </body>
 
 </html>

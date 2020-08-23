@@ -423,7 +423,6 @@ template {
 
 button {
   text-rendering: auto;
-  color: none;
   letter-spacing: normal;
   word-spacing: normal;
   text-transform: none;
@@ -435,8 +434,8 @@ button {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0);
   box-sizing: border-box;
-  margin: none;
-  font: none;
+  margin: 0;
   padding: 0;
   border: none;
+  outline: none;
 }
