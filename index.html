@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<html lang="ru" >
 
 <head>
   <meta charset="UTF-8">
@@ -21,13 +21,13 @@
         <div class="profile__info">
           <div class="profile__info-column">
             <h1 class="profile__user-name">Жак-Ив Кусто </h1>
-            <button type="button" class="profile__edit-button"></button>
+            <button aria-label="Edit profile" type="button" class="profile__edit-button"></button>
 
           </div>
           <p class="profile__subtitle">Исследователь океана</p>
         </div>
       </div>
-      <button type="button" class="profile__add-button"></button>
+      <button aria-label="Add new card" type="button" class="profile__add-button"></button>
     </section>
 
     <section class="elements">
@@ -44,8 +44,8 @@
       <p class="popup__title">Редактировать профиль</p>
       <input type="text" name="user " required class="popup__input popup__input_name" tabindex="0">
       <input type="text" name="about-user " required class="popup__input popup__input_subtitle" tabindex="0">
-      <button type="submit" class="popup__save-button " tabindex="0">Сохранить</button>
-      <button type="button" class="popup__escape-button "></button>
+      <button aria-label="Save" type="submit" class="popup__save-button " tabindex="0">Сохранить</button>
+      <button aria-label="Close popup" type="button" class="popup__escape-button "></button>
     </form>
   </div>
 
@@ -56,8 +56,8 @@
              class="popup-card__input popup-card__input_name" tabindex="0">
       <input type="text" name="card-src" placeholder="Ссылка на картинку" required
              class="popup-card__input popup-card__input_src" tabindex="0">
-      <button type="submit" class="popup-card__save-button" tabindex="0">Сохранить</button>
-      <button type="button" class="popup-card__escape-button"></button>
+      <button aria-label="Save" type="submit" class="popup-card__save-button" tabindex="0">Сохранить</button>
+      <button aria-label="Close" type="button" class="popup-card__escape-button"></button>
     </form>
   </div>
 
@@ -66,7 +66,7 @@
     <div class="popup-image__container">
       <img src="" alt="" class="popup-image__item">
       <p class="popup-image__title"></p>
-      <button class="popup-image__escape-button"></button>
+      <button aria-label="Close" class="popup-image__escape-button"></button>
 
     </div>
   </div>
@@ -75,10 +75,10 @@
 <template class="card-template">
   <article class="card">
     <img src="" alt="" class="card__image">
-    <button class="card__trash-can"></button>
+    <button aria-label="Delete card" class="card__trash-can"></button>
     <div class="card__section">
       <h2 class="card__title"></h2>
-      <button type="button" class="card__like"></button>
+      <button aria-label="Like-button" type="button" class="card__like"></button>
     </div>
   </article>
 </template>
