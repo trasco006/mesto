@@ -2,6 +2,7 @@
 @import url('./__escape-button/popup-image__escape-button.css');
 @import url('./__title/popup-image__title.css');
 @import url('./__item/popup-image__item.css');
+@import url('./__overlay/popup-image__overlay.css');
 
 .popup-image {
     display: flex;

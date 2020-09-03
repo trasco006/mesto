@@ -25,6 +25,11 @@ function popupOpen() {
     }
 }
 
+function closePopup() {
+    if (popup.classList.contains('popup_opened')) {
+        popup.classList.toggle('popup_opened');
+    }
+}
 // ФУНКИЯ ОТПРАВКИ ФОРМЫ ПОПАПА
 function formSubmitHandler(evt) {
     evt.preventDefault();

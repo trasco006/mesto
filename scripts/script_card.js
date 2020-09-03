@@ -15,20 +15,30 @@ const inputCardSrc = document.querySelector('.popup-card__input_src');
 
 // ЛОГИКА ОТКРЫТИЯ-ЗАКРЫТИЯ ПОПАПА-КАРТОЧКИ
 function openCardPopup() {
-  if (popupCard.classList.contains('popup-card_opened')) {
+  if (!popupCard.classList.contains('popup-card_opened')) {
     popupCard.classList.toggle('popup-card_opened');
-  } else {
+  }
+}
+
+function closeCardPopup() {
+  if (popupCard.classList.contains('popup-card_opened')) {
     popupCard.classList.toggle('popup-card_opened');
   }
 }
 
 // НАЗНАЧЕНИЕ КНОПОК ПОПАПА-КАРТОЧКИ
 addCardButton.addEventListener('click', openCardPopup);
-escapeCardButton.addEventListener('click', openCardPopup)
+escapeCardButton.addEventListener('click', closeCardPopup)
 formAddCard.addEventListener('submit', formSubmitHandler);
 
 // ЛОГИКА ДОБАВЛЕНИЯ КАРТОЧКИ
 const elementsContainer = document.querySelector('.elements');
+
+function cardImageClose() {
+  if (popupImage.classList.contains('popup-image_opened')) {
+    popupImage.classList.toggle('popup-image_opened');
+  }
+}
 
 function cardAdding(cardName, cardSrc) {
   const cardTemplate = document.querySelector('.card-template').content;
@@ -41,8 +51,6 @@ function cardAdding(cardName, cardSrc) {
     evt.target.classList.toggle('card_liked');
   });
 
-
-
   // ЛОГИКА УДАЛЕНИЯ КАРТОЧКИ
   const cardRemoveButton = cardItem.querySelector('.card__trash-can');
   cardRemoveButton.addEventListener('click', function () {
@@ -50,17 +58,11 @@ function cardAdding(cardName, cardSrc) {
   })
 
   // ЛОГИКА ЗУМА ИЗОБРАЖЕНИЯ
-
   const imageZoomButton = cardItem.querySelector('.card__image');
   elementsContainer.prepend(cardItem);
+
   function openCardImage() {
     if (!popupImage.classList.contains('popup-image_opened')) {
-      popupImage.classList.toggle('popup-image_opened');
-    }
-  }
-
-  function cardImageClose() {
-    if (popupImage.classList.contains('popup-image_opened')) {
       popupImage.classList.toggle('popup-image_opened');
     }
   }
@@ -76,8 +78,6 @@ function cardAdding(cardName, cardSrc) {
     imageZoomTitle.textContent = cardName;
     imageZoomEscapeButton.addEventListener('click', cardImageClose)
   })
-
-
 }
 
 // ФУНКЦИЯ ОТПРАВКИ ДАННЫХ НА СЕРВЕР
@@ -118,4 +118,28 @@ const initialCards = [
 initialCards.forEach(function (value, index) {
   cardAdding(value.name, value.link);
 });
+
+// ФУНКЦИЯ ЗАКРЫТИЯ
+const closeAll = function () {
+  cardImageClose();
+  closePopup();
+  closeCardPopup()
+}
+
+// ЗАКРЫТИЕ ПОПАПА ПРИ НАЖАТИИ НА ОВЕРЛЭЙ
+let mass = [
+  document.querySelector('.popup-card__overlay'),
+  document.querySelector('.popup-image__overlay'),
+  document.querySelector('.popup__overlay')
+]
+
+mass.forEach(value => value.addEventListener('click', function () {
+  closeAll()
+}))
+
+// ЗАКРЫТИЕ ОКНА ЧЕРЕЗ ESC
+window.addEventListener('keydown', function (evt){
+  if (evt.key === 'Escape') {
+    closeAll()
+  }})
 

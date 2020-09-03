@@ -13,6 +13,7 @@
 @import url('../blocks/card/_liked/card_liked.css');
 @import url('../blocks/popup-image/popup-image.css');
 @import url('../blocks/popup-image/_opened/popup-image_opened.css');
+
 .site-body {
   background-color: #000000;
   color: #FFFFFF;
