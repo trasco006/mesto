@@ -17,6 +17,7 @@ const inputCardSrc = document.querySelector('.popup-card__input_src');
 function openCardPopup() {
   if (!popupCard.classList.contains('popup-card_opened')) {
     popupCard.classList.toggle('popup-card_opened');
+    buttonCardSaveOff()
   }
 }
 
@@ -84,7 +85,7 @@ function cardAdding(cardName, cardSrc) {
 function formSubmitHandler(evt) {
   evt.preventDefault();
   cardAdding(inputCardName.value, inputCardSrc.value);
-  openCardPopup();
+  closeCardPopup()
 }
 
 // ДОБАВЛЕНИЕ ПЕРВЫХ ШЕСТИ КАРТОЧЕК
@@ -138,8 +139,56 @@ mass.forEach(value => value.addEventListener('click', function () {
 }))
 
 // ЗАКРЫТИЕ ОКНА ЧЕРЕЗ ESC
-window.addEventListener('keydown', function (evt){
+window.addEventListener('keydown', function (evt) {
   if (evt.key === 'Escape') {
     closeAll()
-  }})
+  }
+})
 
+
+// ЛОГИКА ВАЛИДАЦИЯ ПОПАПА-КАРТОЧКИ
+const popupCardValidation = () => {
+  const popupCardNameError = popupCard.querySelector('#popupCard-input1')
+  const popupCardSrcError = popupCard.querySelector('#popupCard-input2')
+
+  //ВАЛИДАЦИЯ ПОЛЯ "НАЗВАНИЕ КАРТОЧКИ"
+  inputCardName.addEventListener('input', function () {
+    if (!inputCardName.validity.valid) {
+      inputCardSrc.classList.add('input_invalid')
+      buttonCardSaveOff()
+      popupCardNameError.textContent = 'Вы пропустили это поле.'
+    } else {
+      inputCardName.classList.remove('input_invalid')
+      popupCardNameError.textContent = ''
+      buttonCardSaveOff()
+    }
+  });
+
+  //ВАЛИДАЦИЯ ПОЛЯ "ССЫЛКА НА КАРТИНКУ"
+  inputCardSrc.addEventListener('input', function () {
+    if (!inputCardSrc.validity.valid) {
+      inputCardSrc.classList.add('input_invalid');
+      buttonCardSaveOff()
+      popupCardSrcError.textContent = 'Введите адрес сайта.'
+    } else {
+      inputCardSrc.classList.remove('input_invalid')
+      popupCardSrcError.textContent = ''
+      buttonCardSaveOff()
+    }
+  })
+}
+
+
+// //ВЫКЛЮЧЕНИЕ КНОПКИ ПРИ ВАЛИДАЦИИ
+const popupCardSaveButton = popupCard.querySelector('.popup-card__save-button');
+const buttonCardSaveOff = () => {
+  if (!inputCardName.validity.valid || !inputCardSrc.validity.valid) {
+    popupCardSaveButton.classList.add('popup__save-button_disabled');
+    popupCardSaveButton.setAttribute("disabled", "disabled")
+  } else {
+    popupCardSaveButton.classList.remove('popup__save-button_disabled')
+    popupCardSaveButton.removeAttribute("disabled", "disabled")
+  }
+}
+
+popupCardValidation()

@@ -23,16 +23,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b0e37f5-b424-4334-8890-16353cda1424" name="Default Changelist" comment="finish">
-      <change afterPath="$PROJECT_DIR$/blocks/popup-card/__overlay/popup-card__overlay.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blocks/popup-image/__overlay/popup-image__overlay.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blocks/popup/__overlay/popup__overlay.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/input/_invalid/input_invalid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/input/input.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/popup/__error/popup__error.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/popup/__save-button/_disabled/popup__save-button_disabled.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup-card/__container/popup-card__container.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup-card/__container/popup-card__container.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup-card/popup-card.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup-card/popup-card.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup-image/__container/popup-image__container.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup-image/__container/popup-image__container.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup-image/popup-image.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup-image/popup-image.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/__container/popup__container.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/__container/popup__container.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blocks/popup/__input/popup__input.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/__input/popup__input.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/popup/__save-button/popup__save-button.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/__save-button/popup__save-button.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blocks/popup/popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/popup.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.css" afterDir="false" />
@@ -72,13 +69,13 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Yandex\mesto\blocks\card" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Yandex\mesto\blocks\popup-image" />
       <recent name="E:\Yandex\mesto\scripts" />
       <recent name="E:\Yandex\mesto\blocks" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Yandex\mesto\blocks\card" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.test.js">
@@ -116,7 +113,8 @@
       <workItem from="1598285159467" duration="597000" />
       <workItem from="1598553407278" duration="3967000" />
       <workItem from="1598760232256" duration="1264000" />
-      <workItem from="1599154081012" duration="2396000" />
+      <workItem from="1599154081012" duration="3183000" />
+      <workItem from="1599232306581" duration="9589000" />
     </task>
     <task id="LOCAL-00001" summary="Готовая проектная работа 5">
       <created>1598183575222</created>
@@ -160,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598194844259</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Сделаны выходы через esc и оверлей">
+      <created>1599157678777</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1599157678777</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,7 +190,8 @@
     <MESSAGE value="Правки 2" />
     <MESSAGE value="Правки 3" />
     <MESSAGE value="finish" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish" />
+    <MESSAGE value="Сделаны выходы через esc и оверлей" />
+    <option name="LAST_COMMIT_MESSAGE" value="Сделаны выходы через esc и оверлей" />
   </component>
   <component name="WindowStateProjectService">
     <state x="570" y="252" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598124511521">
@@ -276,25 +282,25 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1600.900@0.0.1600.900" timestamp="1598189594605" />
-    <state x="392" y="183" key="Vcs.Push.Dialog.v2" timestamp="1598116739193">
+    <state x="392" y="183" key="Vcs.Push.Dialog.v2" timestamp="1599157767308">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="392" y="183" key="Vcs.Push.Dialog.v2/0.0.1600.900@0.0.1600.900" timestamp="1598116739193" />
+    <state x="392" y="183" key="Vcs.Push.Dialog.v2/0.0.1600.900@0.0.1600.900" timestamp="1599157767308" />
     <state x="507" y="6" width="585" height="888" key="find.popup" timestamp="1598180152026">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="507" y="6" width="585" height="888" key="find.popup/0.0.1600.900@0.0.1600.900" timestamp="1598180152026" />
-    <state x="456" y="205" width="672" height="677" key="run.anything.popup" timestamp="1598206394496">
+    <state x="456" y="205" width="672" height="677" key="run.anything.popup" timestamp="1599244669326">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="456" y="205" width="672" height="677" key="run.anything.popup/0.0.1600.900@0.0.1600.900" timestamp="1598206394496" />
+    <state x="456" y="205" width="672" height="677" key="run.anything.popup/0.0.1600.900@0.0.1600.900" timestamp="1599244669326" />
     <state x="592" y="308" key="scopes" timestamp="1598176091715">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="592" y="308" key="scopes/0.0.1600.900@0.0.1600.900" timestamp="1598176091715" />
-    <state x="463" y="190" width="672" height="678" key="search.everywhere.popup" timestamp="1598206430348">
+    <state x="463" y="190" width="672" height="678" key="search.everywhere.popup" timestamp="1599240457677">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="463" y="190" width="672" height="678" key="search.everywhere.popup/0.0.1600.900@0.0.1600.900" timestamp="1598206430348" />
+    <state x="463" y="190" width="672" height="678" key="search.everywhere.popup/0.0.1600.900@0.0.1600.900" timestamp="1599240457677" />
   </component>
 </project>
