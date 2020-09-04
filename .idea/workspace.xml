@@ -24,7 +24,9 @@
   <component name="ChangeListManager">
     <list default="true" id="4b0e37f5-b424-4334-8890-16353cda1424" name="Default Changelist" comment="finish">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup-card/__input/popup-card__input.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup-card/__input/popup-card__input.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/script_card.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/script_card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/script_profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/script_profile.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +67,7 @@
       <recent name="E:\Yandex\mesto\blocks" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Yandex\mesto" />
       <recent name="E:\Yandex\mesto\blocks\card" />
     </key>
   </component>
@@ -104,7 +107,7 @@
       <workItem from="1598553407278" duration="3967000" />
       <workItem from="1598760232256" duration="1264000" />
       <workItem from="1599154081012" duration="3183000" />
-      <workItem from="1599232306581" duration="9737000" />
+      <workItem from="1599232306581" duration="15901000" />
     </task>
     <task id="LOCAL-00001" summary="Готовая проектная работа 5">
       <created>1598183575222</created>
@@ -162,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599244802469</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="первично всё готово. ждём правок">
+      <created>1599244907784</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1599244907784</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,18 +290,22 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1600.900@0.0.1600.900" timestamp="1598189594605" />
-    <state x="392" y="183" key="Vcs.Push.Dialog.v2" timestamp="1599244808170">
+    <state x="647" y="363" key="VCS.ChangelistChooser" timestamp="1599253096398">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="392" y="183" key="Vcs.Push.Dialog.v2/0.0.1600.900@0.0.1600.900" timestamp="1599244808170" />
+    <state x="647" y="363" key="VCS.ChangelistChooser/0.0.1600.900@0.0.1600.900" timestamp="1599253096398" />
+    <state x="392" y="183" key="Vcs.Push.Dialog.v2" timestamp="1599244910323">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="392" y="183" key="Vcs.Push.Dialog.v2/0.0.1600.900@0.0.1600.900" timestamp="1599244910323" />
     <state x="507" y="6" width="585" height="888" key="find.popup" timestamp="1598180152026">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="507" y="6" width="585" height="888" key="find.popup/0.0.1600.900@0.0.1600.900" timestamp="1598180152026" />
-    <state x="456" y="205" width="672" height="677" key="run.anything.popup" timestamp="1599244767536">
+    <state x="456" y="205" width="672" height="677" key="run.anything.popup" timestamp="1599253049217">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="456" y="205" width="672" height="677" key="run.anything.popup/0.0.1600.900@0.0.1600.900" timestamp="1599244767536" />
+    <state x="456" y="205" width="672" height="677" key="run.anything.popup/0.0.1600.900@0.0.1600.900" timestamp="1599253049217" />
     <state x="592" y="308" key="scopes" timestamp="1598176091715">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
@@ -300,5 +314,18 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="463" y="190" width="672" height="678" key="search.everywhere.popup/0.0.1600.900@0.0.1600.900" timestamp="1599240457677" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <condition expression="Логика Валидации" language="JavaScript" />
+          <url>file://$PROJECT_DIR$/scripts/script_card.js</url>
+          <line>147</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

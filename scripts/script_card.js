@@ -17,7 +17,6 @@ const inputCardSrc = document.querySelector('.popup-card__input_src');
 function openCardPopup() {
   if (!popupCard.classList.contains('popup-card_opened')) {
     popupCard.classList.toggle('popup-card_opened');
-    buttonCardSaveOff()
   }
 }
 
@@ -145,50 +144,55 @@ window.addEventListener('keydown', function (evt) {
   }
 })
 
+// ЛОГИКА ВАЛИДАЦИИ ФОРМЫ
+const formValid = (form) => {
+  const inputsList = Array.from(form.querySelectorAll('input'));
 
-// ЛОГИКА ВАЛИДАЦИЯ ПОПАПА-КАРТОЧКИ
-const popupCardValidation = () => {
-  const popupCardNameError = popupCard.querySelector('#popupCard-input1')
-  const popupCardSrcError = popupCard.querySelector('#popupCard-input2')
-
-  //ВАЛИДАЦИЯ ПОЛЯ "НАЗВАНИЕ КАРТОЧКИ"
-  inputCardName.addEventListener('input', function () {
-    if (!inputCardName.validity.valid) {
-      inputCardSrc.classList.add('input_invalid')
-      buttonCardSaveOff()
-      popupCardNameError.textContent = 'Вы пропустили это поле.'
-    } else {
-      inputCardName.classList.remove('input_invalid')
-      popupCardNameError.textContent = ''
-      buttonCardSaveOff()
-    }
-  });
-
-  //ВАЛИДАЦИЯ ПОЛЯ "ССЫЛКА НА КАРТИНКУ"
-  inputCardSrc.addEventListener('input', function () {
-    if (!inputCardSrc.validity.valid) {
-      inputCardSrc.classList.add('input_invalid');
-      buttonCardSaveOff()
-      popupCardSrcError.textContent = 'Введите адрес сайта.'
-    } else {
-      inputCardSrc.classList.remove('input_invalid')
-      popupCardSrcError.textContent = ''
-      buttonCardSaveOff()
-    }
+//ВАЛИДАЦИЯ ИНПУТОВ
+  inputsList.forEach((evt) => {
+    evt.addEventListener('input', function () {
+        if (!evt.validity.valid) {
+          saveButtonDisable()
+          evt.classList.add('input_invalid');
+          if (evt.type === 'url') {
+            evt.nextElementSibling.textContent = 'Введите адрес сайта.';
+          } else {
+            if (evt.value.length == 0) {
+              evt.nextElementSibling.textContent = 'Вы пропустили это поле.';
+            } else {
+              evt.nextElementSibling.textContent = (`Минимальное количество символов: ` + evt.minLength + `. Длина текста сейчас:   ` + evt.value.length + ` символ`);
+            }
+          }
+        } else {
+          saveButtonDisable()
+          evt.classList.remove('input_invalid');
+          evt.nextElementSibling.textContent = ''
+        }
+      }
+    )
   })
-}
 
-
-// //ВЫКЛЮЧЕНИЕ КНОПКИ ПРИ ВАЛИДАЦИИ
-const popupCardSaveButton = popupCard.querySelector('.popup-card__save-button');
-const buttonCardSaveOff = () => {
-  if (!inputCardName.validity.valid || !inputCardSrc.validity.valid) {
-    popupCardSaveButton.classList.add('popup__save-button_disabled');
-    popupCardSaveButton.setAttribute("disabled", "disabled")
-  } else {
-    popupCardSaveButton.classList.remove('popup__save-button_disabled')
-    popupCardSaveButton.removeAttribute("disabled", "disabled")
+//ПРОВЕРКА НА ИНВАЛИДНЫЕ ИНПУТЫ
+  const formVal = (inputsList) => {
+    return inputsList.some((evt) => {
+      return !evt.validity.valid;
+    })
   }
+
+  //ОТКЛЮЧЕНИЕ КНОПКИ САБМИТА
+  const saveButton = form.querySelector('.save__button');
+  const saveButtonDisable = () => {
+    if (formVal(inputsList)) {
+      saveButton.classList.add('popup__save-button_disabled');
+      saveButton.setAttribute("disabled", "disabled")
+    } else {
+      saveButton.classList.remove('popup__save-button_disabled')
+      saveButton.removeAttribute("disabled", "disabled")
+    }
+  }
+
+
 }
 
-popupCardValidation()
+formValid(popupCard)
+formValid(popup)
