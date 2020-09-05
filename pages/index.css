@@ -7,14 +7,12 @@
 @import url('../blocks/footer/footer.css');
 @import url('../blocks/popup/popup.css');
 @import url('../blocks/card/card.css');
-@import url('../blocks/popup/_opened/popup_opened.css');
 @import url('../blocks/popup-card/popup-card.css');
-@import url('../blocks/popup-card/_opened/popup-card_opened.css');
 @import url('../blocks/card/_liked/card_liked.css');
 @import url('../blocks/popup-image/popup-image.css');
-@import url('../blocks/popup-image/_opened/popup-image_opened.css');
 @import url('../blocks/input/input.css');
 @import url('../blocks/popup/__save-button/_disabled/popup__save-button_disabled.css');
+@import url('../blocks/popup/_opened/popup_opened.css');
 .site-body {
   background-color: #000000;
   color: #FFFFFF;

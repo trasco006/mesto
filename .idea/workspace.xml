@@ -19,11 +19,23 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:FEATURE" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b0e37f5-b424-4334-8890-16353cda1424" name="Default Changelist" comment="">
+    <list default="true" id="4b0e37f5-b424-4334-8890-16353cda1424" name="Default Changelist" comment="Создана новая ветка">
+      <change afterPath="$PROJECT_DIR$/scripts/validate.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/popup-card/_opened/popup-card_opened.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/popup-image/_opened/popup-image_opened.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/popup/_opened/popup_opened.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/_opened/popup_opened.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +44,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JsFlowSettings">
@@ -108,7 +125,7 @@
       <workItem from="1599232306581" duration="16250000" />
       <workItem from="1599292049194" duration="30000" />
       <workItem from="1599323382100" duration="615000" />
-      <workItem from="1599324358077" duration="4853000" />
+      <workItem from="1599324358077" duration="15586000" />
     </task>
     <task id="LOCAL-00001" summary="Готовая проектная работа 5">
       <created>1598183575222</created>
@@ -201,7 +218,21 @@
       <option name="project" value="LOCAL" />
       <updated>1599329908576</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Работает">
+      <created>1599330036889</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1599330036889</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Создана новая ветка">
+      <created>1599330187294</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1599330187294</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,7 +243,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="FEATURE" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -232,7 +275,9 @@
     <MESSAGE value="допилен README.md" />
     <MESSAGE value="Изменено название функции открытие зума" />
     <MESSAGE value="fixup! Изменено название функции открытие зума" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixup! Изменено название функции открытие зума" />
+    <MESSAGE value="Работает" />
+    <MESSAGE value="Создана новая ветка" />
+    <option name="LAST_COMMIT_MESSAGE" value="Создана новая ветка" />
   </component>
   <component name="WindowStateProjectService">
     <state x="570" y="252" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598124511521">
@@ -335,10 +380,10 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="647" y="363" key="VCS.ChangelistChooser/0.0.1600.900@0.0.1600.900" timestamp="1599253096398" />
-    <state x="392" y="183" key="Vcs.Push.Dialog.v2" timestamp="1599253355938">
+    <state x="392" y="183" key="Vcs.Push.Dialog.v2" timestamp="1599330038999">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="392" y="183" key="Vcs.Push.Dialog.v2/0.0.1600.900@0.0.1600.900" timestamp="1599253355938" />
+    <state x="392" y="183" key="Vcs.Push.Dialog.v2/0.0.1600.900@0.0.1600.900" timestamp="1599330038999" />
     <state x="507" y="6" width="585" height="888" key="find.popup" timestamp="1598180152026">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
@@ -351,21 +396,9 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="592" y="308" key="scopes/0.0.1600.900@0.0.1600.900" timestamp="1598176091715" />
-    <state x="463" y="190" width="672" height="678" key="search.everywhere.popup" timestamp="1599240457677">
+    <state x="463" y="190" width="672" height="678" key="search.everywhere.popup" timestamp="1599335634125">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="463" y="190" width="672" height="678" key="search.everywhere.popup/0.0.1600.900@0.0.1600.900" timestamp="1599240457677" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <condition expression="Логика Валидации" language="JavaScript" />
-          <url>file://$PROJECT_DIR$/scripts/script.js</url>
-          <line>147</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="463" y="190" width="672" height="678" key="search.everywhere.popup/0.0.1600.900@0.0.1600.900" timestamp="1599335634125" />
   </component>
 </project>
