@@ -1,3 +1,4 @@
+
 ///////////////////////////////////////////// ДОБАВЛЕНИЕ ПОПАПА ИЗМЕНЕНИЯ ДАННЫХ ПРОФИЛЯ
 const editButton = document.querySelector('.profile__edit-button');
 const formEditProfile = document.querySelector('.popup__container')
@@ -15,7 +16,7 @@ const profileSubtitle = document.querySelector('.profile__subtitle');
 const inputName = document.querySelector('.popup__input_name');
 const inputSubtitle = document.querySelector('.popup__input_subtitle');
 
-// ЛОГИКА ОТКРЫТИЯ ПОПАПА
+// ЛОГИКА ОТКРЫТИЯ-ЗАКРЫТИЯ ПОПАПА
 function popupOpen() {
   if (popup.classList.contains('popup_opened')) {
     popup.classList.toggle('popup_opened');
@@ -44,7 +45,6 @@ function formSubmitHandler(evt) {
 editButton.addEventListener('click', popupOpen);
 escapeButton.addEventListener('click', popupOpen);
 formEditProfile.addEventListener('submit', formSubmitHandler);
-
 
 ///////////////////////////////////////////// ДОБАВЛЕНИЕ ПОПАП-КАРТОЧКИ
 
@@ -82,43 +82,32 @@ formAddCard.addEventListener('submit', formSubmitHandler);
 // ЛОГИКА ДОБАВЛЕНИЯ КАРТОЧКИ
 const elementsContainer = document.querySelector('.elements');
 
-function closeImageCard() {
+function cardImageClose() {
   if (popupImage.classList.contains('popup-image_opened')) {
     popupImage.classList.toggle('popup-image_opened');
   }
 }
 
-const cardTemplate = document.querySelector('.card-template').content;
-
-
-// ЛОГИКА ПОЛУЧЕНИЯ КАРТОЧКИ
-const getCard = (cardName, cardSrc) => {
+function cardAdding(cardName, cardSrc) {
+  const cardTemplate = document.querySelector('.card-template').content;
   const cardItem = cardTemplate.cloneNode(true);
+
   cardItem.querySelector('.card__image').src = cardSrc;
   cardItem.querySelector('.card__image').alt = cardName;
   cardItem.querySelector('.card__title').textContent = cardName;
-  //cardItem.querySelector('.card__like').addEventListener('click', likeCard(cardItem));  // вешаем обработчик на лайк
- // cardItem.querySelector('.card__trash-can').addEventListener('click', removeCard);      // вешаем обработчик на удаление
+  cardItem.querySelector('.card__like').addEventListener('click', function (evt) {
+    evt.target.classList.toggle('card_liked');
+  });
 
-}
+  // ЛОГИКА УДАЛЕНИЯ КАРТОЧКИ
+  const cardRemoveButton = cardItem.querySelector('.card__trash-can');
+  cardRemoveButton.addEventListener('click', function () {
+    cardRemoveButton.parentElement.remove();
+  })
 
-// ЛОГИКА УДАЛЕНИЯ КАРТОЧКИ
-const removeCard = (evt) => {
-  console.log(evt)
-  evt.querySelector('.card__trash-can').parentElement.remove();
-}
-
-// ЛОГИКА ЛАЙКА КАРТОЧКИ
-const likeCard = (evt) => {
-  evt.target.classList.toggle('card_liked');
-}
-
-const renderCards= () => {
-
-}
-  // // ЛОГИКА ЗУМА ИЗОБРАЖЕНИЯ
-  // const imageZoomButton = cardItem.querySelector('.card__image');
-  // elementsContainer.prepend(cardItem);
+  // ЛОГИКА ЗУМА ИЗОБРАЖЕНИЯ
+  const imageZoomButton = cardItem.querySelector('.card__image');
+  elementsContainer.prepend(cardItem);
 
   function openCardImage() {
     if (!popupImage.classList.contains('popup-image_opened')) {
@@ -135,14 +124,14 @@ const renderCards= () => {
     imageZoomItem.src = cardSrc;
     imageZoomItem.alt = cardName;
     imageZoomTitle.textContent = cardName;
-    imageZoomEscapeButton.addEventListener('click', closeImageCard)
+    imageZoomEscapeButton.addEventListener('click', cardImageClose)
   })
-
+}
 
 // ФУНКЦИЯ ОТПРАВКИ ДАННЫХ НА СЕРВЕР
 function formSubmitHandler(evt) {
   evt.preventDefault();
-  getCard(inputCardName.value, inputCardSrc.value);
+  cardAdding(inputCardName.value, inputCardSrc.value);
   closeCardPopup()
 }
 
@@ -175,12 +164,12 @@ const initialCards = [
 ];
 
 initialCards.forEach(function (value, index) {
-  getCard(value.name, value.link);
+  cardAdding(value.name, value.link);
 });
 
 // ФУНКЦИЯ ЗАКРЫТИЯ
 const closeAll = function () {
-  closeImageCard();
+  cardImageClose();
   closePopup();
   closeCardPopup()
 }

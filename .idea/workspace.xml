@@ -22,7 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b0e37f5-b424-4334-8890-16353cda1424" name="Default Changelist" comment="Изменено название функции открытие зума">
+    <list default="true" id="4b0e37f5-b424-4334-8890-16353cda1424" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/script.js" afterDir="false" />
     </list>
@@ -108,7 +108,7 @@
       <workItem from="1599232306581" duration="16250000" />
       <workItem from="1599292049194" duration="30000" />
       <workItem from="1599323382100" duration="615000" />
-      <workItem from="1599324358077" duration="4537000" />
+      <workItem from="1599324358077" duration="4853000" />
     </task>
     <task id="LOCAL-00001" summary="Готовая проектная работа 5">
       <created>1598183575222</created>
@@ -194,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599325537468</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="fixup! Изменено название функции открытие зума">
+      <created>1599329908576</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1599329908576</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,7 +231,8 @@
     <MESSAGE value="финка" />
     <MESSAGE value="допилен README.md" />
     <MESSAGE value="Изменено название функции открытие зума" />
-    <option name="LAST_COMMIT_MESSAGE" value="Изменено название функции открытие зума" />
+    <MESSAGE value="fixup! Изменено название функции открытие зума" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixup! Изменено название функции открытие зума" />
   </component>
   <component name="WindowStateProjectService">
     <state x="570" y="252" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598124511521">
@@ -243,6 +251,10 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="547" y="305" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1600.900@0.0.1600.900" timestamp="1598200423178" />
+    <state x="425" y="37" key="CommitChangelistDialog2" timestamp="1599329907909">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="425" y="37" key="CommitChangelistDialog2/0.0.1600.900@0.0.1600.900" timestamp="1599329907909" />
     <state x="92" y="92" width="1416" height="716" key="DiffContextDialog" timestamp="1598116889858">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
