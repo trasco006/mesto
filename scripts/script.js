@@ -88,26 +88,37 @@ function closeImageCard() {
   }
 }
 
-function cardAdding(cardName, cardSrc) {
-  const cardTemplate = document.querySelector('.card-template').content;
-  const cardItem = cardTemplate.cloneNode(true);
+const cardTemplate = document.querySelector('.card-template').content;
 
+
+// ЛОГИКА ПОЛУЧЕНИЯ КАРТОЧКИ
+const getCard = (cardName, cardSrc) => {
+  const cardItem = cardTemplate.cloneNode(true);
   cardItem.querySelector('.card__image').src = cardSrc;
   cardItem.querySelector('.card__image').alt = cardName;
   cardItem.querySelector('.card__title').textContent = cardName;
-  cardItem.querySelector('.card__like').addEventListener('click', function (evt) {
-    evt.target.classList.toggle('card_liked');
-  });
+  //cardItem.querySelector('.card__like').addEventListener('click', likeCard(cardItem));  // вешаем обработчик на лайк
+ // cardItem.querySelector('.card__trash-can').addEventListener('click', removeCard);      // вешаем обработчик на удаление
 
-  // ЛОГИКА УДАЛЕНИЯ КАРТОЧКИ
-  const cardRemoveButton = cardItem.querySelector('.card__trash-can');
-  cardRemoveButton.addEventListener('click', function () {
-    cardRemoveButton.parentElement.remove();
-  })
+}
 
-  // ЛОГИКА ЗУМА ИЗОБРАЖЕНИЯ
-  const imageZoomButton = cardItem.querySelector('.card__image');
-  elementsContainer.prepend(cardItem);
+// ЛОГИКА УДАЛЕНИЯ КАРТОЧКИ
+const removeCard = (evt) => {
+  console.log(evt)
+  evt.querySelector('.card__trash-can').parentElement.remove();
+}
+
+// ЛОГИКА ЛАЙКА КАРТОЧКИ
+const likeCard = (evt) => {
+  evt.target.classList.toggle('card_liked');
+}
+
+const renderCards= () => {
+
+}
+  // // ЛОГИКА ЗУМА ИЗОБРАЖЕНИЯ
+  // const imageZoomButton = cardItem.querySelector('.card__image');
+  // elementsContainer.prepend(cardItem);
 
   function openCardImage() {
     if (!popupImage.classList.contains('popup-image_opened')) {
@@ -126,12 +137,12 @@ function cardAdding(cardName, cardSrc) {
     imageZoomTitle.textContent = cardName;
     imageZoomEscapeButton.addEventListener('click', closeImageCard)
   })
-}
+
 
 // ФУНКЦИЯ ОТПРАВКИ ДАННЫХ НА СЕРВЕР
 function formSubmitHandler(evt) {
   evt.preventDefault();
-  cardAdding(inputCardName.value, inputCardSrc.value);
+  getCard(inputCardName.value, inputCardSrc.value);
   closeCardPopup()
 }
 
@@ -164,7 +175,7 @@ const initialCards = [
 ];
 
 initialCards.forEach(function (value, index) {
-  cardAdding(value.name, value.link);
+  getCard(value.name, value.link);
 });
 
 // ФУНКЦИЯ ЗАКРЫТИЯ
