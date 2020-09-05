@@ -23,7 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b0e37f5-b424-4334-8890-16353cda1424" name="Default Changelist" comment="finish">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/script_card.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/script_profile.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,18 +61,18 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Yandex\mesto" />
+      <recent name="E:\Yandex\mesto\blocks\card" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Yandex\mesto\blocks\popup-image" />
       <recent name="E:\Yandex\mesto\scripts" />
       <recent name="E:\Yandex\mesto\blocks" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Yandex\mesto" />
-      <recent name="E:\Yandex\mesto\blocks\card" />
-    </key>
   </component>
   <component name="RunManager" selected="Node.js.test.js">
-    <configuration name="script_card.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/scripts/script_card.js" working-dir="$PROJECT_DIR$/scripts">
+    <configuration name="script.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/scripts/script.js" working-dir="$PROJECT_DIR$/scripts">
       <method v="2" />
     </configuration>
     <configuration name="script_profile.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/scripts/script_profile.js" working-dir="$PROJECT_DIR$/scripts">
@@ -82,7 +85,7 @@
       <list>
         <item itemvalue="Node.js.test.js" />
         <item itemvalue="Node.js.script_profile.js" />
-        <item itemvalue="Node.js.script_card.js" />
+        <item itemvalue="Node.js.script.js" />
       </list>
     </recent_temporary>
   </component>
@@ -107,7 +110,7 @@
       <workItem from="1599232306581" duration="16250000" />
       <workItem from="1599292049194" duration="30000" />
       <workItem from="1599323382100" duration="615000" />
-      <workItem from="1599324358077" duration="594000" />
+      <workItem from="1599324358077" duration="1138000" />
     </task>
     <task id="LOCAL-00001" summary="Готовая проектная работа 5">
       <created>1598183575222</created>
@@ -179,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599253220017</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="допилен README.md">
+      <created>1599324978906</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1599324978906</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,7 +217,8 @@
     <MESSAGE value="Сделаны выходы через esc и оверлей" />
     <MESSAGE value="первично всё готово. ждём правок" />
     <MESSAGE value="финка" />
-    <option name="LAST_COMMIT_MESSAGE" value="финка" />
+    <MESSAGE value="допилен README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="допилен README.md" />
   </component>
   <component name="WindowStateProjectService">
     <state x="570" y="252" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598124511521">
@@ -218,6 +229,10 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="480" y="186" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1600.900@0.0.1600.900" timestamp="1599155551752" />
+    <state x="530" y="197" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599325252353">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="530" y="197" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.900@0.0.1600.900" timestamp="1599325252353" />
     <state x="547" y="305" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1598200423178">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
@@ -328,7 +343,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <condition expression="Логика Валидации" language="JavaScript" />
-          <url>file://$PROJECT_DIR$/scripts/script_card.js</url>
+          <url>file://$PROJECT_DIR$/scripts/script.js</url>
           <line>147</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>

@@ -1,3 +1,51 @@
+///////////////////////////////////////////// ДОБАВЛЕНИЕ ПОПАПА ИЗМЕНЕНИЯ ДАННЫХ ПРОФИЛЯ
+const editButton = document.querySelector('.profile__edit-button');
+const formEditProfile = document.querySelector('.popup__container')
+const popup = document.querySelector('.popup');
+
+// ОБЪЯВЛЕНИЕ КНОПОК ПОПАПА
+const escapeButton = document.querySelector('.popup__escape-button');
+const popupSaveButton = popup.querySelector('.popup__save-button ')
+
+// ОБЪЯВЛЕНИЕ ДАННЫХ ПРОФИЛЯ
+const profileName = document.querySelector('.profile__user-name');
+const profileSubtitle = document.querySelector('.profile__subtitle');
+
+// ОБЪЯВЛЕНИЕ ПОЛЕЙ ВООДА ПОПАПА
+const inputName = document.querySelector('.popup__input_name');
+const inputSubtitle = document.querySelector('.popup__input_subtitle');
+
+// ЛОГИКА ОТКРЫТИЯ ПОПАПА
+function popupOpen() {
+  if (popup.classList.contains('popup_opened')) {
+    popup.classList.toggle('popup_opened');
+  } else {
+    popup.classList.toggle('popup_opened');
+    inputName.value = profileName.textContent;
+    inputSubtitle.value = profileSubtitle.textContent;
+  }
+}
+
+function closePopup() {
+  if (popup.classList.contains('popup_opened')) {
+    popup.classList.toggle('popup_opened');
+  }
+}
+
+// ФУНКИЯ ОТПРАВКИ ФОРМЫ ПОПАПА
+function formSubmitHandler(evt) {
+  evt.preventDefault();
+  profileName.textContent = inputName.value;
+  profileSubtitle.textContent = inputSubtitle.value;
+  popupOpen();
+}
+
+// НАЗНАЧЕНИЯ КНОПОК ПОПАПА
+editButton.addEventListener('click', popupOpen);
+escapeButton.addEventListener('click', popupOpen);
+formEditProfile.addEventListener('submit', formSubmitHandler);
+
+
 ///////////////////////////////////////////// ДОБАВЛЕНИЕ ПОПАП-КАРТОЧКИ
 
 // ОБЪЯВЛЕНИЕ ПОПАПА-КАРТОЧКИ И КНОПКИ ДОБАВЛЕНИЯ КАРТОЧКИ
@@ -34,7 +82,7 @@ formAddCard.addEventListener('submit', formSubmitHandler);
 // ЛОГИКА ДОБАВЛЕНИЯ КАРТОЧКИ
 const elementsContainer = document.querySelector('.elements');
 
-function cardImageClose() {
+function closeImageCard() {
   if (popupImage.classList.contains('popup-image_opened')) {
     popupImage.classList.toggle('popup-image_opened');
   }
@@ -76,7 +124,7 @@ function cardAdding(cardName, cardSrc) {
     imageZoomItem.src = cardSrc;
     imageZoomItem.alt = cardName;
     imageZoomTitle.textContent = cardName;
-    imageZoomEscapeButton.addEventListener('click', cardImageClose)
+    imageZoomEscapeButton.addEventListener('click', closeImageCard)
   })
 }
 
@@ -121,7 +169,7 @@ initialCards.forEach(function (value, index) {
 
 // ФУНКЦИЯ ЗАКРЫТИЯ
 const closeAll = function () {
-  cardImageClose();
+  closeImageCard();
   closePopup();
   closeCardPopup()
 }
