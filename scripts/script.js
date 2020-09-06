@@ -12,20 +12,21 @@ const profileName = document.querySelector('.profile__user-name');
 const profileSubtitle = document.querySelector('.profile__subtitle');
 
 // ОБЪЯВЛЕНИЕ ПОЛЕЙ ВООДА ПОПАПА
-const inputName = document.querySelector('.popup__input_name');
-const inputSubtitle = document.querySelector('.popup__input_subtitle');
+const inputName = document.querySelector('#input-name');
+const inputSubtitle = document.querySelector('#input-subtitle');
 
 // УНИВЕРСАЛЬНАЯ ЛОГИКА ОТКРЫТИЯ ПОПАПА
 const openPopup = (item) => {
+  if (!popup.classList.contains('popup_opened')) {
+    inputName.value = profileName.textContent;
+    inputSubtitle.value = profileSubtitle.textContent;}
   item.classList.add('popup_opened');
   window.addEventListener('keydown', exitByEsc)
 }
 
 // УНИВЕРСАЛЬНАЯ ЛОГИКА ЗАКРЫТИЯ ПОПАПА
 const closePopup = (item) => {
-  item.classList.remove('popup_opened');
-  inputName.value = profileName.textContent;
-  inputSubtitle.value = profileSubtitle.textContent;
+   item.classList.remove('popup_opened');
   window.removeEventListener('keydown', exitByEsc)
 }
 
@@ -34,7 +35,7 @@ function formSubmitHandler(evt) {
   evt.preventDefault();
   profileName.textContent = inputName.value;
   profileSubtitle.textContent = inputSubtitle.value;
-  popupOpen();
+  closePopup(popup);
 }
 
 // НАЗНАЧЕНИЯ КНОПОК ПОПАПА
@@ -54,8 +55,8 @@ const popupImage = document.querySelector('.popup-image')
 const escapeCardButton = document.querySelector('.popup-card__escape-button');
 
 // ОБЪЯВЛЕНИЕ ПОЛЕЙ ВВОДА ПОПАПА-КАРТОЧКИ
-const inputCardName = document.querySelector('.popup-card__input_name');
-const inputCardSrc = document.querySelector('.popup-card__input_src');
+const inputCardName = document.querySelector('#input-card-name');
+const inputCardSrc = document.querySelector('#input-url');
 
 // КОНСТАНТЫ ПОПАПА-ПРЕВЬЮ
 const imageZoomTitle = document.querySelector('.popup-image__title');

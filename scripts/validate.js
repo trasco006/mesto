@@ -1,52 +1,60 @@
-// ЛОГИКА ВАЛИДАЦИИ ФОРМЫ
-const formValid = (form) => {
-  const inputsList = Array.from(form.querySelectorAll('input'));
+const showInputError = (formElement, inputElement, errorMessage) => {
+  const errorElement = formElement.querySelector(`#${inputElement.id}-error`);
+  inputElement.classList.add('form__input_type_error');
+  errorElement.textContent = errorMessage;
+  errorElement.classList.add('form__input-error_active');
+};
 
-//ВАЛИДАЦИЯ ИНПУТОВ
-  inputsList.forEach((evt) => {
-    evt.addEventListener('input', function () {
-        if (!evt.validity.valid) {
-          saveButtonDisable()
-          evt.classList.add('input_invalid');
-          if (evt.type === 'url') {
-            evt.nextElementSibling.textContent = 'Введите адрес сайта.';
-          } else {
-            if (evt.value.length == 0) {
-              evt.nextElementSibling.textContent = 'Вы пропустили это поле.';
-            } else {
-              evt.nextElementSibling.textContent = (`Минимальное количество символов: ` + evt.minLength + `. Длина текста сейчас:   ` + evt.value.length + ` символ`);
-            }
-          }
-        } else {
-          saveButtonDisable()
-          evt.classList.remove('input_invalid');
-          evt.nextElementSibling.textContent = ''
-        }
-      }
-    )
+const hideInputError = (formElement, inputElement) => {
+  const errorElement = formElement.querySelector(`#${inputElement.id}-error`);
+  inputElement.classList.remove('form__input_type_error');
+  errorElement.classList.remove('form__input-error_active');
+  errorElement.textContent = '';
+};
+
+const checkInputValidity = (formElement, inputElement) => {
+  if (!inputElement.validity.valid) {
+    showInputError(formElement, inputElement, inputElement.validationMessage);
+  } else {
+    hideInputError(formElement, inputElement);
+  }
+};
+
+const hasInvalidInput = (inputList) => {
+  return inputList.some((inputElement) => {
+    return !inputElement.validity.valid;
   })
+};
 
-//ПРОВЕРКА НА ИНВАЛИДНЫЕ ИНПУТЫ
-  const formVal = (inputsList) => {
-    return inputsList.some((evt) => {
-      return !evt.validity.valid;
-    })
-  }
-
-  //ОТКЛЮЧЕНИЕ КНОПКИ САБМИТА
-  const saveButton = form.querySelector('.save__button');
-  const saveButtonDisable = () => {
-    if (formVal(inputsList)) {
-      saveButton.classList.add('popup__save-button_disabled');
-      saveButton.setAttribute("disabled", "disabled")
-    } else {
-      saveButton.classList.remove('popup__save-button_disabled')
-      saveButton.removeAttribute("disabled", "disabled")
-    }
-  }
-
-
+const toggleButtonState = (inputList, buttonElement) => {
+  if (hasInvalidInput(inputList)) {buttonElement.classList.add('button_inactive')}
+  else {buttonElement.classList.remove('button_inactive')}
 }
 
-formValid(popupCard)
-formValid(popup)
+const setEventListeners = (formElement) => {
+  const inputList = Array.from(formElement.querySelectorAll('.form__input'));
+  const buttonElement = formElement.querySelector('.form__submit');
+  toggleButtonState(inputList, buttonElement)
+  inputList.forEach((inputElement) => {
+    inputElement.addEventListener('input', function () {
+      checkInputValidity(formElement, inputElement);
+      toggleButtonState(inputList, buttonElement)
+    });
+  });
+};
+
+const enableValidation = () => {
+  const formList = Array.from(document.querySelectorAll('.form'));
+  formList.forEach((formElement) => {
+    formElement.addEventListener('submit', function (evt) {
+      evt.preventDefault();
+    });
+    const fieldsetList = Array.from(formElement.querySelectorAll('.form__set'));
+    fieldsetList.forEach((fieldSet) => {
+      setEventListeners(fieldSet);
+    })
+
+  });
+};
+
+enableValidation();

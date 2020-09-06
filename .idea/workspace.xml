@@ -9,15 +9,6 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
     </expand>
     <select>
       <path>
@@ -28,15 +19,16 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b0e37f5-b424-4334-8890-16353cda1424" name="Default Changelist" comment="Создана новая ветка">
-      <change afterPath="$PROJECT_DIR$/scripts/validate.js" afterDir="false" />
+    <list default="true" id="4b0e37f5-b424-4334-8890-16353cda1424" name="Default Changelist" comment="Осталось только разобраться с формами">
+      <change afterPath="$PROJECT_DIR$/blocks/form/__input/_type/form__input_type_error.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/form/__input/form__input.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup-card/_opened/popup-card_opened.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup-image/_opened/popup-image_opened.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/_opened/popup_opened.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/_opened/popup_opened.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/input/_invalid/input_invalid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/input/input.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/validate.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +117,7 @@
       <workItem from="1599232306581" duration="16250000" />
       <workItem from="1599292049194" duration="30000" />
       <workItem from="1599323382100" duration="615000" />
-      <workItem from="1599324358077" duration="15586000" />
+      <workItem from="1599324358077" duration="24839000" />
     </task>
     <task id="LOCAL-00001" summary="Готовая проектная работа 5">
       <created>1598183575222</created>
@@ -232,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599330187294</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Осталось только разобраться с формами">
+      <created>1599345071249</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1599345071249</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,13 +276,14 @@
     <MESSAGE value="fixup! Изменено название функции открытие зума" />
     <MESSAGE value="Работает" />
     <MESSAGE value="Создана новая ветка" />
-    <option name="LAST_COMMIT_MESSAGE" value="Создана новая ветка" />
+    <MESSAGE value="Осталось только разобраться с формами" />
+    <option name="LAST_COMMIT_MESSAGE" value="Осталось только разобраться с формами" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="570" y="252" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598124511521">
+    <state x="570" y="252" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599411518017">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="570" y="252" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.900@0.0.1600.900" timestamp="1598124511521" />
+    <state x="570" y="252" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.900@0.0.1600.900" timestamp="1599411518017" />
     <state x="480" y="186" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1599155551752">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
@@ -292,10 +292,10 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="530" y="197" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.900@0.0.1600.900" timestamp="1599325252353" />
-    <state x="547" y="305" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1598200423178">
+    <state x="547" y="305" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1599403478722">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="547" y="305" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1600.900@0.0.1600.900" timestamp="1598200423178" />
+    <state x="547" y="305" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1600.900@0.0.1600.900" timestamp="1599403478722" />
     <state x="425" y="37" key="CommitChangelistDialog2" timestamp="1599329907909">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
@@ -380,10 +380,10 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="647" y="363" key="VCS.ChangelistChooser/0.0.1600.900@0.0.1600.900" timestamp="1599253096398" />
-    <state x="392" y="183" key="Vcs.Push.Dialog.v2" timestamp="1599330038999">
+    <state x="392" y="183" key="Vcs.Push.Dialog.v2" timestamp="1599345102867">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="392" y="183" key="Vcs.Push.Dialog.v2/0.0.1600.900@0.0.1600.900" timestamp="1599330038999" />
+    <state x="392" y="183" key="Vcs.Push.Dialog.v2/0.0.1600.900@0.0.1600.900" timestamp="1599345102867" />
     <state x="507" y="6" width="585" height="888" key="find.popup" timestamp="1598180152026">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
