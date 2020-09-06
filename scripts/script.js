@@ -14,12 +14,12 @@ const profileSubtitle = document.querySelector('.profile__subtitle');
 // ОБЪЯВЛЕНИЕ ПОЛЕЙ ВООДА ПОПАПА
 const inputName = document.querySelector('#input-name');
 const inputSubtitle = document.querySelector('#input-subtitle');
-
+inputName.value = profileName.textContent;
+inputSubtitle.value = profileSubtitle.textContent;
 // УНИВЕРСАЛЬНАЯ ЛОГИКА ОТКРЫТИЯ ПОПАПА
 const openPopup = (item) => {
   if (!popup.classList.contains('popup_opened')) {
-    inputName.value = profileName.textContent;
-    inputSubtitle.value = profileSubtitle.textContent;}
+    }
   item.classList.add('popup_opened');
   window.addEventListener('keydown', exitByEsc)
 }

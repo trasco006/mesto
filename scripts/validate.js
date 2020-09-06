@@ -25,25 +25,29 @@ const checkInputValidity = (formObj, formElement, inputElement) => {
 
 // ПРОВЕРКА НА ИНВАЛИДНЫЕ ИНПУТЫ
 const hasInvalidInput = (inputList) => {
-  return inputList.some((inputElement) => {
-    return !inputElement.validity.valid;
-  })
-};
+    return inputList.some((inputElement) => {
+      return !inputElement.validity.valid;
+    })}
+
+
 // ДЕАКТИВАЦИЯ КНОПКИ САБМИТА
 const toggleButtonState = (formObj, inputList, buttonElement) => {
-  if (hasInvalidInput(inputList)) {buttonElement.classList.add(formObj.inactiveButtonClass)}
-  else {buttonElement.classList.remove(formObj.inactiveButtonClass)}
+  if (hasInvalidInput(inputList)) {
+    buttonElement.classList.add(formObj.inactiveButtonClass)
+  } else {
+    buttonElement.classList.remove(formObj.inactiveButtonClass)
+  }
 }
 
 // ДОБАВЛЕНИЕ СЛУШАТЕЛЕЙ
 const setEventListeners = (formObj, formElement) => {
   const inputList = Array.from(formElement.querySelectorAll(formObj.inputSelector));
   const buttonElement = formElement.querySelector(formObj.submitButtonSelector)
-  toggleButtonState(formObj, inputList, buttonElement)
+  toggleButtonState(formObj, inputList, buttonElement);
   inputList.forEach((inputElement) => {
     inputElement.addEventListener('input', function () {
-    checkInputValidity(formObj, formElement, inputElement);
-    toggleButtonState(formObj, inputList, buttonElement)
+      checkInputValidity(formObj, formElement, inputElement);
+      toggleButtonState(formObj, inputList, buttonElement)
     });
   });
 };

@@ -19,14 +19,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b0e37f5-b424-4334-8890-16353cda1424" name="Default Changelist" comment="Удалена старая валидация. Добавлен шаблон новой.">
-      <change afterPath="$PROJECT_DIR$/blocks/popup/__button/popup__button.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blocks/popup/__form/popup__form.css" afterDir="false" />
+    <list default="true" id="4b0e37f5-b424-4334-8890-16353cda1424" name="Default Changelist" comment="Валидация допилена, но кнопка сохранить в профиле всё с самого начала не активная">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/__save-button/_disabled/popup__save-button_disabled.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/__button/_disabled/popup__button_disabled.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/popup/popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/popup/popup.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/validate.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -117,7 +112,7 @@
       <workItem from="1599232306581" duration="16250000" />
       <workItem from="1599292049194" duration="30000" />
       <workItem from="1599323382100" duration="615000" />
-      <workItem from="1599324358077" duration="32679000" />
+      <workItem from="1599324358077" duration="34760000" />
     </task>
     <task id="LOCAL-00001" summary="Готовая проектная работа 5">
       <created>1598183575222</created>
@@ -238,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599411846044</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Валидация допилена, но кнопка сохранить в профиле всё с самого начала не активная">
+      <created>1599419729229</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1599419729229</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,7 +287,8 @@
     <MESSAGE value="Создана новая ветка" />
     <MESSAGE value="Осталось только разобраться с формами" />
     <MESSAGE value="Удалена старая валидация. Добавлен шаблон новой." />
-    <option name="LAST_COMMIT_MESSAGE" value="Удалена старая валидация. Добавлен шаблон новой." />
+    <MESSAGE value="Валидация допилена, но кнопка сохранить в профиле всё с самого начала не активная" />
+    <option name="LAST_COMMIT_MESSAGE" value="Валидация допилена, но кнопка сохранить в профиле всё с самого начала не активная" />
   </component>
   <component name="WindowStateProjectService">
     <state x="570" y="252" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599411518017">
@@ -392,10 +395,10 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="647" y="363" key="VCS.ChangelistChooser/0.0.1600.900@0.0.1600.900" timestamp="1599253096398" />
-    <state x="392" y="183" key="Vcs.Push.Dialog.v2" timestamp="1599411916243">
+    <state x="392" y="183" key="Vcs.Push.Dialog.v2" timestamp="1599419732507">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="392" y="183" key="Vcs.Push.Dialog.v2/0.0.1600.900@0.0.1600.900" timestamp="1599411916243" />
+    <state x="392" y="183" key="Vcs.Push.Dialog.v2/0.0.1600.900@0.0.1600.900" timestamp="1599419732507" />
     <state x="507" y="6" width="585" height="888" key="find.popup" timestamp="1598180152026">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
