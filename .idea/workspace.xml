@@ -14,15 +14,13 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:FEATURE" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b0e37f5-b424-4334-8890-16353cda1424" name="Default Changelist" comment="Валидация допилена, но кнопка сохранить в профиле всё с самого начала не активная">
+    <list default="true" id="4b0e37f5-b424-4334-8890-16353cda1424" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/validate.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +30,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="99be601d238ca6dcaccbcc2db708dc551e9feada" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -62,15 +60,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Yandex\mesto\blocks\popup\__button" />
-      <recent name="E:\Yandex\mesto" />
-      <recent name="E:\Yandex\mesto\blocks\card" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Yandex\mesto\blocks\popup-image" />
       <recent name="E:\Yandex\mesto\scripts" />
       <recent name="E:\Yandex\mesto\blocks" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Yandex\mesto\blocks\popup\__button" />
+      <recent name="E:\Yandex\mesto" />
+      <recent name="E:\Yandex\mesto\blocks\card" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.test.js">
@@ -88,6 +86,8 @@
         <item itemvalue="Node.js.test.js" />
         <item itemvalue="Node.js.script_profile.js" />
         <item itemvalue="Node.js.script.js" />
+        <item itemvalue="Node.js.test.js" />
+        <item itemvalue="Node.js.script_profile.js" />
       </list>
     </recent_temporary>
   </component>
@@ -257,7 +257,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="FEATURE" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -403,6 +403,10 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="507" y="6" width="585" height="888" key="find.popup/0.0.1600.900@0.0.1600.900" timestamp="1598180152026" />
+    <state x="580" y="163" key="git4idea.branch.GitSmartOperationDialog" timestamp="1599422486941">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="580" y="163" key="git4idea.branch.GitSmartOperationDialog/0.0.1600.900@0.0.1600.900" timestamp="1599422486941" />
     <state x="456" y="205" width="672" height="677" key="run.anything.popup" timestamp="1599415873432">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
@@ -415,5 +419,17 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="463" y="190" width="672" height="678" key="search.everywhere.popup/0.0.1600.900@0.0.1600.900" timestamp="1599335634125" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <condition expression="Логика Валидации" language="JavaScript" />
+          <url>file://$PROJECT_DIR$/scripts/script.js</url>
+          <line>110</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
