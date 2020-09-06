@@ -42,7 +42,7 @@
 
   <div class="popup">
     <div class="popup__overlay"></div>
-    <form name="profile-edit" class="popup__container">
+    <form name="profile-edit" class="popup__form popup__container">
       <p class="popup__title">Редактировать профиль</p>
       <input id="input-name" type="text" name="user " placeholder="Имя" autocomplete="off" minlength="2" maxlength="40"
              class="popup__input form__input form__input_name" tabindex="0" required>
@@ -50,22 +50,22 @@
       <input id="input-subtitle" type="text" name="about-user " placeholder="О себе" autocomplete="off" minlength="2" maxlength="200"
              required class="popup__input form__input form__input_subtitle" tabindex="0">
       <span id="input-subtitle-error" class="popup__error "></span>
-      <button aria-label="Save" type="submit" class="popup__save-button save__button" tabindex="0">Сохранить</button>
+      <button aria-label="Save" type="submit" class=" popup__button popup__save-button save__button" tabindex="0">Сохранить</button>
       <button aria-label="Close popup" type="button" class="popup__escape-button "></button>
     </form>
   </div>
 
   <div class="popup-card">
     <div class="popup-card__overlay"></div>
-    <form name="add card" class=" popup-card__container " novalidate>
+    <form name="add card" class="popup__form popup-card__container " novalidate>
       <p class="popup-card__title ">Новое место</p>
       <input id="input-card-name" type="text" minlength="1" maxlength="30" name="card-name" autocomplete="off" placeholder="Название" required
-             class="popup-card__input  form__input   form__input_name" tabindex="0">
+             class=" popup__input popup-card__input  form__input   form__input_name" tabindex="0">
       <span id="input-card-name-error" class="popup__error "></span>
       <input id="input-url" type="url" name="card-src" autocomplete="off" placeholder="Ссылка на картинку" required
-             class="popup-card__input  form__input  form__input_src" tabindex="0">
+             class="popup__input popup-card__input  form__input  form__input_src" tabindex="0">
       <span id="input-url-error" class="popup__error "></span>
-      <button aria-label="Save" type="submit" class="popup-card__save-button save__button" tabindex="0">Сохранить</button>
+      <button aria-label="Save" type="submit" class="popup__button popup-card__save-button save__button" tabindex="0">Сохранить</button>
       <button aria-label="Close" type="button" class="popup-card__escape-button"></button>
     </form>
   </div>
