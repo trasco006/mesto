@@ -77,7 +77,6 @@ function getCard(cardName, cardSrc) {
   cardItem.querySelector('.card__trash-can').addEventListener('click', removeCard); //вешаем удаление
   cardItem.querySelector('.card__image').addEventListener('click', () => previewCard(cardName, cardSrc)); //вешаем превью
   return cardItem;
-  console.log('1')
 }
 
 //ЛОГИКА ЛАЙКА
