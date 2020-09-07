@@ -33,8 +33,10 @@ const hasInvalidInput = (inputList) => {
 // ДЕАКТИВАЦИЯ КНОПКИ САБМИТА
 const toggleButtonState = (formObj, inputList, buttonElement) => {
   if (hasInvalidInput(inputList)) {
+    buttonElement.disabled = true;
     buttonElement.classList.add(formObj.inactiveButtonClass)
   } else {
+    buttonElement.disabled = false;
     buttonElement.classList.remove(formObj.inactiveButtonClass)
   }
 }

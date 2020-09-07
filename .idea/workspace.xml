@@ -19,8 +19,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b0e37f5-b424-4334-8890-16353cda1424" name="Default Changelist" comment="">
+    <list default="true" id="4b0e37f5-b424-4334-8890-16353cda1424" name="Default Changelist" comment="Готов к финальному ревью">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/validate.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,6 +115,7 @@
       <workItem from="1599292049194" duration="30000" />
       <workItem from="1599323382100" duration="615000" />
       <workItem from="1599324358077" duration="34760000" />
+      <workItem from="1599493443900" duration="901000" />
     </task>
     <task id="LOCAL-00001" summary="Готовая проектная работа 5">
       <created>1598183575222</created>
@@ -240,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599419729229</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Готов к финальному ревью">
+      <created>1599422667385</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1599422667385</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,7 +298,8 @@
     <MESSAGE value="Осталось только разобраться с формами" />
     <MESSAGE value="Удалена старая валидация. Добавлен шаблон новой." />
     <MESSAGE value="Валидация допилена, но кнопка сохранить в профиле всё с самого начала не активная" />
-    <option name="LAST_COMMIT_MESSAGE" value="Валидация допилена, но кнопка сохранить в профиле всё с самого начала не активная" />
+    <MESSAGE value="Готов к финальному ревью" />
+    <option name="LAST_COMMIT_MESSAGE" value="Готов к финальному ревью" />
   </component>
   <component name="WindowStateProjectService">
     <state x="570" y="252" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599411518017">
@@ -395,10 +406,10 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="647" y="363" key="VCS.ChangelistChooser/0.0.1600.900@0.0.1600.900" timestamp="1599253096398" />
-    <state x="392" y="183" key="Vcs.Push.Dialog.v2" timestamp="1599419732507">
+    <state x="392" y="183" key="Vcs.Push.Dialog.v2" timestamp="1599422669636">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="392" y="183" key="Vcs.Push.Dialog.v2/0.0.1600.900@0.0.1600.900" timestamp="1599419732507" />
+    <state x="392" y="183" key="Vcs.Push.Dialog.v2/0.0.1600.900@0.0.1600.900" timestamp="1599422669636" />
     <state x="507" y="6" width="585" height="888" key="find.popup" timestamp="1598180152026">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
@@ -419,17 +430,5 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="463" y="190" width="672" height="678" key="search.everywhere.popup/0.0.1600.900@0.0.1600.900" timestamp="1599335634125" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <condition expression="Логика Валидации" language="JavaScript" />
-          <url>file://$PROJECT_DIR$/scripts/script.js</url>
-          <line>110</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

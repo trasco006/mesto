@@ -19,14 +19,14 @@ inputSubtitle.value = profileSubtitle.textContent;
 // УНИВЕРСАЛЬНАЯ ЛОГИКА ОТКРЫТИЯ ПОПАПА
 const openPopup = (item) => {
   if (!popup.classList.contains('popup_opened')) {
-    }
+  }
   item.classList.add('popup_opened');
   window.addEventListener('keydown', exitByEsc)
 }
 
 // УНИВЕРСАЛЬНАЯ ЛОГИКА ЗАКРЫТИЯ ПОПАПА
 const closePopup = (item) => {
-   item.classList.remove('popup_opened');
+  item.classList.remove('popup_opened');
   window.removeEventListener('keydown', exitByEsc)
 }
 
@@ -76,7 +76,8 @@ function getCard(cardName, cardSrc) {
   cardItem.querySelector('.card__like').addEventListener('click', likeCard); //вешаем лайк
   cardItem.querySelector('.card__trash-can').addEventListener('click', removeCard); //вешаем удаление
   cardItem.querySelector('.card__image').addEventListener('click', () => previewCard(cardName, cardSrc)); //вешаем превью
-  elementsContainer.prepend(cardItem);
+  return cardItem;
+  console.log('1')
 }
 
 //ЛОГИКА ЛАЙКА
@@ -126,15 +127,22 @@ const initialCards = [
   }
 ];
 
+
+//ФУНКЦИЯ РЕНДЕРА
+const renderCards = (cardName, cardSrc) => {
+  elementsContainer.prepend(getCard(cardName, cardSrc));
+}
+
+
 // ЛОГИКА ДОБАВЛЕНИЯ МАССИВА
 initialCards.forEach(function (value, index) {
-  getCard(value.name, value.link);
+  renderCards(value.name, value.link);
 });
 
 // ОТПРАВКА ФОРМЫ КАРТЫ
 const submitCard = (evt) => {
   evt.preventDefault();
-  getCard(inputCardName.value, inputCardSrc.value);
+  renderCards(inputCardName.value, inputCardSrc.value);
   closePopup(popupCard);
 }
 
@@ -149,10 +157,11 @@ document.querySelector('.popup-image__overlay').addEventListener('click', () => 
 document.querySelector('.popup__overlay').addEventListener('click', () => closePopup(popup));
 
 // ЗАКРЫТИЕ ОКНА ЧЕРЕЗ ESC
+
+
 const exitByEsc = (evt) => {
+  const activePopup = document.querySelector('.popup_opened');
   if (evt.key === 'Escape') {
-    closePopup(popup);
-    closePopup(popupCard);
-    closePopup(popupImage);
+    closePopup(activePopup);
   }
 }
