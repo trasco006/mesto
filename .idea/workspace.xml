@@ -20,13 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b0e37f5-b424-4334-8890-16353cda1424" name="Default Changelist" comment="Финальная сдача проекта">
-      <change afterPath="$PROJECT_DIR$/scripts/FormValidator.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_09_2020_22_53__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_09_2020_22_53__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Card.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/validate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -300,6 +296,26 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="develop" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/develop" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
@@ -351,25 +367,25 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="92" y="92" width="1416" height="716" key="DiffContextDialog/0.0.1600.900@0.0.1600.900" timestamp="1598116889858" />
-    <state width="1579" height="274" key="GridCell.Tab.0.bottom" timestamp="1601208309190">
+    <state width="1579" height="274" key="GridCell.Tab.0.bottom" timestamp="1601210063835">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
-    <state width="1579" height="274" key="GridCell.Tab.0.bottom/0.0.1600.870@0.0.1600.870" timestamp="1601208309190" />
+    <state width="1579" height="274" key="GridCell.Tab.0.bottom/0.0.1600.870@0.0.1600.870" timestamp="1601210063835" />
     <state width="1579" height="291" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1598557825629" />
-    <state width="1579" height="274" key="GridCell.Tab.0.center" timestamp="1601208309189">
+    <state width="1579" height="274" key="GridCell.Tab.0.center" timestamp="1601210063835">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
-    <state width="1579" height="274" key="GridCell.Tab.0.center/0.0.1600.870@0.0.1600.870" timestamp="1601208309189" />
+    <state width="1579" height="274" key="GridCell.Tab.0.center/0.0.1600.870@0.0.1600.870" timestamp="1601210063835" />
     <state width="1579" height="291" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1598557825629" />
-    <state width="1579" height="274" key="GridCell.Tab.0.left" timestamp="1601208309189">
+    <state width="1579" height="274" key="GridCell.Tab.0.left" timestamp="1601210063835">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
-    <state width="1579" height="274" key="GridCell.Tab.0.left/0.0.1600.870@0.0.1600.870" timestamp="1601208309189" />
+    <state width="1579" height="274" key="GridCell.Tab.0.left/0.0.1600.870@0.0.1600.870" timestamp="1601210063835" />
     <state width="1579" height="291" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1598557825629" />
-    <state width="1579" height="274" key="GridCell.Tab.0.right" timestamp="1601208309190">
+    <state width="1579" height="274" key="GridCell.Tab.0.right" timestamp="1601210063835">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
-    <state width="1579" height="274" key="GridCell.Tab.0.right/0.0.1600.870@0.0.1600.870" timestamp="1601208309190" />
+    <state width="1579" height="274" key="GridCell.Tab.0.right/0.0.1600.870@0.0.1600.870" timestamp="1601210063835" />
     <state width="1579" height="291" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1598557825629" />
     <state width="1579" height="291" key="GridCell.Tab.1.bottom" timestamp="1598557825629">
       <screen x="0" y="0" width="1600" height="900" />
@@ -452,9 +468,10 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="580" y="163" key="git4idea.branch.GitSmartOperationDialog/0.0.1600.900@0.0.1600.900" timestamp="1599422486941" />
-    <state x="456" y="205" width="672" height="677" key="run.anything.popup" timestamp="1599415873432">
-      <screen x="0" y="0" width="1600" height="900" />
+    <state x="456" y="198" width="672" height="655" key="run.anything.popup" timestamp="1601210791781">
+      <screen x="0" y="0" width="1600" height="870" />
     </state>
+    <state x="456" y="198" width="672" height="655" key="run.anything.popup/0.0.1600.870@0.0.1600.870" timestamp="1601210791781" />
     <state x="456" y="205" width="672" height="677" key="run.anything.popup/0.0.1600.900@0.0.1600.900" timestamp="1599415873432" />
     <state x="592" y="308" key="scopes" timestamp="1598176091715">
       <screen x="0" y="0" width="1600" height="900" />
