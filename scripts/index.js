@@ -7,7 +7,6 @@ const popup = document.querySelector('.popup');
 
 // ОБЪЯВЛЕНИЕ КНОПОК ПОПАПА
 const escapeButton = document.querySelector('.popup__escape-button');
-const popupSaveButton = popup.querySelector('.popup__save-button ')
 
 // ОБЪЯВЛЕНИЕ ДАННЫХ ПРОФИЛЯ
 const profileName = document.querySelector('.profile__user-name');
@@ -20,12 +19,9 @@ inputName.value = profileName.textContent;
 inputSubtitle.value = profileSubtitle.textContent;
 // УНИВЕРСАЛЬНАЯ ЛОГИКА ОТКРЫТИЯ ПОПАПА
 const openPopup = (item) => {
-  if (!popup.classList.contains('popup_opened')) {
-  }
   item.classList.add('popup_opened');
   window.addEventListener('keydown', exitByEsc)
 }
-
 // УНИВЕРСАЛЬНАЯ ЛОГИКА ЗАКРЫТИЯ ПОПАПА
 const closePopup = (item) => {
   item.classList.remove('popup_opened');
@@ -38,6 +34,13 @@ function formSubmitHandler(evt) {
   profileName.textContent = inputName.value;
   profileSubtitle.textContent = inputSubtitle.value;
   closePopup(popup);
+}
+
+//Функция создания новой карточки
+function getCardElement(nameItem, linkItem, selectorItem) {
+  const card = new Card(nameItem, linkItem, selectorItem);
+  const cardElement = card.generateCard();
+  elementsContainer.prepend(cardElement);
 }
 
 // НАЗНАЧЕНИЯ КНОПОК ПОПАПА
@@ -93,17 +96,13 @@ const initialCards = [
 
 //Рендер карточек из массива
 initialCards.forEach(function (item) {
-  const card = new Card(item.name, item.link, '.card-template');
-  const cardElement = card.generateCard();
-  elementsContainer.prepend(cardElement);
+  getCardElement(item.name, item.link, '.card-template');
 });
 
 // ОТПРАВКА ФОРМЫ КАРТЫ
 const submitCard = (evt) => {
   evt.preventDefault();
-  const card = new Card(inputCardName.value, inputCardSrc.value, '.card-template');
-  const cardElement = card.generateCard();
-  elementsContainer.prepend(cardElement);
+  getCardElement(inputCardName.value, inputCardSrc.value, '.card-template');
   closePopup(popupCard);
 }
 
@@ -113,9 +112,9 @@ escapeCardButton.addEventListener('click', () => closePopup(popupCard));
 formAddCard.addEventListener('submit', submitCard);
 
 // ЗАКРЫТИЕ ПОПАПА ПРИ НАЖАТИИ НА ОВЕРЛЭЙ
-document.querySelector('.popup-card__overlay').addEventListener('click', () => closePopup(popupCard));
-document.querySelector('.popup-image__overlay').addEventListener('click', () => closePopup(popupImage));
-document.querySelector('.popup__overlay').addEventListener('click', () => closePopup(popup));
+popupCard.querySelector('.popup-card__overlay').addEventListener('click', () => closePopup(popupCard));
+popupImage.querySelector('.popup-image__overlay').addEventListener('click', () => closePopup(popupImage));
+popup.querySelector('.popup__overlay').addEventListener('click', () => closePopup(popup));
 
 // ЗАКРЫТИЕ ОКНА ЧЕРЕЗ ESC
 const exitByEsc = (evt) => {
