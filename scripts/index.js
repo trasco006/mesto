@@ -1,3 +1,4 @@
+import {Card} from './Card.js'
 ///////////////////////////////////////////// ДОБАВЛЕНИЕ ПОПАПА ИЗМЕНЕНИЯ ДАННЫХ ПРОФИЛЯ
 const editButton = document.querySelector('.profile__edit-button');
 const formEditProfile = document.querySelector('.popup__container')
@@ -58,45 +59,8 @@ const escapeCardButton = document.querySelector('.popup-card__escape-button');
 const inputCardName = document.querySelector('#input-card-name');
 const inputCardSrc = document.querySelector('#input-url');
 
-// КОНСТАНТЫ ПОПАПА-ПРЕВЬЮ
-const imageZoomTitle = document.querySelector('.popup-image__title');
-const imageZoomEscapeButton = document.querySelector('.popup-image__escape-button');
-const imageZoomItem = document.querySelector('.popup-image__item');
-
 ////// ЛОГИКА ДОБАВЛЕНИЯ КАРТОЧКИ
 const elementsContainer = document.querySelector('.elements');
-const cardTemplate = document.querySelector('.card-template').content;
-
-// ЛОГИКА ВОЗВРАЩЕНИЯ РАЗМЕТКИ
-function getCard(cardName, cardSrc) {
-  const cardItem = cardTemplate.cloneNode(true);
-  cardItem.querySelector('.card__image').src = cardSrc;
-  cardItem.querySelector('.card__image').alt = cardName;
-  cardItem.querySelector('.card__title').textContent = cardName;
-  cardItem.querySelector('.card__like').addEventListener('click', likeCard); //вешаем лайк
-  cardItem.querySelector('.card__trash-can').addEventListener('click', removeCard); //вешаем удаление
-  cardItem.querySelector('.card__image').addEventListener('click', () => previewCard(cardName, cardSrc)); //вешаем превью
-  return cardItem;
-}
-
-//ЛОГИКА ЛАЙКА
-const likeCard = (evt) => {
-  evt.target.classList.toggle('card_liked');
-}
-
-// ЛОГИКА УДАЛЕНИЯ КАРТОЧКИ
-const removeCard = (evt) => {
-  evt.target.parentElement.remove();
-}
-
-// ЛОГИКА ПРЕВЬЮ КАРТОЧКИ
-const previewCard = (cardName, cardSrc) => {
-  openPopup(popupImage)
-  imageZoomItem.src = cardSrc;
-  imageZoomItem.alt = cardName;
-  imageZoomTitle.textContent = cardName;
-  imageZoomEscapeButton.addEventListener('click', () => closePopup(popupImage))
-}
 
 // МАССИВ ШЕСТИ КАРТОЧЕК
 const initialCards = [
@@ -126,22 +90,20 @@ const initialCards = [
   }
 ];
 
+//Рендер карточек из массива
 
-//ФУНКЦИЯ РЕНДЕРА
-const renderCards = (cardName, cardSrc) => {
-  elementsContainer.prepend(getCard(cardName, cardSrc));
-}
-
-
-// ЛОГИКА ДОБАВЛЕНИЯ МАССИВА
-initialCards.forEach(function (value, index) {
-  renderCards(value.name, value.link);
+initialCards.forEach(function (item) {
+  const card = new Card(item.name, item.link, '.card-template');
+  const cardElement = card.generateCard();
+  elementsContainer.prepend(cardElement);
+  console.log('1')
 });
+
 
 // ОТПРАВКА ФОРМЫ КАРТЫ
 const submitCard = (evt) => {
   evt.preventDefault();
-  renderCards(inputCardName.value, inputCardSrc.value);
+  const card = new Card(inputCardName.value, inputCardSrc.value, '.card-template');
   closePopup(popupCard);
 }
 
@@ -156,8 +118,6 @@ document.querySelector('.popup-image__overlay').addEventListener('click', () => 
 document.querySelector('.popup__overlay').addEventListener('click', () => closePopup(popup));
 
 // ЗАКРЫТИЕ ОКНА ЧЕРЕЗ ESC
-
-
 const exitByEsc = (evt) => {
   const activePopup = document.querySelector('.popup_opened');
   if (evt.key === 'Escape') {
