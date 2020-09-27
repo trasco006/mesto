@@ -91,7 +91,6 @@ const initialCards = [
 ];
 
 //Рендер карточек из массива
-
 initialCards.forEach(function (item) {
   const card = new Card(item.name, item.link, '.card-template');
   const cardElement = card.generateCard();
@@ -99,11 +98,12 @@ initialCards.forEach(function (item) {
   console.log('1')
 });
 
-
 // ОТПРАВКА ФОРМЫ КАРТЫ
 const submitCard = (evt) => {
   evt.preventDefault();
   const card = new Card(inputCardName.value, inputCardSrc.value, '.card-template');
+  const cardElement = card.generateCard();
+  elementsContainer.prepend(cardElement);
   closePopup(popupCard);
 }
 

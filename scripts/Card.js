@@ -18,9 +18,9 @@ class Card {
     evt.target.parentElement.remove()
   }
 
-  _openCloseCardImagePopup() {
+  _openCardImagePopup() {
     document.querySelector('.popup-image').classList.add('popup_opened');
-    //  window.addEventListener('keydown', exitByEsc)
+
   }
 
   _closeCardImagePopup() {
@@ -28,7 +28,7 @@ class Card {
   }
 
   _previewCard() {
-    this._openCloseCardImagePopup()
+    this._openCardImagePopup()
     document.querySelector('.popup-image__item').src = this._imageLink;
     document.querySelector('.popup-image__item').alt = this._title;
     document.querySelector('.popup-image__title').textContent = this._title;
@@ -46,6 +46,11 @@ class Card {
       this._previewCard()
     });
     document.querySelector('.popup-image__escape-button').addEventListener('click', () => this._closeCardImagePopup())
+    window.addEventListener('keydown', (evt) => {
+      if (evt.key === 'Escape') {
+        this._closeCardImagePopup()
+      }
+    })
   }
 
   generateCard() {
