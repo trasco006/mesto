@@ -1,4 +1,5 @@
 import {Card} from './Card.js'
+import {FormValidator} from "./FormValidator.js"
 ///////////////////////////////////////////// ДОБАВЛЕНИЕ ПОПАПА ИЗМЕНЕНИЯ ДАННЫХ ПРОФИЛЯ
 const editButton = document.querySelector('.profile__edit-button');
 const formEditProfile = document.querySelector('.popup__container')
@@ -95,7 +96,6 @@ initialCards.forEach(function (item) {
   const card = new Card(item.name, item.link, '.card-template');
   const cardElement = card.generateCard();
   elementsContainer.prepend(cardElement);
-  console.log('1')
 });
 
 // ОТПРАВКА ФОРМЫ КАРТЫ
@@ -124,3 +124,17 @@ const exitByEsc = (evt) => {
     closePopup(activePopup);
   }
 }
+
+
+const settings = {
+  inputSelector: '.popup__input',
+  submitButtonSelector: '.popup__button',
+  inactiveButtonClass: 'popup__button_disabled',
+  inputErrorClass: 'popup__input_type_error',
+  errorClass: 'popup__error_visible'
+}
+
+const validateProfilePopup = new FormValidator(settings, '.popup__container')
+validateProfilePopup.enableValidation()
+const validateCardPopup = new FormValidator(settings, '.popup-card__container')
+validateCardPopup.enableValidation()

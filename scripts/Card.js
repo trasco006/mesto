@@ -3,6 +3,7 @@ class Card {
     this._title = title;
     this._imageLink = imageLink;
     this._cardSelector = cardSelector;
+    this._cardImage = document.querySelector('.popup-image');
   }
 
   _getTemplate() {
@@ -19,12 +20,12 @@ class Card {
   }
 
   _openCardImagePopup() {
-    document.querySelector('.popup-image').classList.add('popup_opened');
+    this._cardImage.classList.add('popup_opened');
 
   }
 
   _closeCardImagePopup() {
-    document.querySelector('.popup-image').classList.remove('popup_opened');
+    this._cardImage.classList.remove('popup_opened');
   }
 
   _previewCard() {
