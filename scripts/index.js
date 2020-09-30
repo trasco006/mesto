@@ -39,9 +39,9 @@ function formSubmitHandler(evt) {
 //Функция создания новой карточки
 function getCardElement(nameItem, linkItem, selectorItem) {
   const card = new Card(nameItem, linkItem, selectorItem);
-  const cardElement = card.generateCard();
-  elementsContainer.prepend(cardElement);
+ return card.generateCard();
 }
+
 
 // НАЗНАЧЕНИЯ КНОПОК ПОПАПА
 editButton.addEventListener('click', () => openPopup(popup));
@@ -96,13 +96,14 @@ const initialCards = [
 
 //Рендер карточек из массива
 initialCards.forEach(function (item) {
-  getCardElement(item.name, item.link, '.card-template');
+  // getCardElement(item.name, item.link, '.card-template');
+  elementsContainer.prepend(getCardElement(item.name, item.link, '.card-template'));
 });
 
 // ОТПРАВКА ФОРМЫ КАРТЫ
 const submitCard = (evt) => {
   evt.preventDefault();
-  getCardElement(inputCardName.value, inputCardSrc.value, '.card-template');
+  elementsContainer.prepend(getCardElement(inputCardName.value, inputCardSrc.value, '.card-template'));
   closePopup(popupCard);
 }
 
