@@ -20,16 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b0e37f5-b424-4334-8890-16353cda1424" name="Default Changelist" comment="Финальная сдача проекта">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/components/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/components/Card.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/components/PopuWithForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/components/PopuWithForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/components/PopuWithImage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/components/PopuWithImage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/components/Popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/components/Popup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/components/UserInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/components/UserInfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/pages/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +184,7 @@
       <workItem from="1602016014573" duration="5713000" />
       <workItem from="1602091306309" duration="5827000" />
       <workItem from="1602322212357" duration="15885000" />
-      <workItem from="1602345238622" duration="7984000" />
+      <workItem from="1602345238622" duration="8226000" />
     </task>
     <task id="LOCAL-00001" summary="Готовая проектная работа 5">
       <created>1598183575222</created>
