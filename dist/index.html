@@ -1,1 +1,102 @@
-<!doctype html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Mesto.Russia</title><link href="main.css" rel="stylesheet"></head><body class="site-body"><div class="page"><header class="header"><div class="header__logo"></div></header><main><section class="profile"><div class="profile__column"><div class="profile__avatar"></div><div class="profile__info"><div class="profile__info-column"><h1 class="profile__user-name">Жак-Ив Кусто</h1><button aria-label="Edit profile" type="button" class="profile__edit-button"></button></div><p class="profile__subtitle">Исследователь океана</p></div></div><button aria-label="Add new card" type="button" class="profile__add-button"></button></section><section class="elements"></section></main><footer class="footer"><p class="footer__copyright">© 2020 Mesto Russia</p></footer><div class="popup"><div class="popup__overlay"></div><form name="profile-edit" class="popup__form popup__container"><p class="popup__title">Редактировать профиль</p><input id="input-name" name="user " placeholder="Имя" autocomplete="off" minlength="2" maxlength="40" class="popup__input form__input form__input_first form__input_name" tabindex="0" required> <span id="input-name-error" class="popup__error"></span> <input id="input-subtitle" name="about-user " placeholder="О себе" autocomplete="off" minlength="2" maxlength="200" required class="form__input_second popup__input form__input form__input_subtitle" tabindex="0"> <span id="input-subtitle-error" class="popup__error"></span> <button aria-label="Save" type="submit" class="popup__button popup__save-button save__button" tabindex="0">Сохранить</button> <button aria-label="Close popup" type="button" class="popup__escape-button popup_close_button"></button></form></div><div class="popup-card"><div class="popup-card__overlay"></div><form name="add card" class="popup__form popup-card__container" novalidate><p class="popup-card__title">Новое место</p><input id="input-card-name" minlength="1" maxlength="30" name="card-name" autocomplete="off" placeholder="Название" required class="popup__input popup-card__input form__input form__input_name form__input_first" tabindex="0"> <span id="input-card-name-error" class="popup__error"></span> <input id="input-url" type="url" name="card-src" autocomplete="off" placeholder="Ссылка на картинку" required class="popup__input popup-card__input form__input form__input_src form__input_second" tabindex="0"> <span id="input-url-error" class="popup__error"></span> <button aria-label="Save" type="submit" class="popup__button popup-card__save-button save__button" tabindex="0">Сохранить</button> <button aria-label="Close" type="button" class="popup-card__escape-button popup_close_button"></button></form></div><div class="popup-image"><div class="popup-image__overlay"></div><div class="popup-image__container"><img src="#" alt="" class="popup-image__item"><p class="popup-image__title"></p><button aria-label="Close" class="popup-image__escape-button popup_close_button"></button></div></div></div><template class="card-template"><article class="card"><img src="#" alt="" class="card__image"> <button aria-label="Delete card" class="card__trash-can"></button><div class="card__section"><h2 class="card__title"></h2><button aria-label="Like-button" type="button" class="card__like"></button></div></article></template><script src="main.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--  <link rel="stylesheet" href="./pages/index.css">-->
+  <title>Mesto.Russia</title>
+<link href="main.css" rel="stylesheet"></head>
+
+<body class="site-body">
+
+<div class="page">
+  <header class="header">
+    <div class="header__logo"></div>
+  </header>
+  <main>
+
+    <section class="profile">
+      <div class="profile__column">
+        <div class="profile__avatar"></div>
+        <div class="profile__info">
+          <div class="profile__info-column">
+            <h1 class="profile__user-name">Жак-Ив Кусто </h1>
+            <button aria-label="Edit profile" type="button" class="profile__edit-button"></button>
+
+          </div>
+          <p class="profile__subtitle">Исследователь океана</p>
+        </div>
+      </div>
+      <button aria-label="Add new card" type="button" class="profile__add-button"></button>
+    </section>
+
+    <section class="elements">
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__copyright">© 2020 Mesto Russia </p>
+  </footer>
+
+  <div class="popup">
+    <div class="popup__overlay"></div>
+    <form name="profile-edit" class="popup__form popup__container">
+      <p class="popup__title">Редактировать профиль</p>
+      <input id="input-name" type="text" name="user " placeholder="Имя" autocomplete="off" minlength="2" maxlength="40"
+             class="popup__input form__input  form__input_first form__input_name" tabindex="0" required>
+      <span id="input-name-error" class="popup__error "></span>
+      <input id="input-subtitle" type="text" name="about-user " placeholder="О себе" autocomplete="off" minlength="2"
+             maxlength="200"
+             required class=" form__input_second popup__input form__input form__input_subtitle" tabindex="0">
+      <span id="input-subtitle-error" class="popup__error "></span>
+      <button aria-label="Save" type="submit" class=" popup__button popup__save-button save__button" tabindex="0">
+        Сохранить
+      </button>
+      <button aria-label="Close popup" type="button" class="popup__escape-button popup_close_button "></button>
+    </form>
+  </div>
+
+  <div class="popup-card">
+    <div class="popup-card__overlay"></div>
+    <form name="add card" class="popup__form popup-card__container " novalidate>
+      <p class="popup-card__title ">Новое место</p>
+      <input id="input-card-name" type="text" minlength="1" maxlength="30" name="card-name" autocomplete="off"
+             placeholder="Название" required
+             class=" popup__input popup-card__input  form__input   form__input_name  form__input_first" tabindex="0">
+      <span id="input-card-name-error" class="popup__error "></span>
+      <input id="input-url" type="url" name="card-src" autocomplete="off" placeholder="Ссылка на картинку" required
+             class="popup__input popup-card__input  form__input  form__input_src form__input_second" tabindex="0">
+      <span id="input-url-error" class="popup__error "></span>
+      <button aria-label="Save" type="submit" class="popup__button popup-card__save-button save__button" tabindex="0">
+        Сохранить
+      </button>
+      <button aria-label="Close" type="button" class="popup-card__escape-button popup_close_button"></button>
+    </form>
+  </div>
+
+  <div class="popup-image">
+    <div class="popup-image__overlay"></div>
+    <div class="popup-image__container">
+      <img src="#" alt="" class="popup-image__item">
+      <p class="popup-image__title"></p>
+      <button aria-label="Close" class="popup-image__escape-button popup_close_button"></button>
+    </div>
+  </div>
+
+</div>
+<template class="card-template">
+  <article class="card">
+    <img src="#" alt="" class="card__image">
+    <button aria-label="Delete card" class="card__trash-can"></button>
+    <div class="card__section">
+      <h2 class="card__title"></h2>
+      <button aria-label="Like-button" type="button" class="card__like"></button>
+    </div>
+  </article>
+</template>
+
+<script src="main.js"></script></body>
+
+</html>

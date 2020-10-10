@@ -6,7 +6,7 @@ import {
   editButton,
 } from "../utils/constants.js"
 import Popup from "./Popup.js";
-
+import UserInfo from "./UserInfo.js";
 export class PopupWithForm extends Popup {
   constructor(popupSelector, submitFunction) {
     super(popupSelector);
