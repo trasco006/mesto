@@ -20,10 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b0e37f5-b424-4334-8890-16353cda1424" name="Default Changelist" comment="Финальная сдача проекта">
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/terser-webpack-plugin/content-v2/sha512/1a/ae/fc7433e439b3d6d037ec5d3d6c3bdbb8f5cf1755f230a03c1aa6c6a99230e980c41eb235103d99d3a405fb847ab010f4b2b64d06c7b77a264a7418b0daa8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/terser-webpack-plugin/content-v2/sha512/1b/76/2b050f2b36ceee6fd639002a80b749e5657d31024e58fd9caa0bd917be8421474a739e09010eaf0bc9fbcb29b6ecbed925a19252f86342a15f30893e96d9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/terser-webpack-plugin/index-v5/9d/5d/00b4d3dbcacdd3aa5ace6ab6384f9cff34c6fa4f267fe54c110da467a27c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/node_modules/.cache/terser-webpack-plugin/index-v5/f1/14/522b17931dade68af44be6bcbc7ccfe9c34d7d5608b8eb600142dd9a42f6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +182,7 @@
       <workItem from="1602016014573" duration="5713000" />
       <workItem from="1602091306309" duration="5827000" />
       <workItem from="1602322212357" duration="15885000" />
-      <workItem from="1602345238622" duration="8563000" />
+      <workItem from="1602345238622" duration="9111000" />
     </task>
     <task id="LOCAL-00001" summary="Готовая проектная работа 5">
       <created>1598183575222</created>
@@ -465,28 +463,28 @@
       <screen x="0" y="0" width="1600" height="870" />
     </state>
     <state x="692" y="209" key="FileChooserDialogImpl/0.0.1600.870@0.0.1600.870" timestamp="1601738854249" />
-    <state width="1557" height="269" key="GridCell.Tab.0.bottom" timestamp="1602345792571">
+    <state width="1556" height="297" key="GridCell.Tab.0.bottom" timestamp="1602354784120">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="269" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1602345792571" />
+    <state width="1556" height="297" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1602354784119" />
     <state width="1579" height="266" key="GridCell.Tab.0.bottom/0.0.1600.870@0.0.1600.870" timestamp="1601815463685" />
     <state width="1579" height="291" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1598557825629" />
-    <state width="1557" height="269" key="GridCell.Tab.0.center" timestamp="1602345792570">
+    <state width="1556" height="297" key="GridCell.Tab.0.center" timestamp="1602354784119">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="269" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1602345792570" />
+    <state width="1556" height="297" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1602354784119" />
     <state width="1579" height="266" key="GridCell.Tab.0.center/0.0.1600.870@0.0.1600.870" timestamp="1601815463685" />
     <state width="1579" height="291" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1598557825629" />
-    <state width="1557" height="269" key="GridCell.Tab.0.left" timestamp="1602345792570">
+    <state width="1556" height="297" key="GridCell.Tab.0.left" timestamp="1602354784119">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="269" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1602345792570" />
+    <state width="1556" height="297" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1602354784119" />
     <state width="1579" height="266" key="GridCell.Tab.0.left/0.0.1600.870@0.0.1600.870" timestamp="1601815463684" />
     <state width="1579" height="291" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1598557825629" />
-    <state width="1557" height="269" key="GridCell.Tab.0.right" timestamp="1602345792571">
+    <state width="1556" height="297" key="GridCell.Tab.0.right" timestamp="1602354784119">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="269" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1602345792571" />
+    <state width="1556" height="297" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1602354784119" />
     <state width="1579" height="266" key="GridCell.Tab.0.right/0.0.1600.870@0.0.1600.870" timestamp="1601815463685" />
     <state width="1579" height="291" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1598557825629" />
     <state width="1579" height="291" key="GridCell.Tab.1.bottom" timestamp="1598557825629">
@@ -573,10 +571,10 @@
     </state>
     <state x="617" y="345" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.860@0.0.1600.860" timestamp="1602347088164" />
     <state x="617" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.870@0.0.1600.870" timestamp="1601192252452" />
-    <state x="507" y="6" width="585" height="849" key="find.popup" timestamp="1602017378068">
+    <state x="507" y="6" width="585" height="849" key="find.popup" timestamp="1602354415262">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="507" y="6" width="585" height="849" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1602017378068" />
+    <state x="507" y="6" width="585" height="849" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1602354415262" />
     <state x="507" y="6" width="585" height="888" key="find.popup/0.0.1600.900@0.0.1600.900" timestamp="1598180152026" />
     <state x="580" y="163" key="git4idea.branch.GitSmartOperationDialog" timestamp="1599422486941">
       <screen x="0" y="0" width="1600" height="900" />
