@@ -20,8 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b0e37f5-b424-4334-8890-16353cda1424" name="Default Changelist" comment="Финальная сдача проекта">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/pages/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +182,7 @@
       <workItem from="1602016014573" duration="5713000" />
       <workItem from="1602091306309" duration="5827000" />
       <workItem from="1602322212357" duration="15885000" />
-      <workItem from="1602345238622" duration="9111000" />
+      <workItem from="1602345238622" duration="9422000" />
     </task>
     <task id="LOCAL-00001" summary="Готовая проектная работа 5">
       <created>1598183575222</created>
@@ -580,10 +580,10 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="580" y="163" key="git4idea.branch.GitSmartOperationDialog/0.0.1600.900@0.0.1600.900" timestamp="1599422486941" />
-    <state x="456" y="196" width="672" height="648" key="run.anything.popup" timestamp="1602353279696">
+    <state x="456" y="196" width="672" height="648" key="run.anything.popup" timestamp="1602354863048">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="456" y="196" width="672" height="648" key="run.anything.popup/0.0.1600.860@0.0.1600.860" timestamp="1602353279696" />
+    <state x="456" y="196" width="672" height="648" key="run.anything.popup/0.0.1600.860@0.0.1600.860" timestamp="1602354863048" />
     <state x="456" y="198" width="672" height="655" key="run.anything.popup/0.0.1600.870@0.0.1600.870" timestamp="1601829312173" />
     <state x="456" y="205" width="672" height="677" key="run.anything.popup/0.0.1600.900@0.0.1600.900" timestamp="1599415873432" />
     <state x="592" y="308" key="scopes" timestamp="1598176091715">

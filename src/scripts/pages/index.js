@@ -20,7 +20,6 @@ import {PopupWithForm} from "../components/PopuWithForm.js"
 import {FormValidator} from "../components/FormValidator.js"
 import '../../pages/index.css'
 import UserInfo from "../components/UserInfo";
-import PopupWithImage from "../components/PopuWithImage";
 
 //привязка полей ввода попапа
 inputName.value = profileName.textContent;
@@ -35,7 +34,6 @@ const handleCardClick = (src, title) => {
   document.querySelector('.popup-image__item').alt = title;
   document.querySelector('.popup-image').querySelector('.popup-image__title').textContent = title;
 }
-
 
 //Функция создания новой карточки
 function getCardElement(nameItem, linkItem, selectorItem, handleCardClick) {
@@ -54,9 +52,8 @@ const popupUserInfo = new PopupWithForm('.popup', popupWithFormFunction
 editButton.addEventListener('click', () => popupUserInfo.open());
 
 //Функционал создания попапа карточки
-function popupWithCardFunction([one, two]) {
-  inputCardName.textContent = one;
-  inputCardSrc.textContent = two
+function popupWithCardFunction() {
+  elementsContainer.prepend(getCardElement(inputCardName.value, inputCardSrc.value, '.card-template'));
 }
 
 const popupWithCard = new PopupWithForm('.popup-card', popupWithCardFunction)
