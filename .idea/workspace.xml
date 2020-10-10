@@ -20,10 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b0e37f5-b424-4334-8890-16353cda1424" name="Default Changelist" comment="Финальная сдача проекта">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.cache/terser-webpack-plugin/content-v2/sha512/1a/ae/fc7433e439b3d6d037ec5d3d6c3bdbb8f5cf1755f230a03c1aa6c6a99230e980c41eb235103d99d3a405fb847ab010f4b2b64d06c7b77a264a7418b0daa8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.cache/terser-webpack-plugin/content-v2/sha512/1b/76/2b050f2b36ceee6fd639002a80b749e5657d31024e58fd9caa0bd917be8421474a739e09010eaf0bc9fbcb29b6ecbed925a19252f86342a15f30893e96d9" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.cache/terser-webpack-plugin/index-v5/9d/5d/00b4d3dbcacdd3aa5ace6ab6384f9cff34c6fa4f267fe54c110da467a27c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.cache/terser-webpack-plugin/index-v5/f1/14/522b17931dade68af44be6bcbc7ccfe9c34d7d5608b8eb600142dd9a42f6" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +184,7 @@
       <workItem from="1602016014573" duration="5713000" />
       <workItem from="1602091306309" duration="5827000" />
       <workItem from="1602322212357" duration="15885000" />
-      <workItem from="1602345238622" duration="8226000" />
+      <workItem from="1602345238622" duration="8563000" />
     </task>
     <task id="LOCAL-00001" summary="Готовая проектная работа 5">
       <created>1598183575222</created>
@@ -340,7 +340,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602344169700</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="gitignore didn't work&#10;gi">
+      <created>1602353998641</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1602353998641</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -410,7 +417,8 @@
     <MESSAGE value="Валидация допилена, но кнопка сохранить в профиле всё с самого начала не активная" />
     <MESSAGE value="Готов к финальному ревью" />
     <MESSAGE value="Финальная сдача проекта" />
-    <option name="LAST_COMMIT_MESSAGE" value="Финальная сдача проекта" />
+    <MESSAGE value="gitignore didn't work" />
+    <option name="LAST_COMMIT_MESSAGE" value="gitignore didn't work" />
   </component>
   <component name="WindowStateProjectService">
     <state x="591" y="292" key="#Scopes" timestamp="1601736582473">
