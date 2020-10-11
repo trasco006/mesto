@@ -17,6 +17,7 @@ import {
 } from "../scripts/utils/constants.js"
 import Popup from "../scripts/components/Popup.js";
 import Card from "../scripts/components/Card.js"
+import PopupWithImage from "../scripts/components/PopuWithImage";
 import {PopupWithForm} from "../scripts/components/PopuWithForm.js"
 import {FormValidator} from "../scripts/components/FormValidator.js"
 import './index.css'
@@ -27,14 +28,11 @@ inputName.value = profileName.textContent;
 inputSubtitle.value = profileSubtitle.textContent;
 
 //Функционал создания превью карточки
-// const abc = new PopupWithImage('.popup-image');
-const handleCardClick = (src, title) => {     //TODO Разобраться
-  popupImage.classList.add('popup_opened');
-  window.addEventListener('keydown', (evt) => this._handleEscClose(evt));
-  popupImageItem.src = src;
-  popupImageItem.alt = title;
-  popupImage.querySelector('.popup-image__title').textContent = title;
+const popupWithImageElement = new PopupWithImage('.popup-image');
+const handleCardClick = (src, title) => {
+  popupWithImageElement.open(src, title)
 }
+
 
 //Функция создания новой карточки
 function getCardElement(nameItem, linkItem, selectorItem, handleCardClick) {

@@ -8,6 +8,8 @@ export default class Card {
     this._handleCardClick = handleCardClick;
     this._element = this._getTemplate();
     this._cardImg = this._element.querySelector('.card__image');
+    this._closePopupByEsc = this._closePopupByEsc.bind(this)
+
   }
 
   _closePopupByEsc(evt) {
@@ -30,8 +32,8 @@ export default class Card {
   }
 
   _openCardImagePopup() {
-   // this._popupImage.classList.add('popup_opened');
-   // window.addEventListener('keydown', (evt) => this._closePopupByEsc(evt))
+   this._popupImage.classList.add('popup_opened');
+   window.addEventListener('keydown', this._closePopupByEsc)
   }
 
   _closeCardImagePopup() {

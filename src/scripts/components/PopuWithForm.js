@@ -15,13 +15,13 @@ export class PopupWithForm extends Popup {
   }
 
   _getInputValues() {
-    return [this._firstInput, this._secondInput]
+    return [this._firstInput.value, this._secondInput.value]
   }
 
   close() {
     super.close()
-    this._popup.querySelector('.form__input_first').value = ''
-    this._popup.querySelector('.form__input_second').value = ''
+    this._firstInput.value = ''
+    this._secondInput .value = ''
   }
 
   setEventListeners() {
