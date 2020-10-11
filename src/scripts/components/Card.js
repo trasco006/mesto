@@ -3,9 +3,11 @@ export default class Card {
     this._title = title;
     this._imageLink = imageLink;
     this._cardSelector = cardSelector;
-    this._cardImage = document.querySelector('.popup-image');
+    this._popupImage = document.querySelector('.popup-image');
     this._popupImageItem = document.querySelector('.popup-image__item')
     this._handleCardClick = handleCardClick;
+    this._element = this._getTemplate();
+    this._cardImg = this._element.querySelector('.card__image');
   }
 
   _closePopupByEsc(evt) {
@@ -28,20 +30,20 @@ export default class Card {
   }
 
   _openCardImagePopup() {
-   // this._cardImage.classList.add('popup_opened');
+   // this._popupImage.classList.add('popup_opened');
    // window.addEventListener('keydown', (evt) => this._closePopupByEsc(evt))
   }
 
   _closeCardImagePopup() {
-    this._cardImage.classList.remove('popup_opened');
-    window.removeEventListener('keydown', (evt) => this._closePopupByEsc(evt))
+    this._popupImage.classList.remove('popup_opened');
+    window.removeEventListener('keydown', this._closePopupByEsc)
   }
 
   _previewCard() {
     this._openCardImagePopup()
     this._popupImageItem.src = this._imageLink;
     this._popupImageItem.alt = this._title;
-    this._cardImage.querySelector('.popup-image__title').textContent = this._title;
+    this._popupImage.querySelector('.popup-image__title').textContent = this._title;
 
   }
 
@@ -57,15 +59,13 @@ export default class Card {
       this._handleCardClick(this._imageLink, this._title)
     });
 
-    this._cardImage.querySelector('.popup-image__escape-button').addEventListener('click', () => this._closeCardImagePopup())
+    this._popupImage.querySelector('.popup-image__escape-button').addEventListener('click', () => this._closeCardImagePopup())
   }
 
   generateCard() {
-    this._element = this._getTemplate();
-    const cardImage = this._element.querySelector('.card__image')
     this._setEventListeners()
-    cardImage.src = this._imageLink;
-    cardImage.alt = this._title;
+    this._cardImg.src = this._imageLink;
+    this._cardImg.alt = this._title;
     this._element.querySelector('.card__title').textContent = this._title;
     return this._element;
   }

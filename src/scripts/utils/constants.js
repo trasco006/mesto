@@ -21,7 +21,7 @@ export const popupCard = document.querySelector('.popup-card');
 export const addCardButton = document.querySelector('.profile__add-button');
 export const formAddCard = document.querySelector('.popup-card__container')
 export const popupImage = document.querySelector('.popup-image')
-
+export const popupImageItem = document.querySelector('.popup-image__item')
 // ОБЪЯВЛЕНИЕ КНОПОК ПОПАПА-КАРТОЧКИ
 export const escapeCardButton = document.querySelector('.popup-card__escape-button');
 

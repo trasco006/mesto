@@ -1,5 +1,4 @@
 import {
-  profileName,
   inputName,
   profileSubtitle,
   inputSubtitle,
@@ -11,12 +10,12 @@ export class PopupWithForm extends Popup {
   constructor(popupSelector, submitFunction) {
     super(popupSelector);
     this._submitFunction = submitFunction;
+    this._firstInput = this._popup.querySelector('.form__input_first')
+    this._secondInput = this._popup.querySelector('.form__input_second')
   }
 
   _getInputValues() {
-    const firstInputValue = this._popup.querySelector('.form__input_first').value;
-    const secondInputValue = this._popup.querySelector('.form__input_second').value;
-    return [firstInputValue, secondInputValue]
+    return [this._firstInput, this._secondInput]
   }
 
   close() {

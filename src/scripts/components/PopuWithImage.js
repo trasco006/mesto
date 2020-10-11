@@ -4,13 +4,13 @@ import Card from "./Card.js"
 export default class PopupWithImage extends Popup {
   constructor(popupSelector) {
     super(popupSelector);
+    this._popupImage =   this._popup.querySelector('.popup-image__item')
   }
 
-  open() {
-    this._popup.classList.add('popup_opened');
-    window.addEventListener('keydown', (evt) => this._handleEscClose(evt));
-    document.querySelector('.popup-image__item').src = this._imageLink.bind(Card.this._imageLink);
-    document.querySelector('.popup-image__item').alt = this._title.bind(Card.this._title);
-    document.querySelector('.popup-image').querySelector('.popup-image__title').textContent = this._title.bind(Card);
+  open(link, name) {
+    super.open()
+    this._popupImage.src = link;
+    this._popupImage.alt = name;
+    this._popupImage.querySelector('.popup-image__title').textContent = this._title.bind(Card);
   }
 }
