@@ -40,14 +40,6 @@ function getCardElement(nameItem, linkItem, selectorItem, handleCardClick) {
   return card.generateCard();
 }
 
-//Функционал создания попапа профиля
-function popupWithFormFunction([one, two]) {
-  profileName.textContent = one;
-  profileSubtitle.textContent = two;
-}
-
-const popupUserInfo = new PopupWithForm('.popup', popupWithFormFunction)
-editButton.addEventListener('click', () => popupUserInfo.open());
 
 //Функционал создания попапа карточки
 function popupWithCardFunction() {
@@ -56,14 +48,6 @@ function popupWithCardFunction() {
 
 const popupWithCard = new PopupWithForm('.popup-card', popupWithCardFunction)
 addCardButton.addEventListener('click', () => popupWithCard.open());
-
-//____СОЗАДНИЕ ЮЗЕР ИНФО
-const userInfoObj = {
-  name: '#input-name',
-  subtitle: '#input-subtitle'
-}
-const userInfo = new UserInfo(userInfoObj)
-userInfo.setUserInfo()
 
 
 // НАЗНАЧЕНИЯ КНОПОК ПОПАПА
@@ -75,9 +59,9 @@ initialCards.forEach(function (item) {
 
 
 // ЗАКРЫТИЕ ПОПАПА ПРИ НАЖАТИИ НА ОВЕРЛЭЙ
-popupCard.querySelector('.popup-card__overlay').addEventListener('click', popupWithCard.close);
-popupImage.querySelector('.popup-image__overlay').addEventListener('click', Popup.close);
-popup.querySelector('.popup__overlay').addEventListener('click', popupUserInfo.close)
+popupCard.querySelector('.popup-card__overlay').addEventListener('click', () => popupWithCard.close());
+popupImage.querySelector('.popup-image__overlay').addEventListener('click', () => popupWithImageElement.close());
+popup.querySelector('.popup__overlay').addEventListener('click', () => popupUserInfo.close())
 
 
 //Включение валидации форм
@@ -85,4 +69,39 @@ const validateProfilePopup = new FormValidator(settings, '.popup__container')
 validateProfilePopup.enableValidation()
 const validateCardPopup = new FormValidator(settings, '.popup-card__container')
 validateCardPopup.enableValidation()
+
+//Функционал создания попапа профиля
+function popupWithFormFunction([one, two]) {
+  profileName.textContent = one;
+  profileSubtitle.textContent = two;
+}
+
+const popupUserInfo = new PopupWithForm('.popup', popupWithFormFunction)
+editButton.addEventListener('click', () => popupUserInfo.open());
+
+
+
+//____СОЗАДНИЕ ЮЗЕР ИНФО
+const userInfoObj = {
+  name: '#input-name',
+  subtitle: '#input-subtitle'
+}
+const userInfo = new UserInfo(userInfoObj)
+userInfo.setUserInfo()
+
+
+
+
+
+
+
+
+
+
+
+// Вызов обработчиков
+popupWithImageElement.setEventListeners()
+popupUserInfo.setEventListeners()
+popupWithCard.setEventListeners()
+
 
