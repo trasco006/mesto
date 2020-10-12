@@ -1,3 +1,5 @@
+import {inputName, inputSubtitle} from "../utils/constants";
+
 export default class Popup {
   constructor(popupSelector) {
     this._popup = document.querySelector(popupSelector);
@@ -10,6 +12,7 @@ export default class Popup {
   }
 
   open() {
+
     this._popup.classList.add('popup_opened');
     window.addEventListener('keydown', this._handleEscClose)
   }

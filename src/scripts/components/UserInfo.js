@@ -1,4 +1,4 @@
-import {profileName, profileSubtitle} from "../utils/constants";
+import {inputName, inputSubtitle, profileName, profileSubtitle} from "../utils/constants";
 
 export default class UserInfo {
   constructor({name, subtitle}) {
@@ -7,17 +7,19 @@ export default class UserInfo {
   }
 
   getUserInfo() {
-    const subtitle = this._userSubtitle.value
-    const name = this._userName.value;
-    // const subtitle = document.querySelector(this._userSubtitle).value
-    // const name = document.querySelector(this._userName).value;
+    const subtitle = this._userSubtitle.textContent
+    const name = this._userName.textContent;
 
-    return {
-      name, subtitle
+    const obj = {
+      name: name,
+      subtitle: subtitle
+    }
+    return obj
+  }
+
+    setUserInfo()
+    {
+      this._userName.textContent = inputName.value;
+      this._userSubtitle.textContent = inputSubtitle.value
     }
   }
-  setUserInfo() {
-    profileName.textContent = this.getUserInfo().name;
-    profileSubtitle.textContent = this.getUserInfo().subtitle;
-  }
-}

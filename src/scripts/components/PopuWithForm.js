@@ -6,6 +6,7 @@ import {
 } from "../utils/constants.js"
 import Popup from "./Popup.js";
 import UserInfo from "./UserInfo.js";
+
 export class PopupWithForm extends Popup {
   constructor(popupSelector, submitFunction) {
     super(popupSelector);
@@ -18,10 +19,17 @@ export class PopupWithForm extends Popup {
     return [this._firstInput.value, this._secondInput.value]
   }
 
+  openWithData(arr) {
+    super.open()
+    inputName.value = arr.name;
+    inputSubtitle.value = arr.subtitle;
+
+  }
+
   close() {
     super.close()
     this._firstInput.value = ''
-    this._secondInput .value = ''
+    this._secondInput.value = ''
   }
 
   setEventListeners() {

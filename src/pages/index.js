@@ -33,17 +33,15 @@ const handleCardClick = (src, title) => {
   popupWithImageElement.open(src, title)
 }
 
-
 //Функция создания новой карточки
 function getCardElement(nameItem, linkItem, selectorItem, handleCardClick) {
   const card = new Card(nameItem, linkItem, selectorItem, handleCardClick);
   return card.generateCard();
 }
 
-
 //Функционал создания попапа карточки
 function popupWithCardFunction() {
-  elementsContainer.prepend(getCardElement(inputCardName.value, inputCardSrc.value, '.card-template'));
+  elementsContainer.prepend(getCardElement(inputCardName.value, inputCardSrc.value, '.card-template', handleCardClick));
 }
 
 const popupWithCard = new PopupWithForm('.popup-card', popupWithCardFunction)
@@ -70,33 +68,21 @@ validateProfilePopup.enableValidation()
 const validateCardPopup = new FormValidator(settings, '.popup-card__container')
 validateCardPopup.enableValidation()
 
-//Функционал создания попапа профиля
-function popupWithFormFunction([one, two]) {
-  profileName.textContent = one;
-  profileSubtitle.textContent = two;
-}
-
-const popupUserInfo = new PopupWithForm('.popup', popupWithFormFunction)
-editButton.addEventListener('click', () => popupUserInfo.open());
-
 
 
 //____СОЗАДНИЕ ЮЗЕР ИНФО
 const userInfoObj = {
-  name: '#input-name',
-  subtitle: '#input-subtitle'
+  name: '.profile__user-name',
+  subtitle: '.profile__subtitle'
 }
 const userInfo = new UserInfo(userInfoObj)
-userInfo.setUserInfo()
 
+function popupWithFormFunction() {
+  userInfo.setUserInfo()
+}
 
-
-
-
-
-
-
-
+const popupUserInfo = new PopupWithForm('.popup', popupWithFormFunction)
+editButton.addEventListener('click', () => popupUserInfo.openWithData(userInfo.getUserInfo()));
 
 
 // Вызов обработчиков
