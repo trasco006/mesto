@@ -19,10 +19,11 @@ export class PopupWithForm extends Popup {
     return [this._firstInput.value, this._secondInput.value]
   }
 
-  openWithData(arr) {
+  open(data) {
     super.open()
-    inputName.value = arr.name;
-    inputSubtitle.value = arr.subtitle;
+    if (data) {
+    inputName.value = data.name;
+    inputSubtitle.value = data.subtitle;}
 
   }
 

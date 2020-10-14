@@ -8,7 +8,7 @@ export default class Popup {
   }
 
   setEventListeners() {
-    this._popupEscapeButton.addEventListener('click', this.close)
+    this._popupEscapeButton.addEventListener('click', ()=>(this.close()))
   }
 
   open() {

@@ -82,7 +82,7 @@ function popupWithFormFunction() {
 }
 
 const popupUserInfo = new PopupWithForm('.popup', popupWithFormFunction)
-editButton.addEventListener('click', () => popupUserInfo.openWithData(userInfo.getUserInfo()));
+editButton.addEventListener('click', () => popupUserInfo.open(userInfo.getUserInfo()));
 
 
 // Вызов обработчиков
