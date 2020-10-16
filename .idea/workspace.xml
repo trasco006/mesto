@@ -20,20 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b0e37f5-b424-4334-8890-16353cda1424" name="Default Changelist" comment="Финальная сдача проекта">
-      <change afterPath="$PROJECT_DIR$/src/blocks/popup-delete/__container/popup-delete__container.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blocks/popup-delete/__escape-button/popup-delete__escape-button.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blocks/popup-delete/__overlay/popup-delete__overlay.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blocks/popup-delete/__save-button/popup-delete__save-button.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blocks/popup-delete/__title/popup-delete__title.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blocks/popup-delete/popup-delete.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scripts/components/API.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/profile/__avatar/profile__avatar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/profile/__avatar/profile__avatar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/components/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/components/Card.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/components/PopuWithForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/components/PopuWithForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/components/Popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/components/Popup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/components/API.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/components/API.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -613,10 +604,10 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="592" y="308" key="scopes/0.0.1600.900@0.0.1600.900" timestamp="1598176091715" />
-    <state x="463" y="182" width="672" height="649" key="search.everywhere.popup" timestamp="1602881338233">
+    <state x="463" y="182" width="672" height="649" key="search.everywhere.popup" timestamp="1602883699228">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="463" y="182" width="672" height="649" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1602881338233" />
+    <state x="463" y="182" width="672" height="649" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1602883699228" />
     <state x="463" y="184" width="672" height="656" key="search.everywhere.popup/0.0.1600.870@0.0.1600.870" timestamp="1601924544374" />
     <state x="463" y="190" width="672" height="678" key="search.everywhere.popup/0.0.1600.900@0.0.1600.900" timestamp="1599335634125" />
   </component>
