@@ -20,14 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b0e37f5-b424-4334-8890-16353cda1424" name="Default Changelist" comment="Финальная сдача проекта">
-      <change afterPath="$PROJECT_DIR$/src/blocks/profile/__avatar-container/profile__avatar-container.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blocks/profile/__avatar-edit-ico/profile__avatar-edit-ico.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blocks/profile/__avatar-edit/profile__avatar-edit.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/blocks/popup-delete/__container/popup-delete__container.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/blocks/popup-delete/__escape-button/popup-delete__escape-button.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/blocks/popup-delete/__overlay/popup-delete__overlay.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/blocks/popup-delete/__save-button/popup-delete__save-button.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/blocks/popup-delete/__title/popup-delete__title.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/blocks/popup-delete/popup-delete.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scripts/components/API.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/profile/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/profile/profile.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/utils/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/utils/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/components/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/components/Card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/components/PopuWithForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/components/PopuWithForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/components/Popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/components/Popup.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +79,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JavaScript" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/blocks" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -81,6 +87,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Yandex\mesto\src\blocks" />
       <recent name="E:\Yandex\mesto\src" />
       <recent name="E:\Yandex\mesto\blocks\popup-image" />
       <recent name="E:\Yandex\mesto\scripts" />
@@ -587,10 +594,10 @@
     </state>
     <state x="617" y="345" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.860@0.0.1600.860" timestamp="1602347088164" />
     <state x="617" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.870@0.0.1600.870" timestamp="1601192252452" />
-    <state x="507" y="6" width="585" height="849" key="find.popup" timestamp="1602871222704">
+    <state x="507" y="6" width="585" height="849" key="find.popup" timestamp="1602872323338">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="507" y="6" width="585" height="849" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1602871222704" />
+    <state x="507" y="6" width="585" height="849" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1602872323338" />
     <state x="507" y="6" width="585" height="888" key="find.popup/0.0.1600.900@0.0.1600.900" timestamp="1598180152026" />
     <state x="580" y="163" key="git4idea.branch.GitSmartOperationDialog" timestamp="1599422486941">
       <screen x="0" y="0" width="1600" height="900" />
@@ -606,10 +613,10 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="592" y="308" key="scopes/0.0.1600.900@0.0.1600.900" timestamp="1598176091715" />
-    <state x="463" y="182" width="672" height="649" key="search.everywhere.popup" timestamp="1602527194813">
+    <state x="463" y="182" width="672" height="649" key="search.everywhere.popup" timestamp="1602881338233">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="463" y="182" width="672" height="649" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1602527194813" />
+    <state x="463" y="182" width="672" height="649" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1602881338233" />
     <state x="463" y="184" width="672" height="656" key="search.everywhere.popup/0.0.1600.870@0.0.1600.870" timestamp="1601924544374" />
     <state x="463" y="190" width="672" height="678" key="search.everywhere.popup/0.0.1600.900@0.0.1600.900" timestamp="1599335634125" />
   </component>

@@ -1,5 +1,7 @@
+import {acceptDelete} from "../../pages/index";
+
 export default class Card {
-  constructor(title, imageLink, cardSelector, handleCardClick) {
+  constructor(title, imageLink, cardSelector, handleCardClick, acceptDeleteFunction) {
     this._title = title;
     this._imageLink = imageLink;
     this._cardSelector = cardSelector;
@@ -9,6 +11,7 @@ export default class Card {
     this._element = this._getTemplate();
     this._cardImg = this._element.querySelector('.card__image');
     this._closePopupByEsc = this._closePopupByEsc.bind(this)
+    this._acceptDeleteFunction = acceptDeleteFunction;
 
   }
 
@@ -32,8 +35,8 @@ export default class Card {
   }
 
   _openCardImagePopup() {
-   this._popupImage.classList.add('popup_opened');
-   window.addEventListener('keydown', this._closePopupByEsc)
+    this._popupImage.classList.add('popup_opened');
+    window.addEventListener('keydown', this._closePopupByEsc)
   }
 
   _closeCardImagePopup() {
@@ -54,12 +57,19 @@ export default class Card {
       this._likeCard(evt)
     });
     this._element.querySelector('.card__trash-can').addEventListener('click', (evt) => {
-      this._removeCard(evt)
-    });
+        this._acceptDeleteFunction();
+        if (document.querySelector('.save__button').onclick === true) {
+          console.log('a')
+          this._removeCard(evt)
+        }
+      }
+      // this._removeCard(evt)
+    );
     this._element.querySelector('.card__image').addEventListener('click', () => {
+        this._handleCardClick(this._imageLink, this._title)
+      }
       // this._previewCard()
-      this._handleCardClick(this._imageLink, this._title)
-    });
+    );
 
     this._popupImage.querySelector('.popup-image__escape-button').addEventListener('click', () => this._closeCardImagePopup())
   }

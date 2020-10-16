@@ -1,6 +1,7 @@
 @import url('../vendor/normalize.css');
 @import url('../fonts/inter.css');
 @import url('../blocks/popup-avatar/popup-avatar.css');
+@import url('../blocks/popup-delete/popup-delete.css');
 @import url('../blocks/page/page.css');
 @import url('../blocks/header/header.css');
 @import url('../blocks/profile/profile.css');

@@ -16,7 +16,8 @@ export class PopupWithForm extends Popup {
   }
 
   _getInputValues() {
-    return [this._firstInput.value, this._secondInput.value]
+    if (this._firstInput) {
+    return [this._firstInput.value, this._secondInput.value]}
   }
 
   open(data) {
@@ -24,13 +25,14 @@ export class PopupWithForm extends Popup {
     if (data) {
     inputName.value = data.name;
     inputSubtitle.value = data.subtitle;}
-
   }
 
   close() {
     super.close()
-    this._firstInput.value = ''
-    this._secondInput.value = ''
+    if (this._firstInput && this._secondInput) {
+      this._firstInput.value = ''
+      this._secondInput.value = ''
+    }
   }
 
   setEventListeners() {
