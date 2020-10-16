@@ -77,6 +77,7 @@ const cards = cardList.getAllCards();
 const cardsList = cards.then((data) => {
   data.forEach(function (data) {
     elementsContainer.prepend(getCardElement(data.name, data.link, '.card-template', handleCardClick, acceptDeleteFunction));
+    document.querySelector('.card__likes-number').textContent = data.likes.length;
   });
 });
 

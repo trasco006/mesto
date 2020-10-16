@@ -21,6 +21,7 @@ export default class API {
     })
   }
 
+
   setUserInfo() {
     fetch(this._url, {
       method: 'PATCH',

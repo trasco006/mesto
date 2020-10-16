@@ -25,7 +25,6 @@
           </div>
         </div>
 
-
         <div class="profile__info">
           <div class="profile__info-column">
             <h1 class="profile__user-name"></h1>
@@ -89,7 +88,8 @@
       <p class="popup-avatar__title ">Обновить аватар</p>
       <input id="input-avatar-url" type="url" name="avatar-src" autocomplete="off" placeholder="Ссылка на картинку"
              required
-             class="popup__input popup-avatar__input  form__input  form__input_src form__input_first form__input_second" tabindex="0">
+             class="popup__input popup-avatar__input  form__input  form__input_src form__input_first form__input_second"
+             tabindex="0">
       <span id="input-avatar-url-error" class="popup__error "></span>
       <button aria-label="Save" type="submit" class="popup__button popup-avatar__save-button save__button" tabindex="0">
         Сохранить
@@ -126,7 +126,10 @@
     <button aria-label="Delete card" class="card__trash-can"></button>
     <div class="card__section">
       <h2 class="card__title"></h2>
-      <button aria-label="Like-button" type="button" class="card__like"></button>
+      <div class="card__like-container">
+        <button aria-label="Like-button" type="button" class="card__like"></button>
+        <p class="card__likes-number">0</p>
+      </div>
     </div>
   </article>
 </template>
