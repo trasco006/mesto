@@ -20,17 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b0e37f5-b424-4334-8890-16353cda1424" name="Default Changelist" comment="Финальная сдача проекта">
-      <change afterPath="$PROJECT_DIR$/src/blocks/popup-avatar/__container/popup-avatar__container.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blocks/popup-avatar/__escape-button/popup-avatar__escape-button.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blocks/popup-avatar/__input/popup-avatar__input.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blocks/popup-avatar/__overlay/popup-avatar__overlay.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blocks/popup-avatar/__save-button/popup-avatar__save-button.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blocks/popup-avatar/__title/popup-avatar__title.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blocks/popup-avatar/popup-avatar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_09_2020_22_53__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_09_2020_22_53__Default_Changelist_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/blocks/profile/__avatar-container/profile__avatar-container.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/blocks/profile/__avatar-edit-ico/profile__avatar-edit-ico.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/blocks/profile/__avatar-edit/profile__avatar-edit.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/profile/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/profile/profile.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/utils/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/utils/constants.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -441,9 +438,10 @@
       <screen x="0" y="0" width="1600" height="870" />
     </state>
     <state x="591" y="292" key="#Scopes/0.0.1600.870@0.0.1600.870" timestamp="1601736582473" />
-    <state x="570" y="244" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601915581246">
-      <screen x="0" y="0" width="1600" height="870" />
+    <state x="570" y="241" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602870257183">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
+    <state x="570" y="241" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.860@0.0.1600.860" timestamp="1602870257183" />
     <state x="570" y="244" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.870@0.0.1600.870" timestamp="1601915581246" />
     <state x="570" y="252" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.900@0.0.1600.900" timestamp="1599411518017" />
     <state x="605" y="146" key="#com.intellij.ide.util.MemberChooser" timestamp="1602347556490">
@@ -589,10 +587,10 @@
     </state>
     <state x="617" y="345" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.860@0.0.1600.860" timestamp="1602347088164" />
     <state x="617" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.870@0.0.1600.870" timestamp="1601192252452" />
-    <state x="507" y="6" width="585" height="849" key="find.popup" timestamp="1602869647965">
+    <state x="507" y="6" width="585" height="849" key="find.popup" timestamp="1602871222704">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="507" y="6" width="585" height="849" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1602869647965" />
+    <state x="507" y="6" width="585" height="849" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1602871222704" />
     <state x="507" y="6" width="585" height="888" key="find.popup/0.0.1600.900@0.0.1600.900" timestamp="1598180152026" />
     <state x="580" y="163" key="git4idea.branch.GitSmartOperationDialog" timestamp="1599422486941">
       <screen x="0" y="0" width="1600" height="900" />

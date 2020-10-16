@@ -18,7 +18,14 @@
 
     <section class="profile">
       <div class="profile__column">
-        <div class="profile__avatar"></div>
+        <div class="profile__avatar-container">
+          <div class="profile__avatar"></div>
+          <div class="profile__avatar-edit">
+            <div class="profile__avatar-edit-ico"></div>
+          </div>
+        </div>
+
+
         <div class="profile__info">
           <div class="profile__info-column">
             <h1 class="profile__user-name">Жак-Ив Кусто </h1>
@@ -80,8 +87,9 @@
     <div class="popup-avatar__overlay popup-overlay"></div>
     <form name="add avatar" class="popup__form popup-avatar__container " novalidate>
       <p class="popup-avatar__title ">Обновить аватар</p>
-      <input id="input-avatar-url" type="url" name="avatar-src" autocomplete="off" placeholder="Ссылка на картинку" required
-             class="popup__input popup-avatar__input  form__input  form__input_src form__input_second" tabindex="0">
+      <input id="input-avatar-url" type="url" name="avatar-src" autocomplete="off" placeholder="Ссылка на картинку"
+             required
+             class="popup__input popup-avatar__input  form__input  form__input_src form__input_first form__input_second" tabindex="0">
       <span id="input-avatar-url-error" class="popup__error "></span>
       <button aria-label="Save" type="submit" class="popup__button popup-avatar__save-button save__button" tabindex="0">
         Сохранить
@@ -89,9 +97,8 @@
       <button aria-label="Close" type="button" class="popup-avatar__escape-button popup_close_button"></button>
     </form>
   </div>
-  
-  
-  
+
+
   <div class="popup-image">
     <div class="popup-image__overlay popup-overlay"></div>
     <div class="popup-image__container">
@@ -100,7 +107,6 @@
       <button aria-label="Close" class="popup-image__escape-button popup_close_button"></button>
     </div>
   </div>
-
 
 
 </div>

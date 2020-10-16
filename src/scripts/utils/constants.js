@@ -67,3 +67,6 @@ export const settings = {
   inputErrorClass: 'popup__input_type_error',
   errorClass: 'popup__error_visible'
 }
+
+//Кнопка вызова попапа изменения аватара
+export const avatarEditButton = document.querySelector('.profile__avatar-edit')

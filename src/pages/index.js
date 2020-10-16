@@ -13,15 +13,21 @@ import {
   inputCardName,
   settings,
   inputCardSrc,
-  popupImageItem
+  avatarEditButton
 } from "../scripts/utils/constants.js"
-import Popup from "../scripts/components/Popup.js";
 import Card from "../scripts/components/Card.js"
 import PopupWithImage from "../scripts/components/PopuWithImage";
 import {PopupWithForm} from "../scripts/components/PopuWithForm.js"
 import {FormValidator} from "../scripts/components/FormValidator.js"
 import './index.css'
 import UserInfo from "../scripts/components/UserInfo";
+
+// открытие попапа изменения аватара
+const selectAvatarFunction = (item) => {
+  document.querySelector('.profile__avatar').style.backgroundImage = `url(${item[0]})`;
+}
+const popupAvatar = new PopupWithForm('.popup-avatar', selectAvatarFunction )
+avatarEditButton.addEventListener('click', () => popupAvatar.open())
 
 //привязка полей ввода попапа
 inputName.value = profileName.textContent;
@@ -89,5 +95,5 @@ editButton.addEventListener('click', () => popupUserInfo.open(userInfo.getUserIn
 popupWithImageElement.setEventListeners()
 popupUserInfo.setEventListeners()
 popupWithCard.setEventListeners()
-
+popupAvatar.setEventListeners()
 
