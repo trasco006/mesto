@@ -43,7 +43,6 @@ export class PopupWithForm extends Popup {
       evt.preventDefault();
       if (this._popup.querySelector('.popup-delete__container')) {
         this._submitFunction()
-        console.log('a')
       } else {
         this._submitFunction(this._getInputValues());
       }

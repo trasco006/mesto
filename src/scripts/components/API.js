@@ -9,50 +9,85 @@ export default class API {
     this._url = config.url;
     this._headers = config.headers;
   }
-
-  newCardAdding(name, src) {
+  disLikeCard(cardId) {
     fetch(this._url, {
-      method: 'POST',
+      method: 'DELETE',
       headers: this._headers,
-      body: JSON.stringify({
-        name: name,
-        link: src
-      })
+    })
+  }
+
+  likeCard(cardId) {
+    fetch(this._url, {
+      method: 'PUT',
+      headers: this._headers,
+    })
+  }
+
+  getCardId(cardId) {
+    fetch(this._url, {
+      method: 'DELETE',
+      headers: this._headers,
     })
   }
 
 
-  setUserInfo() {
+newCardAdding(name, src)
+{
+  fetch(this._url, {
+    method: 'POST',
+    headers: this._headers,
+    body: JSON.stringify({
+      name: name,
+      link: src
+    })
+  })
+}
+
+  setUserAvatar(avatarUrl)
+  {
     fetch(this._url, {
       method: 'PATCH',
       headers: this._headers,
       body: JSON.stringify({
-        name: profileName.textContent,
-        about: profileSubtitle.textContent
+        avatar: avatarUrl
       })
     })
   }
 
-  getUserInfo() {
-    const promise = fetch(this._url, {
-      method: 'GET',
-      headers: this._headers
+setUserInfo()
+{
+  fetch(this._url, {
+    method: 'PATCH',
+    headers: this._headers,
+    body: JSON.stringify({
+      name: profileName.textContent,
+      about: profileSubtitle.textContent
     })
-    const promise1 = promise.then((res) => {
-      return res.json()
-    })
-    return promise1;
-  }
+  })
+}
 
-  getAllCards() {
-    const promise = fetch(this._url, {
-      method: 'GET',
-      headers: this._headers
-    });
-    const promise2 = promise.then((res) => {
-      return res.json()
-    })
-    return promise2;
-  }
+getUserInfo()
+{
+  const promise = fetch(this._url, {
+    method: 'GET',
+    headers: this._headers
+  })
+  const promise1 = promise.then((res) => {
+    return res.json()
+  })
+  return promise1;
+}
+
+getAllCards()
+{
+  const promise = fetch(this._url, {
+    method: 'GET',
+    headers: this._headers
+  });
+  const promise2 = promise.then((res) => {
+    return res.json()
+  })
+  return promise2;
+}
 
 }
