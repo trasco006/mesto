@@ -17,14 +17,16 @@ export class PopupWithForm extends Popup {
 
   _getInputValues() {
     if (this._firstInput) {
-    return [this._firstInput.value, this._secondInput.value]}
+      return [this._firstInput.value, this._secondInput.value]
+    }
   }
 
   open(data) {
     super.open()
     if (data) {
-    inputName.value = data.name;
-    inputSubtitle.value = data.subtitle;}
+      inputName.value = data.name;
+      inputSubtitle.value = data.subtitle;
+    }
   }
 
   close() {
@@ -37,13 +39,16 @@ export class PopupWithForm extends Popup {
 
   setEventListeners() {
     super.setEventListeners()
-    this._popup.querySelector('.save__button').addEventListener('click',
-      (evt) => {
-        evt.preventDefault();
+    this._popup.querySelector('.save__button').addEventListener('click', (evt) => {
+      evt.preventDefault();
+      if (this._popup.querySelector('.popup-delete__container')) {
+        this._submitFunction()
+        console.log('a')
+      } else {
         this._submitFunction(this._getInputValues());
-        this.close()
       }
-    )
+      this.close()
+    })
   }
 
 

@@ -1,4 +1,5 @@
 import {acceptDelete} from "../../pages/index";
+import {PopupWithForm} from "./PopuWithForm";
 
 export default class Card {
   constructor(title, imageLink, cardSelector, handleCardClick, acceptDeleteFunction) {
@@ -57,13 +58,9 @@ export default class Card {
       this._likeCard(evt)
     });
     this._element.querySelector('.card__trash-can').addEventListener('click', (evt) => {
-        this._acceptDeleteFunction();
-        if (document.querySelector('.save__button').onclick === true) {
-          console.log('a')
-          this._removeCard(evt)
-        }
+        this._acceptDeleteFunction(evt.target.parentNode)
+      // console.log(evt.target.parentElement)
       }
-      // this._removeCard(evt)
     );
     this._element.querySelector('.card__image').addEventListener('click', () => {
         this._handleCardClick(this._imageLink, this._title)

@@ -46,15 +46,18 @@ const handleCardClick = (src, title) => {
 }
 
 
-const acceptDeleteSubmit = (evt) => {
-  console.log('Попап закрыт')
+const acceptDeleteSubmit = (item) => {
+  item.remove()
 }
-
-export const acceptDelete = new PopupWithForm('.popup-delete', acceptDeleteSubmit)
-const acceptDeleteFunction = () => {
-  acceptDelete.open()
+// const acceptDeleteConst = new PopupWithForm('.popup-delete', acceptDeleteSubmit);
+const acceptDelete = (item) => {
+  return new PopupWithForm('.popup-delete', function ()  {acceptDeleteSubmit(item)})
+};
+const acceptDeleteFunction = (item) => {
+  const a = acceptDelete(item);
+  a.setEventListeners()
+  a.open()
 }
-
 //Функция создания новой карточки
 function getCardElement(nameItem, linkItem, selectorItem, handleCardClick, acceptDeleteFunction) {
   const card = new Card(nameItem, linkItem, selectorItem, handleCardClick, acceptDeleteFunction);
@@ -63,7 +66,6 @@ function getCardElement(nameItem, linkItem, selectorItem, handleCardClick, accep
 
 
 //Рендер карточек из массива
-
 // initialCards.forEach(function (item) {
 //   elementsContainer.prepend(getCardElement(item.name, item.link, '.card-template', handleCardClick, acceptDeleteFunction));
 // });
@@ -96,7 +98,6 @@ userProfile.then((data) => {
   profileName.textContent = data.name;
   profileSubtitle.textContent = data.about;
   document.querySelector('.profile__avatar').style.backgroundImage = `url(${data.avatar})`
-
 })
 
 // ОТПРАВКА НА СЕРВЕР ИЗМЕНЁННОЙ ИНФОРМАЦИИ О ПОЛЬЗОВАТЕЛЕ
@@ -117,6 +118,7 @@ const newCardAdding = new API({
     'Content-Type': 'application/json'
   }
 })
+
 //Функционал создания попапа карточки
 function popupWithCardFunction() {
   elementsContainer.prepend(getCardElement(inputCardName.value, inputCardSrc.value, '.card-template', handleCardClick, acceptDeleteFunction))
@@ -125,7 +127,6 @@ function popupWithCardFunction() {
 
 const popupWithCard = new PopupWithForm('.popup-card', popupWithCardFunction)
 addCardButton.addEventListener('click', () => popupWithCard.open());
-
 
 
 // ЗАКРЫТИЕ ПОПАПА ПРИ НАЖАТИИ НА ОВЕРЛЭЙ
@@ -163,4 +164,4 @@ popupWithImageElement.setEventListeners()
 popupUserInfo.setEventListeners()
 popupWithCard.setEventListeners()
 popupAvatar.setEventListeners()
-acceptDelete.setEventListeners()
+// acceptDelete.setEventListeners()
