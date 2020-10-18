@@ -94,15 +94,9 @@ export default class Card {
     this._cardImg.src = this._imageLink;
     this._cardImg.alt = this._title;
     this._element.querySelector('.card__title').textContent = this._title;
-<<<<<<< HEAD
-    if (this._owner) {
-      if (this._owner._id !== this._user._id) {
-        this._element.querySelector('.card__trash-can').remove()
-=======
     this._user.then(res => {
       if (this._owner._id !== res._id) {
         return res._id
->>>>>>> FEATURE
       }
     })
     this._element.querySelector('.card__trash-can').remove()
