@@ -21,11 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4b0e37f5-b424-4334-8890-16353cda1424" name="Default Changelist" comment="Финальная сдача проекта">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/profile/__avatar/profile__avatar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/profile/__avatar/profile__avatar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/components/API.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/components/API.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/components/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/components/Card.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +198,7 @@
       <workItem from="1603006491088" duration="1528000" />
       <workItem from="1603021302138" duration="41000" />
       <workItem from="1603022271544" duration="1105000" />
-      <workItem from="1603024174562" duration="1237000" />
+      <workItem from="1603024174562" duration="1980000" />
     </task>
     <task id="LOCAL-00001" summary="Готовая проектная работа 5">
       <created>1598183575222</created>
