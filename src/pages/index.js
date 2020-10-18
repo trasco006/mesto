@@ -24,17 +24,24 @@ import {FormValidator} from "../scripts/components/FormValidator.js"
 import './index.css'
 import UserInfo from "../scripts/components/UserInfo";
 
-const newUserAvatar = new API({
-  url: 'https://mesto.nomoreparties.co/v1/cohort-16/users/me/avatar ',
+/****************************************************************************/
+// СОЗДАНИЕ ЭКЗЕМПЛЯРА API //
+/****************************************************************************/
+
+const api = new API({
+  url: "https://mesto.nomoreparties.co/v1/cohort-16/",
   headers: {
     authorization: '9db189b4-a6aa-4209-b940-24fafffd59d9',
     'Content-Type': 'application/json'
   }
 })
+
+
+
 // открытие попапа изменения аватара
 const selectAvatarFunction = (item) => {
   document.querySelector('.profile__avatar').style.backgroundImage = `url(${item[0]})`;
-newUserAvatar.setUserAvatar(item[0])
+  api.setUserAvatar(item[0])
 }
 const popupAvatar = new PopupWithForm('.popup-avatar', selectAvatarFunction)
 avatarEditButton.addEventListener('click', () => {
@@ -53,102 +60,77 @@ const handleCardClick = (src, title) => {
 }
 
 // УДАЛЕНИЕ С СЕРВЕРА КАРТОЧКИ
-export const likeCard = (cardId) => {return new API({
-  url: `https://mesto.nomoreparties.co/v1/cohort-16/cards/likes/${cardId}`,
-  headers: {
-    authorization: '9db189b4-a6aa-4209-b940-24fafffd59d9',
-    'Content-Type': 'application/json'
-  }
-})}
+export const likeCard = (cardId) => {
+  return new API({
+    url: `https://mesto.nomoreparties.co/v1/cohort-16/cards/likes/${cardId}`,
+    headers: {
+      authorization: '9db189b4-a6aa-4209-b940-24fafffd59d9',
+      'Content-Type': 'application/json'
+    }
+  })
+}
 
-// УДАЛЕНИЕ С СЕРВЕРА КАРТОЧКИ
-const cardDelete = (cardId) => {return new API({
-  url: `https://mesto.nomoreparties.co/v1/cohort-16/cards/${cardId}`,
-  headers: {
-    authorization: '9db189b4-a6aa-4209-b940-24fafffd59d9',
-    'Content-Type': 'application/json'
-  }
-})}
+/************************************************************************/
+// УДАЛЕНИЕ КАРТОЧКИ//
+/************************************************************************/
 
 const acceptDeleteSubmit = (item) => {
   // console.log(item)
   item.client.remove()
-  const a = cardDelete(item.server).getCardId(item.server)
+  const a = api.deleteCardById(item.server)
 }
 // const acceptDeleteConst = new PopupWithForm('.popup-delete', acceptDeleteSubmit);
 const acceptDelete = (item) => {
-  return new PopupWithForm('.popup-delete', function ()  {acceptDeleteSubmit(item)})
+  return new PopupWithForm('.popup-delete', function () {
+    acceptDeleteSubmit(item)
+  })
 };
 const acceptDeleteFunction = (item) => {
   const a = acceptDelete(item);
   a.setEventListeners()
   a.open()
 }
+
 //Функция создания новой карточки
-function getCardElement(nameItem, linkItem, selectorItem, handleCardClick, acceptDeleteFunction, data) {
-  const card = new Card(nameItem, linkItem, selectorItem, handleCardClick, acceptDeleteFunction, data);
+function getCardElement(nameItem, linkItem, selectorItem, handleCardClick, acceptDeleteFunction, data, user) {
+  const card = new Card(nameItem, linkItem, selectorItem, handleCardClick, acceptDeleteFunction, data, user);
   return card.generateCard();
 }
 
-// ПОЛУЧЕНИЕ ИНФОРМАЦИИ О ПОЛЬЗОВАТЕЛЕ
-const userProfileInfo = new API({
-  url: 'https://mesto.nomoreparties.co/v1/cohort-16/users/me',
-  headers: {
-    authorization: '9db189b4-a6aa-4209-b940-24fafffd59d9',
-  }
-})
-const userProfile = userProfileInfo.getUserInfo()
+/************************************************************************/
+// ПОЛУЧЕНИЕ ИНФОРМЦИИ О ПОЛЬЗОВАТЕЛЕ //
+/************************************************************************/
 
-// ПРИВЯЗКА ДАННЫХ ПОЛЬЗОВАТЛЯ К ВЕРСТКЕ
+const userProfile = api.getUserInfo()
+
+/************************************************************************/
+// ПРИВЯЗКА ИНФОРМЦИИ О ПОЛЬЗОВАТЕЛЕ К ВЁРСТКЕ//
+/************************************************************************/
 userProfile.then((data) => {
   profileName.textContent = data.name;
   profileSubtitle.textContent = data.about;
   document.querySelector('.profile__avatar').style.backgroundImage = `url(${data.avatar})`
 })
 
-// ОТПРАВКА НА СЕРВЕР ИЗМЕНЁННОЙ ИНФОРМАЦИИ О ПОЛЬЗОВАТЕЛЕ
-const newUserProfileInfo = new API({
-  url: 'https://mesto.nomoreparties.co/v1/cohort-16/users/me',
-  headers: {
-    authorization: '9db189b4-a6aa-4209-b940-24fafffd59d9',
-    'Content-Type': 'application/json'
-  }
-})
+/************************************************************************/
+// ОТПРАВКА ИЗМЕНЁННЫХ ДАННЫХ О ПОЛЬЗОВАТЕЛЕ //
+/************************************************************************/
 
-
-//Рендер карточек из массива
-// initialCards.forEach(function (item) {
-//   elementsContainer.prepend(getCardElement(item.name, item.link, '.card-template', handleCardClick, acceptDeleteFunction));
-// });
-const cardList = new API({
-  url: 'https://mesto.nomoreparties.co/v1/cohort-16/cards',
-  headers: {
-    authorization: '9db189b4-a6aa-4209-b940-24fafffd59d9'
-  }
-})
-const cards = cardList.getAllCards();
+const cards = api.getAllCards();
 const cardsList = cards.then((data) => {
   data.forEach(function (data) {
-    elementsContainer.prepend(getCardElement(data.name, data.link, '.card-template', handleCardClick, acceptDeleteFunction, data));
+    elementsContainer.prepend(getCardElement(data.name, data.link, '.card-template', handleCardClick, acceptDeleteFunction, data, userProfile));
     document.querySelector('.card__likes-number').textContent = data.likes.length;
   });
 });
 
+/************************************************************************/
+// СОЗДАНИЕ КАРТОЧКИ ВРУЧНУЮ //
+/************************************************************************/
 
-// ОТПРАВКА НА СЕРВЕР НОВОЙ КАРТОЧКИ
-const newCardAdding = new API({
-  url: ' https://mesto.nomoreparties.co/v1/cohort-16/cards',
-  headers: {
-    authorization: '9db189b4-a6aa-4209-b940-24fafffd59d9',
-    'Content-Type': 'application/json'
-  }
-})
-
-
-//Функционал создания попапа карточки
 function popupWithCardFunction() {
-  elementsContainer.prepend(getCardElement(inputCardName.value, inputCardSrc.value, '.card-template', handleCardClick, acceptDeleteFunction, ''))
-  newCardAdding.newCardAdding(inputCardName.value, inputCardSrc.value);
+  elementsContainer.prepend(getCardElement(inputCardName.value, inputCardSrc.value, '.card-template', handleCardClick, acceptDeleteFunction, '', userProfile))
+  api.addNewCard(inputCardName.value, inputCardSrc.value);
 }
 
 const popupWithCard = new PopupWithForm('.popup-card', popupWithCardFunction)
@@ -178,7 +160,7 @@ const userInfo = new UserInfo(userInfoObj)
 
 function popupWithFormFunction() {
   userInfo.setUserInfo()
-  newUserProfileInfo.setUserInfo()
+  api.setUserInfo(profileName, profileSubtitle)
 }
 
 const popupUserInfo = new PopupWithForm('.popup', popupWithFormFunction)

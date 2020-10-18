@@ -1,7 +1,7 @@
 import {likeCard} from "../../pages/index.js";
 
 export default class Card {
-  constructor(title, imageLink, cardSelector, handleCardClick, acceptDeleteFunction, data) {
+  constructor(title, imageLink, cardSelector, handleCardClick, acceptDeleteFunction, data, user) {
     this._title = title;
     this._imageLink = imageLink;
     this._cardSelector = cardSelector;
@@ -14,6 +14,7 @@ export default class Card {
     this._acceptDeleteFunction = acceptDeleteFunction;
     this._owner = data.owner
     this._cardId = data._id
+    this._user = user
     this._likes = data.likes
   }
 
@@ -24,8 +25,6 @@ export default class Card {
   }
 
   _getTemplate() {
-
-
     return document.querySelector(this._cardSelector).content.cloneNode(true);
   }
 
@@ -64,6 +63,7 @@ export default class Card {
   _setEventListeners() {
     this._element.querySelector('.card__like').addEventListener('click', (evt) => {
       this._likeCard(evt)
+      console.log(this._user._id)
     });
     this._element.querySelector('.card__trash-can').addEventListener('click', (evt) => {
         const aar = {
@@ -89,14 +89,12 @@ export default class Card {
     this._cardImg.src = this._imageLink;
     this._cardImg.alt = this._title;
     this._element.querySelector('.card__title').textContent = this._title;
-    if (this._owner) {
-      if (this._owner._id !== '9d11598a8a71bde185408ae3') {
-        this._element.querySelector('.card__trash-can').remove()
+    this._user.then(res => {
+      if (this._owner._id !== res._id) {
+        return res._id
       }
-      else
-      {
-      }
-    }
+    })
+    this._element.querySelector('.card__trash-can').remove()
     return this._element;
   }
 }
