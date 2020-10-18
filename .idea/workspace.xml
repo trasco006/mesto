@@ -14,13 +14,20 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:develop" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:FEATURE" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b0e37f5-b424-4334-8890-16353cda1424" name="Default Changelist" comment="Финальная сдача проекта">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/src/blocks/profile/__avatar/profile__avatar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/profile/__avatar/profile__avatar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/components/API.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/components/API.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/components/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/components/Card.js" afterDir="false" />
+>>>>>>> FEATURE
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -378,7 +385,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="develop" />
+                        <option value="FEATURE" />
                       </list>
                     </value>
                   </entry>
@@ -435,10 +442,17 @@
     <option name="LAST_COMMIT_MESSAGE" value="gitignore didn't work" />
   </component>
   <component name="WindowStateProjectService">
+<<<<<<< HEAD
     <state x="560" y="250" key="#Notifications" timestamp="1602971647332">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="560" y="250" key="#Notifications/0.0.1600.860@0.0.1600.860" timestamp="1602971647332" />
+=======
+    <state x="538" y="139" key="#JavaScript" timestamp="1603036859383">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="538" y="139" key="#JavaScript/0.0.1600.860@0.0.1600.860" timestamp="1603036859383" />
+>>>>>>> FEATURE
     <state x="591" y="292" key="#Scopes" timestamp="1601736582473">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
@@ -485,6 +499,7 @@
     </state>
     <state x="692" y="207" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1603023441314" />
     <state x="692" y="209" key="FileChooserDialogImpl/0.0.1600.870@0.0.1600.870" timestamp="1601738854249" />
+<<<<<<< HEAD
     <state width="1579" height="222" key="GridCell.Tab.0.bottom" timestamp="1603023388172">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -507,6 +522,30 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1579" height="222" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1603023388172" />
+=======
+    <state width="1579" height="218" key="GridCell.Tab.0.bottom" timestamp="1603048259134">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1579" height="218" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1603048259134" />
+    <state width="1579" height="266" key="GridCell.Tab.0.bottom/0.0.1600.870@0.0.1600.870" timestamp="1601815463685" />
+    <state width="1579" height="291" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1598557825629" />
+    <state width="1579" height="218" key="GridCell.Tab.0.center" timestamp="1603048259134">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1579" height="218" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1603048259134" />
+    <state width="1579" height="266" key="GridCell.Tab.0.center/0.0.1600.870@0.0.1600.870" timestamp="1601815463685" />
+    <state width="1579" height="291" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1598557825629" />
+    <state width="1579" height="218" key="GridCell.Tab.0.left" timestamp="1603048259134">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1579" height="218" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1603048259134" />
+    <state width="1579" height="266" key="GridCell.Tab.0.left/0.0.1600.870@0.0.1600.870" timestamp="1601815463684" />
+    <state width="1579" height="291" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1598557825629" />
+    <state width="1579" height="218" key="GridCell.Tab.0.right" timestamp="1603048259134">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1579" height="218" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1603048259134" />
+>>>>>>> FEATURE
     <state width="1579" height="266" key="GridCell.Tab.0.right/0.0.1600.870@0.0.1600.870" timestamp="1601815463685" />
     <state width="1579" height="291" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1598557825629" />
     <state width="1579" height="291" key="GridCell.Tab.1.bottom" timestamp="1598557825629">
@@ -588,10 +627,10 @@
       <screen x="0" y="0" width="1600" height="870" />
     </state>
     <state x="685" y="86" width="592" height="698" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1600.870@0.0.1600.870" timestamp="1601735152824" />
-    <state x="617" y="345" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602347088164">
+    <state x="617" y="345" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603039544781">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="617" y="345" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.860@0.0.1600.860" timestamp="1602347088164" />
+    <state x="617" y="345" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.860@0.0.1600.860" timestamp="1603039544781" />
     <state x="617" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.870@0.0.1600.870" timestamp="1601192252452" />
     <state x="507" y="6" width="585" height="849" key="find.popup" timestamp="1602872323338">
       <screen x="0" y="0" width="1600" height="860" />
@@ -602,16 +641,17 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="580" y="163" key="git4idea.branch.GitSmartOperationDialog/0.0.1600.900@0.0.1600.900" timestamp="1599422486941" />
-    <state x="456" y="196" width="672" height="648" key="run.anything.popup" timestamp="1602934855253">
+    <state x="456" y="196" width="672" height="648" key="run.anything.popup" timestamp="1603052020655">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="456" y="196" width="672" height="648" key="run.anything.popup/0.0.1600.860@0.0.1600.860" timestamp="1602934855253" />
+    <state x="456" y="196" width="672" height="648" key="run.anything.popup/0.0.1600.860@0.0.1600.860" timestamp="1603052020655" />
     <state x="456" y="198" width="672" height="655" key="run.anything.popup/0.0.1600.870@0.0.1600.870" timestamp="1601829312173" />
     <state x="456" y="205" width="672" height="677" key="run.anything.popup/0.0.1600.900@0.0.1600.900" timestamp="1599415873432" />
     <state x="592" y="308" key="scopes" timestamp="1598176091715">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="592" y="308" key="scopes/0.0.1600.900@0.0.1600.900" timestamp="1598176091715" />
+<<<<<<< HEAD
     <state x="463" y="182" width="672" height="649" key="search.everywhere.popup" timestamp="1602975193361">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -630,4 +670,13 @@
       </breakpoints>
     </breakpoint-manager>
   </component>
+=======
+    <state x="463" y="182" width="672" height="649" key="search.everywhere.popup" timestamp="1603049332042">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="463" y="182" width="672" height="649" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1603049332042" />
+    <state x="463" y="184" width="672" height="656" key="search.everywhere.popup/0.0.1600.870@0.0.1600.870" timestamp="1601924544374" />
+    <state x="463" y="190" width="672" height="678" key="search.everywhere.popup/0.0.1600.900@0.0.1600.900" timestamp="1599335634125" />
+  </component>
+>>>>>>> FEATURE
 </project>
