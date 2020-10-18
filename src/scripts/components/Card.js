@@ -1,7 +1,7 @@
 import {likeCard} from "../../pages/index.js";
 
 export default class Card {
-  constructor(title, imageLink, cardSelector, handleCardClick, acceptDeleteFunction, data) {
+  constructor(title, imageLink, cardSelector, handleCardClick, acceptDeleteFunction, data, user) {
     this._title = title;
     this._imageLink = imageLink;
     this._cardSelector = cardSelector;
@@ -15,6 +15,7 @@ export default class Card {
     this._owner = data.owner
     this._cardId = data._id
     this._likes = data.likes
+    this._user = user
   }
 
   _closePopupByEsc(evt) {
@@ -77,6 +78,10 @@ export default class Card {
     );
     this._element.querySelector('.card__image').addEventListener('click', () => {
         this._handleCardClick(this._imageLink, this._title)
+        console.log(this._owner._id !== this._user._id)
+
+      console.log(this._user)
+
       }
       // this._previewCard()
     );
@@ -90,7 +95,7 @@ export default class Card {
     this._cardImg.alt = this._title;
     this._element.querySelector('.card__title').textContent = this._title;
     if (this._owner) {
-      if (this._owner._id !== '9d11598a8a71bde185408ae3') {
+      if (this._owner._id !== this._user._id) {
         this._element.querySelector('.card__trash-can').remove()
       }
       else

@@ -21,10 +21,11 @@
   <component name="ChangeListManager">
     <list default="true" id="4b0e37f5-b424-4334-8890-16353cda1424" name="Default Changelist" comment="Финальная сдача проекта">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/profile/__avatar/profile__avatar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/profile/__avatar/profile__avatar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scripts/components/API.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/components/API.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scripts/components/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/components/Card.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/components/PopuWithForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/components/PopuWithForm.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,10 +71,10 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JavaScript" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/blocks" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -196,7 +197,13 @@
       <workItem from="1602520904608" duration="8045000" />
       <workItem from="1602617195636" duration="1948000" />
       <workItem from="1602692707212" duration="1014000" />
-      <workItem from="1602923053079" duration="16254000" />
+      <workItem from="1602923053079" duration="17012000" />
+      <workItem from="1602970838593" duration="1338000" />
+      <workItem from="1602974543209" duration="1108000" />
+      <workItem from="1603006491088" duration="1528000" />
+      <workItem from="1603021302138" duration="41000" />
+      <workItem from="1603022271544" duration="1105000" />
+      <workItem from="1603024174562" duration="1237000" />
     </task>
     <task id="LOCAL-00001" summary="Готовая проектная работа 5">
       <created>1598183575222</created>
@@ -433,6 +440,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="gitignore didn't work" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="560" y="250" key="#Notifications" timestamp="1602971647332">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="560" y="250" key="#Notifications/0.0.1600.860@0.0.1600.860" timestamp="1602971647332" />
     <state x="591" y="292" key="#Scopes" timestamp="1601736582473">
       <screen x="0" y="0" width="1600" height="870" />
     </state>
@@ -474,32 +485,33 @@
       <screen x="0" y="0" width="1600" height="870" />
     </state>
     <state x="783" y="219" width="673" height="499" key="EnvironmentVariablesDialog/0.0.1600.870@0.0.1600.870" timestamp="1601736207437" />
-    <state x="692" y="209" key="FileChooserDialogImpl" timestamp="1601738854249">
-      <screen x="0" y="0" width="1600" height="870" />
-    </state>
-    <state x="692" y="209" key="FileChooserDialogImpl/0.0.1600.870@0.0.1600.870" timestamp="1601738854249" />
-    <state width="1557" height="92" key="GridCell.Tab.0.bottom" timestamp="1602923239617">
+    <state x="692" y="207" key="FileChooserDialogImpl" timestamp="1603023441314">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="92" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1602923239617" />
+    <state x="692" y="207" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1603023441314" />
+    <state x="692" y="209" key="FileChooserDialogImpl/0.0.1600.870@0.0.1600.870" timestamp="1601738854249" />
+    <state width="1579" height="222" key="GridCell.Tab.0.bottom" timestamp="1603023388172">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1579" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1603023388172" />
     <state width="1579" height="266" key="GridCell.Tab.0.bottom/0.0.1600.870@0.0.1600.870" timestamp="1601815463685" />
     <state width="1579" height="291" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1598557825629" />
-    <state width="1557" height="92" key="GridCell.Tab.0.center" timestamp="1602923239617">
+    <state width="1579" height="222" key="GridCell.Tab.0.center" timestamp="1603023388171">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="92" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1602923239617" />
+    <state width="1579" height="222" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1603023388171" />
     <state width="1579" height="266" key="GridCell.Tab.0.center/0.0.1600.870@0.0.1600.870" timestamp="1601815463685" />
     <state width="1579" height="291" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1598557825629" />
-    <state width="1557" height="92" key="GridCell.Tab.0.left" timestamp="1602923239617">
+    <state width="1579" height="222" key="GridCell.Tab.0.left" timestamp="1603023388171">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="92" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1602923239617" />
+    <state width="1579" height="222" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1603023388171" />
     <state width="1579" height="266" key="GridCell.Tab.0.left/0.0.1600.870@0.0.1600.870" timestamp="1601815463684" />
     <state width="1579" height="291" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1598557825629" />
-    <state width="1557" height="92" key="GridCell.Tab.0.right" timestamp="1602923239617">
+    <state width="1579" height="222" key="GridCell.Tab.0.right" timestamp="1603023388172">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="92" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1602923239617" />
+    <state width="1579" height="222" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1603023388172" />
     <state width="1579" height="266" key="GridCell.Tab.0.right/0.0.1600.870@0.0.1600.870" timestamp="1601815463685" />
     <state width="1579" height="291" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1598557825629" />
     <state width="1579" height="291" key="GridCell.Tab.1.bottom" timestamp="1598557825629">
@@ -558,10 +570,10 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="667" y="152" key="RollbackChangesDialog/0.0.1600.900@0.0.1600.900" timestamp="1599411805634" />
-    <state x="17" y="108" width="1381" height="708" key="SettingsEditor" timestamp="1602345458775">
+    <state x="17" y="108" width="1381" height="708" key="SettingsEditor" timestamp="1603023443016">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="17" y="108" width="1381" height="708" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1602345458775" />
+    <state x="17" y="108" width="1381" height="708" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1603023443016" />
     <state x="17" y="109" width="1381" height="715" key="SettingsEditor/0.0.1600.870@0.0.1600.870" timestamp="1601923462500" />
     <state x="301" y="95" key="SettingsEditor/0.0.1600.900@0.0.1600.900" timestamp="1598553559861" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1598189594605">
@@ -605,10 +617,10 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="592" y="308" key="scopes/0.0.1600.900@0.0.1600.900" timestamp="1598176091715" />
-    <state x="463" y="182" width="672" height="649" key="search.everywhere.popup" timestamp="1602937439044">
+    <state x="463" y="182" width="672" height="649" key="search.everywhere.popup" timestamp="1602975193361">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="463" y="182" width="672" height="649" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1602937439044" />
+    <state x="463" y="182" width="672" height="649" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1602975193361" />
     <state x="463" y="184" width="672" height="656" key="search.everywhere.popup/0.0.1600.870@0.0.1600.870" timestamp="1601924544374" />
     <state x="463" y="190" width="672" height="678" key="search.everywhere.popup/0.0.1600.900@0.0.1600.900" timestamp="1599335634125" />
   </component>
@@ -616,9 +628,8 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/pages/index.js</url>
-          <line>34</line>
-          <properties lambdaOrdinal="-1" />
+          <url>file://$PROJECT_DIR$/src/scripts/components/Card.js</url>
+          <line>82</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
