@@ -370,7 +370,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="FEATURE" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>

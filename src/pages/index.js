@@ -165,8 +165,6 @@ function popupWithFormFunction() {
 
 const popupUserInfo = new PopupWithForm('.popup', popupWithFormFunction)
 editButton.addEventListener('click', () => popupUserInfo.open(userInfo.getUserInfo()));
-
-
 // Вызов обработчиков
 popupWithImageElement.setEventListeners()
 popupUserInfo.setEventListeners()
