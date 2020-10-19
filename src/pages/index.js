@@ -9,13 +9,11 @@ import {
   popup,
   popupImage,
   popupCard,
-  initialCards,
   inputCardName,
   settings,
   inputCardSrc,
   avatarEditButton
 } from "../scripts/utils/constants.js"
-import Popup from "../scripts/components/Popup.js";
 import Card from "../scripts/components/Card.js"
 import API from "../scripts/components/API.js"
 import PopupWithImage from "../scripts/components/PopuWithImage";
@@ -35,8 +33,6 @@ const api = new API({
     'Content-Type': 'application/json'
   }
 })
-
-
 
 // открытие попапа изменения аватара
 const selectAvatarFunction = (item) => {
@@ -59,17 +55,6 @@ const handleCardClick = (src, title) => {
   popupWithImageElement.open(src, title)
 }
 
-// УДАЛЕНИЕ С СЕРВЕРА КАРТОЧКИ
-export const likeCard = (cardId) => {
-  return new API({
-    url: `https://mesto.nomoreparties.co/v1/cohort-16/cards/likes/${cardId}`,
-    headers: {
-      authorization: '9db189b4-a6aa-4209-b940-24fafffd59d9',
-      'Content-Type': 'application/json'
-    }
-  })
-}
-
 /************************************************************************/
 // УДАЛЕНИЕ КАРТОЧКИ//
 /************************************************************************/
@@ -78,6 +63,9 @@ const acceptDeleteSubmit = (item) => {
   // console.log(item)
   item.client.remove()
   const a = api.deleteCardById(item.server)
+  a.catch((err) => {
+    console.log(err); // выведем ошибку в консоль
+  });
 }
 // const acceptDeleteConst = new PopupWithForm('.popup-delete', acceptDeleteSubmit);
 const acceptDelete = (item) => {

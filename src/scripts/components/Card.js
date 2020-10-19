@@ -94,7 +94,8 @@ export default class Card {
         return res._id
       }
     })
-    this._element.querySelector('.card__trash-can').remove()
+
+    // this._element.querySelector('.card__trash-can').remove()
     return this._element;
   }
 }

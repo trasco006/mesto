@@ -35,7 +35,7 @@ export default class API {
   /************************************************************************/
 
   addNewCard(name, src) {
-    return fetch(`${this._baseUrl}cards`, {
+    const promise = fetch(`${this._baseUrl}cards`, {
       method: 'POST',
       headers: this._headers,
       body: JSON.stringify({
@@ -43,6 +43,7 @@ export default class API {
         link: src
       })
     })
+    return this._controlError(promise)
   }
 
   /************************************************************************/
