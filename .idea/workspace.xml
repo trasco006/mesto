@@ -20,6 +20,7 @@
   </component>
   <component name="ChangeListManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <list default="true" id="4b0e37f5-b424-4334-8890-16353cda1424" name="Default Changelist" comment="Финальная сдача проекта">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
 <<<<<<< HEAD
@@ -32,6 +33,18 @@
     </list>
 =======
     <list default="true" id="4b0e37f5-b424-4334-8890-16353cda1424" name="Default Changelist" comment="Финальная сдача проекта" />
+>>>>>>> FEATURE
+=======
+    <list default="true" id="4b0e37f5-b424-4334-8890-16353cda1424" name="Default Changelist" comment="19.10.20 bug fixes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/components/API.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/components/API.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/components/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/components/Card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/components/PopuWithForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/components/PopuWithForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/components/Section.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/components/Section.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/components/UserInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/components/UserInfo.js" afterDir="false" />
+    </list>
 >>>>>>> FEATURE
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,6 +216,7 @@
       <workItem from="1602520904608" duration="8045000" />
       <workItem from="1602617195636" duration="1948000" />
       <workItem from="1602692707212" duration="1014000" />
+<<<<<<< HEAD
       <workItem from="1602923053079" duration="17012000" />
       <workItem from="1602970838593" duration="1338000" />
       <workItem from="1602974543209" duration="1108000" />
@@ -210,6 +224,15 @@
       <workItem from="1603021302138" duration="41000" />
       <workItem from="1603022271544" duration="1105000" />
       <workItem from="1603024174562" duration="1980000" />
+=======
+      <workItem from="1602923053079" duration="16254000" />
+      <workItem from="1603139183172" duration="40000" />
+      <workItem from="1603139576765" duration="1591000" />
+      <workItem from="1603222101932" duration="3074000" />
+      <workItem from="1603226443409" duration="48000" />
+      <workItem from="1603288055109" duration="18110000" />
+      <workItem from="1603377539298" duration="3294000" />
+>>>>>>> FEATURE
     </task>
     <task id="LOCAL-00001" summary="Готовая проектная работа 5">
       <created>1598183575222</created>
@@ -372,11 +395,28 @@
       <option name="project" value="LOCAL" />
       <updated>1602353998641</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="19.10.20 bug fixes">
+      <created>1603140153570</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1603140153570</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -443,7 +483,8 @@
     <MESSAGE value="Готов к финальному ревью" />
     <MESSAGE value="Финальная сдача проекта" />
     <MESSAGE value="gitignore didn't work" />
-    <option name="LAST_COMMIT_MESSAGE" value="gitignore didn't work" />
+    <MESSAGE value="19.10.20 bug fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="19.10.20 bug fixes" />
   </component>
   <component name="WindowStateProjectService">
 <<<<<<< HEAD
@@ -461,10 +502,10 @@
       <screen x="0" y="0" width="1600" height="870" />
     </state>
     <state x="591" y="292" key="#Scopes/0.0.1600.870@0.0.1600.870" timestamp="1601736582473" />
-    <state x="570" y="241" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602870257183">
+    <state x="570" y="241" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603129758241">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="570" y="241" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.860@0.0.1600.860" timestamp="1602870257183" />
+    <state x="570" y="241" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.860@0.0.1600.860" timestamp="1603129758241" />
     <state x="570" y="244" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.870@0.0.1600.870" timestamp="1601915581246" />
     <state x="570" y="252" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.900@0.0.1600.900" timestamp="1599411518017" />
     <state x="605" y="146" key="#com.intellij.ide.util.MemberChooser" timestamp="1602347556490">
@@ -504,6 +545,7 @@
     <state x="692" y="207" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1603023441314" />
     <state x="692" y="209" key="FileChooserDialogImpl/0.0.1600.870@0.0.1600.870" timestamp="1601738854249" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <state width="1579" height="222" key="GridCell.Tab.0.bottom" timestamp="1603023388172">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -529,29 +571,37 @@
 =======
     <state width="1579" height="218" key="GridCell.Tab.0.bottom" timestamp="1603048259134">
       <screen x="0" y="0" width="1600" height="860" />
+=======
+    <state width="1577" height="19" key="GridCell.Tab.0.bottom" timestamp="1603383922563">
+      <screen x="0" y="0" width="1600" height="900" />
+>>>>>>> FEATURE
     </state>
-    <state width="1579" height="218" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1603048259134" />
+    <state width="1577" height="17" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1603293162784" />
     <state width="1579" height="266" key="GridCell.Tab.0.bottom/0.0.1600.870@0.0.1600.870" timestamp="1601815463685" />
-    <state width="1579" height="291" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1598557825629" />
-    <state width="1579" height="218" key="GridCell.Tab.0.center" timestamp="1603048259134">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state width="1577" height="19" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1603383922563" />
+    <state width="1577" height="19" key="GridCell.Tab.0.center" timestamp="1603383922563">
+      <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1579" height="218" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1603048259134" />
+    <state width="1577" height="17" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1603293162784" />
     <state width="1579" height="266" key="GridCell.Tab.0.center/0.0.1600.870@0.0.1600.870" timestamp="1601815463685" />
-    <state width="1579" height="291" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1598557825629" />
-    <state width="1579" height="218" key="GridCell.Tab.0.left" timestamp="1603048259134">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state width="1577" height="19" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1603383922563" />
+    <state width="1577" height="19" key="GridCell.Tab.0.left" timestamp="1603383922563">
+      <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1579" height="218" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1603048259134" />
+    <state width="1577" height="17" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1603293162784" />
     <state width="1579" height="266" key="GridCell.Tab.0.left/0.0.1600.870@0.0.1600.870" timestamp="1601815463684" />
-    <state width="1579" height="291" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1598557825629" />
-    <state width="1579" height="218" key="GridCell.Tab.0.right" timestamp="1603048259134">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state width="1577" height="19" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1603383922563" />
+    <state width="1577" height="19" key="GridCell.Tab.0.right" timestamp="1603383922563">
+      <screen x="0" y="0" width="1600" height="900" />
     </state>
+<<<<<<< HEAD
     <state width="1579" height="218" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1603048259134" />
 >>>>>>> FEATURE
+=======
+    <state width="1577" height="17" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1603293162784" />
+>>>>>>> FEATURE
     <state width="1579" height="266" key="GridCell.Tab.0.right/0.0.1600.870@0.0.1600.870" timestamp="1601815463685" />
-    <state width="1579" height="291" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1598557825629" />
+    <state width="1577" height="19" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1603383922563" />
     <state width="1579" height="291" key="GridCell.Tab.1.bottom" timestamp="1598557825629">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
@@ -645,16 +695,17 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="580" y="163" key="git4idea.branch.GitSmartOperationDialog/0.0.1600.900@0.0.1600.900" timestamp="1599422486941" />
-    <state x="456" y="196" width="672" height="648" key="run.anything.popup" timestamp="1603052020655">
+    <state x="456" y="196" width="672" height="648" key="run.anything.popup" timestamp="1603296061211">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="456" y="196" width="672" height="648" key="run.anything.popup/0.0.1600.860@0.0.1600.860" timestamp="1603052020655" />
+    <state x="456" y="196" width="672" height="648" key="run.anything.popup/0.0.1600.860@0.0.1600.860" timestamp="1603296061211" />
     <state x="456" y="198" width="672" height="655" key="run.anything.popup/0.0.1600.870@0.0.1600.870" timestamp="1601829312173" />
     <state x="456" y="205" width="672" height="677" key="run.anything.popup/0.0.1600.900@0.0.1600.900" timestamp="1599415873432" />
     <state x="592" y="308" key="scopes" timestamp="1598176091715">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="592" y="308" key="scopes/0.0.1600.900@0.0.1600.900" timestamp="1598176091715" />
+<<<<<<< HEAD
 <<<<<<< HEAD
     <state x="463" y="182" width="672" height="649" key="search.everywhere.popup" timestamp="1602975193361">
       <screen x="0" y="0" width="1600" height="860" />
@@ -677,10 +728,24 @@
 =======
     <state x="463" y="182" width="672" height="649" key="search.everywhere.popup" timestamp="1603049332042">
       <screen x="0" y="0" width="1600" height="860" />
+=======
+    <state x="463" y="190" width="672" height="678" key="search.everywhere.popup" timestamp="1603299562388">
+      <screen x="0" y="0" width="1600" height="900" />
+>>>>>>> FEATURE
     </state>
-    <state x="463" y="182" width="672" height="649" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1603049332042" />
+    <state x="463" y="182" width="672" height="649" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1603293256737" />
     <state x="463" y="184" width="672" height="656" key="search.everywhere.popup/0.0.1600.870@0.0.1600.870" timestamp="1601924544374" />
-    <state x="463" y="190" width="672" height="678" key="search.everywhere.popup/0.0.1600.900@0.0.1600.900" timestamp="1599335634125" />
+    <state x="463" y="190" width="672" height="678" key="search.everywhere.popup/0.0.1600.900@0.0.1600.900" timestamp="1603299562388" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/scripts/components/PopuWithForm.js</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 >>>>>>> FEATURE
 </project>

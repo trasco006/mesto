@@ -12,7 +12,7 @@ export default class API {
   _controlError(promise) {
     return promise.then((res) => {
       if (!res.ok) {
-        return console.log(`Ошибка: ${res.status}`);
+        return Promise.reject(`Ошибка: ${res.status}`);
       } else {
         return res.json()
       }
@@ -25,7 +25,7 @@ export default class API {
   /************************************************************************/
 
   getAllCards() {
-    let promise = fetch(`${this._baseUrl}cards`, {
+    const promise = fetch(`${this._baseUrl}cards`, {
       method: 'GET',
       headers: this._headers
     });
@@ -37,7 +37,7 @@ export default class API {
   /************************************************************************/
 
   addNewCard(name, src) {
-    return fetch(`${this._baseUrl}cards`, {
+    const promise = fetch(`${this._baseUrl}cards`, {
       method: 'POST',
       headers: this._headers,
       body: JSON.stringify({
@@ -45,6 +45,7 @@ export default class API {
         link: src
       })
     })
+    return this._controlError(promise)
   }
 
   /************************************************************************/
@@ -52,7 +53,7 @@ export default class API {
   /************************************************************************/
 
   getUserInfo() {
-    let promise = fetch(`${this._baseUrl}users/me`, {
+    const promise = fetch(`${this._baseUrl}users/me`, {
       method: 'GET',
       headers: this._headers
     })
@@ -65,14 +66,15 @@ export default class API {
 
 
   setUserInfo(name, subtitle) {
-    return fetch(`${this._baseUrl}users/me`, {
+    const promise = fetch(`${this._baseUrl}users/me`, {
       method: 'PATCH',
       headers: this._headers,
       body: JSON.stringify({
-        name: name.textContent,
-        about: subtitle.textContent
+        name: name,
+        about: subtitle
       })
     })
+    return this._controlError(promise)
   }
 
 
@@ -81,14 +83,19 @@ export default class API {
   /************************************************************************/
 
   setUserAvatar(avatarUrl) {
+<<<<<<< HEAD
     fetch(`${this._baseUrl}users/me/avatar`, {
 
+=======
+    const promise = fetch(`${this._baseUrl}users/me/avatar`, {
+>>>>>>> FEATURE
       method: 'PATCH',
       headers: this._headers,
       body: JSON.stringify({
         avatar: avatarUrl
       })
     })
+    return this._controlError(promise)
   }
 
   /************************************************************************/
@@ -96,24 +103,38 @@ export default class API {
   /************************************************************************/
 
   deleteCardById(cardId) {
-    return fetch(`${this._baseUrl}cards${cardId}`, {
+    const promise = fetch(`${this._baseUrl}cards/${cardId}`, {
       method: 'DELETE',
       headers: this._headers,
     })
+    return this._controlError(promise)
   }
 
-
-  disLikeCard(cardId) {
-    fetch(this._baseUrl, {
-      method: 'DELETE',
-      headers: this._headers,
-    })
-  }
+  /************************************************************************/
+  // ФУНКЦИОНАЛ ДОБАВЛЕНИЯ ЛАЙКА//
+  /************************************************************************/
 
   likeCard(cardId) {
-    fetch(this._url, {
+    const promise = fetch(`${this._baseUrl}cards/likes/${cardId}`, {
       method: 'PUT',
       headers: this._headers,
     })
+    return this._controlError(promise)
   }
+
+  /************************************************************************/
+  // ФУНКЦИОНАЛ УДАЛЕНИЯ ЛАЙКА//
+  /************************************************************************/
+
+  disLikeCard(cardId) {
+    const promise = fetch(`${this._baseUrl}cards/likes/${cardId}`, {
+      method: 'DELETE',
+      headers: this._headers,
+    })
+    return this._controlError(promise)
+  }
+<<<<<<< HEAD
+=======
+
+>>>>>>> FEATURE
 }

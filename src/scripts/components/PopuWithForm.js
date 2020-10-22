@@ -6,6 +6,7 @@ import {
 } from "../utils/constants.js"
 import Popup from "./Popup.js";
 import UserInfo from "./UserInfo.js";
+import {api} from "../../pages";
 
 export class PopupWithForm extends Popup {
   constructor(popupSelector, submitFunction) {
@@ -19,6 +20,11 @@ export class PopupWithForm extends Popup {
     if (this._firstInput) {
       return [this._firstInput.value, this._secondInput.value]
     }
+  }
+
+  cardDeleteSubmit(data){
+    this._submitFunction(data)
+    console.log('3')
   }
 
   open(data) {
@@ -42,11 +48,11 @@ export class PopupWithForm extends Popup {
     this._popup.querySelector('.save__button').addEventListener('click', (evt) => {
       evt.preventDefault();
       if (this._popup.querySelector('.popup-delete__container')) {
-        this._submitFunction()
+        this.cardDeleteSubmit()
       } else {
         this._submitFunction(this._getInputValues());
+
       }
-      this.close()
     })
   }
 
