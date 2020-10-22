@@ -67,8 +67,8 @@ export default class API {
       method: 'PATCH',
       headers: this._headers,
       body: JSON.stringify({
-        name: name.textContent,
-        about: subtitle.textContent
+        name: name,
+        about: subtitle
       })
     })
     return this._controlError(promise)
@@ -94,7 +94,7 @@ export default class API {
   /************************************************************************/
 
   deleteCardById(cardId) {
-    const promise = fetch(`${this._baseUrl}cards${cardId}`, {
+    const promise = fetch(`${this._baseUrl}cards/${cardId}`, {
       method: 'DELETE',
       headers: this._headers,
     })
@@ -106,7 +106,7 @@ export default class API {
   /************************************************************************/
 
   likeCard(cardId) {
-    const promise = fetch(`${this._baseUrl}cards/likes${cardId}`, {
+    const promise = fetch(`${this._baseUrl}cards/likes/${cardId}`, {
       method: 'PUT',
       headers: this._headers,
     })
@@ -118,7 +118,7 @@ export default class API {
   /************************************************************************/
 
   disLikeCard(cardId) {
-    const promise = fetch(`${this._baseUrl}cards/likes${cardId}`, {
+    const promise = fetch(`${this._baseUrl}cards/likes/${cardId}`, {
       method: 'DELETE',
       headers: this._headers,
     })
