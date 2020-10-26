@@ -37,17 +37,18 @@ export default class Card {
 
   _likeCard(evt) {
     if (evt.target.classList.contains('card_liked')) {
-      evt.target.classList.remove('card_liked')
+
       api.disLikeCard(this._cardId).then((res) => {
-        document.querySelector('.card__likes-number').textContent = res.likes.length -1
+        evt.target.classList.remove('card_liked')
+        evt.target.parentElement.querySelector('.card__likes-number').textContent = res.likes.length
       })
         .catch((err) => {
           console.log(err); // выведем ошибку в консоль
         });
     } else {
-      evt.target.classList.add('card_liked')
       api.likeCard(this._cardId).then((res) => {
-        document.querySelector('.card__likes-number').textContent = res.likes.length + 0
+        evt.target.classList.add('card_liked')
+        evt.target.parentElement.querySelector('.card__likes-number').textContent = res.likes.length
       })
         .catch((err) => {
           console.log(err); // выведем ошибку в консоль
@@ -117,6 +118,14 @@ export default class Card {
   // }
 
   generateCard() {
+    if (this._data.likes) {
+      this._setLikesNumber()
+      this._data.likes.forEach((item) => {
+        if (item._id === this._user) {
+          this._element.querySelector('.card__like').classList.add('card_liked')
+        }
+      })
+    }
     this._setEventListeners();
     this._cardImg.src = this._imageLink;
     this._cardImg.alt = this._title;
@@ -126,8 +135,6 @@ export default class Card {
         this._element.querySelector('.card__trash-can').remove()
       }
     }
-    this._setLikesNumber()
-
     return this._element;
   }
 }

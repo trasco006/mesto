@@ -22,11 +22,6 @@ export class PopupWithForm extends Popup {
     }
   }
 
-  cardDeleteSubmit(data){
-    this._submitFunction(data)
-    console.log('3')
-  }
-
   open(data) {
     super.open()
     if (data) {
@@ -34,6 +29,10 @@ export class PopupWithForm extends Popup {
       inputSubtitle.value = data.subtitle;
     }
   }
+  deleteCard(action) {
+    this._submitFunction = action
+  }
+
 
   close() {
     super.close()
@@ -48,10 +47,9 @@ export class PopupWithForm extends Popup {
     this._popup.querySelector('.save__button').addEventListener('click', (evt) => {
       evt.preventDefault();
       if (this._popup.querySelector('.popup-delete__container')) {
-        this.cardDeleteSubmit()
+        this._submitFunction()
       } else {
         this._submitFunction(this._getInputValues());
-
       }
     })
   }
