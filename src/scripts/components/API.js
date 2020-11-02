@@ -83,12 +83,7 @@ export default class API {
   /************************************************************************/
 
   setUserAvatar(avatarUrl) {
-<<<<<<< HEAD
-    fetch(`${this._baseUrl}users/me/avatar`, {
-
-=======
     const promise = fetch(`${this._baseUrl}users/me/avatar`, {
->>>>>>> FEATURE
       method: 'PATCH',
       headers: this._headers,
       body: JSON.stringify({
@@ -133,8 +128,4 @@ export default class API {
     })
     return this._controlError(promise)
   }
-<<<<<<< HEAD
-=======
-
->>>>>>> FEATURE
 }

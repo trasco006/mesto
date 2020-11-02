@@ -30,9 +30,9 @@ import UserInfo from "../scripts/components/UserInfo";
 /****************************************************************************/
 
 export const api = new API({
-  url: "https://mesto.nomoreparties.co/v1/cohort-16/",
+  url: "https://mesto.nomoreparties.co/v1/cohort-17/",
   headers: {
-    authorization: '9db189b4-a6aa-4209-b940-24fafffd59d9',
+    authorization: 'cef396cb-7f39-49a2-a008-1d3b290a4906',
     'Content-Type': 'application/json'
   }
 })
