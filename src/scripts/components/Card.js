@@ -88,8 +88,10 @@ export default class Card {
     });
     this._element.querySelector('.card__trash-can').addEventListener('click', (evt) => {
         const aar = {
-          client: evt.target.parentElement,
           server: this._cardId
+        }
+        aar.client = () => {
+          this._removeCard(evt)
         }
         this._acceptDeleteFunction(aar)
         // console.log(evt.target.parentElement)
@@ -97,10 +99,6 @@ export default class Card {
     );
     this._element.querySelector('.card__image').addEventListener('click', () => {
         this._handleCardClick(this._imageLink, this._title)
-        console.log(this._owner._id !== this._user._id)
-
-      console.log(this._user)
-
       }
       // this._previewCard()
     );

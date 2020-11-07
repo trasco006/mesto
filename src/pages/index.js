@@ -26,7 +26,6 @@ import './index.css'
 import UserInfo from "../scripts/components/UserInfo";
 /****************************************************************************/
 // СОЗДАНИЕ ЭКЗЕМПЛЯРА API //
-
 /****************************************************************************/
 
 export const api = new API({
@@ -65,7 +64,6 @@ const handleCardClick = (src, title) => {
   popupWithImageElement.open(src, title)
 }
 
-const deleteCard = new CardDeletePopup('.popup-delete')
 const popupWithDelete = new PopupWithForm('.popup-delete')
 const acceptDeleteFunction = (data) => {
   popupWithDelete.open()
@@ -74,7 +72,7 @@ const acceptDeleteFunction = (data) => {
       document.querySelector('.popup-delete__save-button').textContent = 'Удаление...'
       api.deleteCardById(data.server)
         .then(() => {
-          data.client.remove()
+          data.client()
           popupWithDelete.close()
         })
         .catch((err) => {
@@ -95,6 +93,8 @@ function getCardElement(nameItem, linkItem, selectorItem, handleCardClick, accep
   return card.generateCard();
 }
 
+const section = new Section({}, '.elements')
+
 
 Promise.all(
   [
@@ -103,7 +103,6 @@ Promise.all(
   ]
 ).then((res) => {
   userInfo.setUserInfo(res[0].name, res[0].about, res[0].avatar)
-  const section = new Section({}, '.elements')
   res[1].forEach(function (data) {
     section.addItem(getCardElement(data.name, data.link, '.card-template', handleCardClick, acceptDeleteFunction, data, res[0]._id))
   })
@@ -112,16 +111,17 @@ Promise.all(
     console.log(err); // выведем ошибку в консоль
   });
 
-const popupWithCard = new PopupWithForm('.popup-card', () => {
+const popupWithCard = new PopupWithForm('.popup-card', (data) => {
   document.querySelector('.popup-card__save-button').textContent = 'Сохранение...'
+
   api.addNewCard(inputCardName.value, inputCardSrc.value).then((res) => {
-    elementsContainer.prepend(getCardElement(res.name, res.link, '.card-template', handleCardClick, acceptDeleteFunction, '', ''))
+    section.addItem(getCardElement(res.name, res.link, '.card-template', handleCardClick, acceptDeleteFunction, '', ''))
     popupWithCard.close()
   })
     .catch((err) => {
       console.log(err); // выведем ошибку в консоль
     })
-    .finally(()=>{
+    .finally(() => {
       document.querySelector('.popup-card__save-button').textContent = 'Сохранить'
     })
 })
@@ -159,7 +159,7 @@ const popupUserInfo = new PopupWithForm('.popup', () => {
     .catch((err) => {
       console.log(err); // выведем ошибку в консоль
     })
-    .finally(()=>{
+    .finally(() => {
       document.querySelector('.popup__save-button').textContent = 'Сохранить'
     })
 })
