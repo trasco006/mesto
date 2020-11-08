@@ -78,7 +78,7 @@ const acceptDeleteFunction = (data) => {
         .catch((err) => {
           console.log(err); // выведем ошибку в консоль
         })
-        .finally((err) => {
+        .finally(() => {
           document.querySelector('.popup-delete__save-button').textContent = 'Да'
         })
     }
@@ -94,7 +94,6 @@ function getCardElement(nameItem, linkItem, selectorItem, handleCardClick, accep
 }
 
 const section = new Section({}, '.elements')
-
 
 Promise.all(
   [
@@ -115,7 +114,7 @@ const popupWithCard = new PopupWithForm('.popup-card', (data) => {
   document.querySelector('.popup-card__save-button').textContent = 'Сохранение...'
 
   api.addNewCard(inputCardName.value, inputCardSrc.value).then((res) => {
-    section.addItem(getCardElement(res.name, res.link, '.card-template', handleCardClick, acceptDeleteFunction, '', ''))
+    section.addItem(getCardElement(res.name, res.link, '.card-template', handleCardClick, acceptDeleteFunction, res, ''))
     popupWithCard.close()
   })
     .catch((err) => {
@@ -133,7 +132,6 @@ popupCard.querySelector('.popup-card__overlay').addEventListener('click', () => 
 popupImage.querySelector('.popup-image__overlay').addEventListener('click', () => popupWithImageElement.close());
 popup.querySelector('.popup__overlay').addEventListener('click', () => popupUserInfo.close())
 
-
 //Включение валидации форм
 const validateProfilePopup = new FormValidator(settings, '.popup__container')
 validateProfilePopup.enableValidation()
@@ -144,6 +142,7 @@ validateAvatarPopup.enableValidation()
 
 /**********************************************************************************************/
 // Попап изменения информации пользователя
+/**********************************************************************************************/
 const userInfoObj = {
   name: '.profile__user-name',
   subtitle: '.profile__subtitle',
@@ -153,7 +152,7 @@ const userInfo = new UserInfo(userInfoObj)
 const popupUserInfo = new PopupWithForm('.popup', () => {
   document.querySelector('.popup__save-button').textContent = 'Сохранение...'
   api.setUserInfo(inputName.value, inputSubtitle.value).then((res) => {
-    userInfo.setUserInfo(res.name, res.about);
+    userInfo.setUserInfo(res.name, res.about, res.avatar);
     popupUserInfo.close()
   })
     .catch((err) => {
@@ -165,37 +164,7 @@ const popupUserInfo = new PopupWithForm('.popup', () => {
 })
 editButton.addEventListener('click', () => popupUserInfo.open(userInfo.getUserInfo()));
 
-
 // Вызов обработчиков
 popupWithImageElement.setEventListeners()
 popupUserInfo.setEventListeners()
 popupAvatar.setEventListeners()
-
-
-/****************************       до лучших времён */
-// const acceptDeleteFunction = (data) => {
-//   acceptDelete.open()
-//   const acceptDeleteSubmit = (data) => {
-//     console.log(data)
-//     api.deleteCardById(data.server).then((res) => {
-//       res.client.remove()
-//     })
-//       .catch((err) => {
-//         console.log(err); // выведем ошибку в консоль
-//       })
-//   }
-//   return acceptDeleteSubmit()
-// }
-// const acceptDelete = new PopupWithForm('.popup-delete',
-//   () => {
-//     acceptDeleteSubmit
-//   }
-// )
-//
-// acceptDelete.setEventListeners()
-
-
-
-
-
-
